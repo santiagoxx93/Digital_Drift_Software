@@ -104,98 +104,61 @@ function App() {
 </div>
 </div>
 </div>
-{/*  Right Column: Interactive Mockup Hero (macOS Clean White Engine)  */}
+{/*  Right Column: Minimal Phone Mockup  */}
 <div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
-{/*  Deep Crimson Glow Backing  */}
-<div className="absolute inset-0 bg-gradient-to-tr from-red-100/70 via-rose-50/50 to-transparent rounded-3xl blur-2xl -z-10"></div>
-{/*  Laptop / Tablet Glass Frame Mockup  */}
-<div className="w-full bg-white border border-slate-200 rounded-2xl p-4 shadow-xl flex flex-col gap-3 relative">
-{/*  Mockup Top OS Bar  */}
-<div className="flex items-center justify-between px-2 py-1 bg-slate-50 rounded-lg border border-slate-200">
-<div className="flex items-center gap-1.5">
-<span className="w-2.5 h-2.5 rounded-full bg-[#ff1a35]"></span>
-<span className="w-2.5 h-2.5 rounded-full bg-[#f59e0b]"></span>
-<span className="w-2.5 h-2.5 rounded-full bg-[#22c55e]"></span>
-</div>
-<div className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-700 px-3 py-0.5 bg-emerald-50 rounded-md border border-emerald-100 shadow-xs">
-<span className="material-symbols-outlined text-[13px] text-emerald-600">lock</span>
-<span className="font-semibold">https://www.tuempresa.com</span>
-</div>
-<div className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
-<span className="material-symbols-outlined text-[12px] text-[#22c55e]">bolt</span>
-0.6s carga
-</div>
-</div>
-{/*  Mockup Internal Dashboard View  */}
-<div className="bg-white rounded-xl p-4 flex flex-col gap-4 border border-slate-100 shadow-xs">
-<div className="flex items-start sm:items-center justify-between flex-col sm:flex-row gap-2">
-<div>
-<span className="font-label-sm text-label-sm text-slate-500 uppercase tracking-wider block font-semibold mb-0.5">100% activo y recibiendo visitas</span>
-<span className="font-headline-sm text-headline-sm text-slate-900 font-bold">Tu Negocio en Internet</span>
-</div>
-<span className="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-label-sm text-[11px] font-semibold flex items-center gap-1.5 shrink-0">
-<span className="relative flex h-2 w-2">
-  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-</span>
-Online
-</span>
-</div>
-{/*  Ficha de estado del sitio (3 tarjetas)  */}
-<div className="grid grid-cols-3 gap-2">
-<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
-<span className="text-[10px] text-slate-500 font-medium mb-0.5">Dominio &amp; SSL</span>
-<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
-<span className="material-symbols-outlined text-[14px] text-[#22c55e]">check_circle</span>
-.com Propio (Activo)
-</span>
-</div>
-<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
-<span className="text-[10px] text-slate-500 font-medium mb-0.5">Correos Empresa</span>
-<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
-<span className="material-symbols-outlined text-[14px] text-[#22c55e]">mark_email_read</span>
-4 Cuentas configuradas
-</span>
-</div>
-<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
-<span className="text-[10px] text-slate-500 font-medium mb-0.5">Recepción de Leads</span>
-<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
-<span className="material-symbols-outlined text-[14px] text-[#22c55e]">smartphone</span>
-Directo a tu celular
-</span>
-</div>
-</div>
-{/*  Simulación de Mensaje Entrante de WhatsApp  */}
-<div className="p-4 rounded-xl bg-emerald-50 border border-emerald-100 flex flex-col gap-3 shadow-sm relative overflow-hidden">
-{/* Decorative background element */}
-<div className="absolute -right-4 -bottom-4 opacity-5">
-<svg viewBox="0 0 24 24" className="w-32 h-32 fill-[#25D366]"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
-</div>
-<div className="flex items-center justify-between relative z-10">
-<div className="flex items-center gap-2">
-<div className="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0">
-<svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
-</div>
-<span className="font-label-md text-label-md text-slate-900 font-bold leading-tight">Nuevo cliente desde la web</span>
-</div>
-<span className="text-[11px] font-medium text-slate-500 shrink-0">Hace 2 min</span>
-</div>
-<div className="bg-white rounded-xl rounded-tl-none p-3 shadow-sm border border-emerald-100 relative z-10 text-[13px] leading-relaxed text-slate-700">
-¡Hola! Estuve viendo su catálogo en <span className="font-semibold text-[#25D366]">www.tuempresa.com</span> y me interesa cotizar un pedido. ¿Tienen disponibilidad inmediata?
-</div>
-<div className="inline-flex self-start px-3 py-1.5 rounded-lg bg-[#25D366] text-white text-[11px] font-bold shadow-sm items-center gap-1.5 mt-1 relative z-10 hover:bg-[#20BA5A] transition-colors cursor-pointer">
-<span className="material-symbols-outlined text-[14px]">send</span>
-1 clic para responder en WhatsApp
-</div>
-</div>
-</div>
-{/*  Bottom Visual Bar: Quick Highlights  */}
-<div className="flex items-center justify-center px-3 pt-3 pb-1 border-t border-slate-100 mt-1">
-<span className="font-body-sm text-[12px] text-slate-500 font-medium flex items-center gap-1.5 text-center">
-<span className="material-symbols-outlined text-[16px] text-[#ff1a35]">verified_user</span>
-Sin intermediarios • Tú eres dueño total de tu web y tus clientes
-</span>
-</div>
+{/*  Subtle background glow  */}
+<div className="absolute inset-0 bg-gradient-to-tr from-emerald-100/40 via-emerald-50/30 to-transparent rounded-3xl blur-2xl -z-10"></div>
+
+{/*  Phone Frame  */}
+<div className="w-[280px] sm:w-[300px] mx-auto">
+  <div className="bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-900/20">
+    {/*  Inner screen  */}
+    <div className="bg-white rounded-[2rem] overflow-hidden">
+      {/*  Status bar  */}
+      <div className="flex items-center justify-between px-6 pt-3 pb-2">
+        <span className="text-[11px] font-semibold text-slate-900">9:41</span>
+        <div className="w-20 h-5 bg-slate-900 rounded-full mx-auto"></div>
+        <div className="flex items-center gap-1">
+          <span className="material-symbols-outlined text-[14px] text-slate-900">signal_cellular_alt</span>
+          <span className="material-symbols-outlined text-[14px] text-slate-900">battery_full</span>
+        </div>
+      </div>
+
+      {/*  Lock screen content  */}
+      <div className="px-5 pt-8 pb-6 flex flex-col items-center">
+        <span className="text-[11px] text-slate-400 font-medium tracking-wide">Lunes 15 de septiembre</span>
+        <span className="text-[32px] font-bold text-slate-900 leading-tight mt-0.5">13:42</span>
+      </div>
+
+      {/*  WhatsApp Notification  */}
+      <div className="px-3 pb-4">
+        <div className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-200/60 p-4 flex flex-col gap-3">
+          {/*  Notification header  */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center shrink-0">
+                <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[13px] font-bold text-slate-900 leading-tight">WhatsApp</span>
+                <span className="text-[11px] text-slate-500 font-medium">Nuevo mensaje</span>
+              </div>
+            </div>
+            <span className="text-[10px] text-slate-400 font-medium">ahora</span>
+          </div>
+          {/*  Message preview  */}
+          <div className="text-[13px] text-slate-700 leading-relaxed">
+            <span className="font-semibold text-slate-900">Cliente nuevo:</span> Hola, vi su página web y me interesa cotizar. ¿Tienen disponibilidad?
+          </div>
+        </div>
+      </div>
+
+      {/*  Bottom indicator bar  */}
+      <div className="flex justify-center pb-3 pt-2">
+        <div className="w-28 h-1 bg-slate-200 rounded-full"></div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>
