@@ -365,7 +365,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
         <span className="px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 font-label-sm text-label-sm font-bold uppercase tracking-wider">
           Sin mensualidades ocultas
         </span>
-        <span className="text-xs font-mono text-slate-500 font-medium">Plan Entrada Comercial</span>
+        <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Entrada Comercial</span>
       </div>
       
       <div className="flex flex-col gap-2 pb-6 border-b border-slate-100">
@@ -428,6 +428,15 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
             <span className="font-body-sm text-body-sm text-slate-600">Conexión directa a perfiles de Instagram, Facebook y TikTok.</span>
           </div>
         </div>
+        <div className="flex items-start gap-3.5">
+          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Entrega estimada en 7 a 10 días hábiles</span>
+            <span className="font-body-sm text-body-sm text-slate-600">Proceso ágil con acompañamiento directo.</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -436,7 +445,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
         <span className="">Quiero este plan →</span>
       </a>
       <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
-        <span className="material-symbols-outlined text-[16px] text-slate-400">lock</span>
+        <span className="material-symbols-outlined text-[16px] text-slate-400">check_circle</span>
         <span className="">Sin mensualidades ocultas • Tu web es 100% tuya</span>
       </div>
     </div>
@@ -452,7 +461,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
           <span className="material-symbols-outlined text-[16px] fill-current">star</span>
           EL MÁS ELEGIDO POR PYMES
         </span>
-        <span className="text-xs font-mono text-slate-500 font-medium">Plan Turnkey Pro</span>
+        <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Turnkey Pro</span>
       </div>
       
       <div className="flex flex-col gap-2 pb-6 border-b border-slate-100">
