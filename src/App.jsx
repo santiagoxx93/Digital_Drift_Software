@@ -57,7 +57,7 @@ function App() {
 <div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
-<span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Agencia de Desarrollo &amp; Digitalización Comercial</span>
+<span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Hacemos páginas web que venden</span>
 </div>
 {/*  High-Impact H1 Headline  */}
 <h1 className="font-display-hero text-display-hero-mobile md:text-display-hero font-extrabold text-[#0f172a] tracking-tight leading-[1.1] mb-space-md">
@@ -77,32 +77,16 @@ function App() {
 <svg className="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"  />
 </svg>
-<span className="">Solicitar Demo Visual Gratis</span>
-<span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span className="">Solicitar Demo Gratis</span>
 </a>
 {/*  Secondary Ghost CTA  */}
 <a className="inline-flex items-center justify-center gap-space-xs bg-white hover:bg-slate-50 border border-slate-300 hover:border-[#ff1a35] hover:shadow-[0_4px_16px_rgba(255,26,53,0.12)] text-slate-800 px-6 py-4 rounded-xl font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-200" href="#demos">
-<span className="material-symbols-outlined text-[#ff1a35] text-[20px]">play_circle</span>
-<span className="">Explorar Demos en Vivo</span>
+<span className="">Ver demos</span>
 </a>
 </div>
-{/*  Trust Metric Indicators  */}
-<div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-600 font-body-sm text-body-sm pt-2">
-<div className="inline-flex items-center gap-1.5 font-medium">
-<span className="material-symbols-outlined text-[#20BA5A] text-[18px]">bolt</span>
-<span className="">Entrega en 5-7 días</span>
-</div>
-<span className="text-slate-300">•</span>
-<div className="inline-flex items-center gap-1.5 font-medium">
-<span className="material-symbols-outlined text-[#ff1a35] text-[18px]">verified_user</span>
-<span className="">Garantía 100% de satisfacción</span>
-</div>
-<span className="text-slate-300">•</span>
-<div className="inline-flex items-center gap-1.5 font-medium">
-<span className="material-symbols-outlined text-slate-800 text-[18px]">phone_iphone</span>
-<span className="">Optimizado para móviles</span>
-</div>
-</div>
+<p className="text-slate-500 font-body-sm text-body-sm pt-2 font-medium">
+  Entrega rápida · Sin letra pequeña · Optimizado para celulares
+</p>
 </div>
 {/*  Right Column: Minimal Phone Mockup  */}
 <div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
@@ -175,14 +159,13 @@ function App() {
           Demos interactivas listas para probar
         </h2>
 <p className="font-body-md text-body-md text-slate-600 mt-space-xs">
-          Cada arquitectura está configurada desde la base con embudos directos a WhatsApp, catálogos indexables y respuesta ultraveloz para garantizar retorno de inversión.
+          Cada demo está lista para usar. Tócala, pruébala y decide.
         </p>
 </div>
 <div className="flex items-center gap-space-xs">
 <span className="font-label-md text-label-md text-slate-600">¿No ves tu industria?</span>
 <a className="font-label-md text-label-md text-[#ff1a35] hover:text-[#e11d48] hover:underline flex items-center font-bold" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20mi%20negocio%20es%20de%20otro%20rubro%20y%20quiero%20ver%20un%20ejemplo.">
-          Diseñamos a medida
-          <span className="material-symbols-outlined text-[16px]">chevron_right</span>
+          Diseñamos a medida →
 </a>
 </div>
 </div>
@@ -208,8 +191,7 @@ function App() {
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-servinteca.vercel.app" target="_blank" rel="noopener noreferrer">
-<span>Ver Demo en Vivo</span>
-<span className="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver demo</span>
 </a>
 </div>
 
@@ -232,8 +214,7 @@ function App() {
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20ver%20la%20demo%20médica%20privada" target="_blank" rel="noopener noreferrer">
-<span>Ver Demo en Vivo</span>
-<span className="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver demo</span>
 </a>
 </div>
 
@@ -256,8 +237,7 @@ function App() {
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-comida.vercel.app/" target="_blank" rel="noopener noreferrer">
-<span>Ver Demo en Vivo</span>
-<span className="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver demo</span>
 </a>
 </div>
 
@@ -280,8 +260,7 @@ function App() {
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demozapatos.vercel.app/" target="_blank" rel="noopener noreferrer">
-<span>Ver Demo en Vivo</span>
-<span className="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver demo</span>
 </a>
 </div>
 
@@ -295,10 +274,7 @@ function App() {
 {/*  Background Subtle Glow  */}
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[500px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
 <div className="text-center max-w-2xl mx-auto mb-space-lg">
-<div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-red-50 border border-red-200 text-[#ff1a35] mb-space-xs">
-<span className="material-symbols-outlined text-[16px]">price_check</span>
-<span className="font-label-sm text-label-sm uppercase font-bold tracking-wider">PAQUETE LLAVE EN MANO</span>
-</div>
+
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
         Transparencia Total, Cero Letras Pequeñas
       </h2>
@@ -338,54 +314,42 @@ function App() {
       {/* Lista de características */}
       <div className="space-y-4 py-6">
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Diseño moderno 100% adaptable</span>
             <span className="font-body-sm text-body-sm text-slate-600">Optimizado para celulares y computadoras sin perder velocidad.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Catálogo interactivo</span>
             <span className="font-body-sm text-body-sm text-slate-600">Muestra organizada de tus productos o servicios con fotos y detalles.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botón directo a WhatsApp</span>
             <span className="font-body-sm text-body-sm text-slate-600">Tus clientes te piden o cotizan con un solo clic.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio (.com) y hosting ultra rápido</span>
             <span className="font-body-sm text-body-sm text-slate-600">Incluidos por 1 año completo con certificado de seguridad SSL.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Integración con redes sociales</span>
             <span className="font-body-sm text-body-sm text-slate-600">Conexión directa a perfiles de Instagram, Facebook y TikTok.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-blue-50 border border-blue-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-blue-400 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Puesta en marcha y entrega lista para operar</span>
             <span className="font-body-sm text-body-sm text-slate-600">Configuración completa para que comiences a recibir clientes sin enredos técnicos.</span>
@@ -399,8 +363,7 @@ function App() {
         <span className="">Quiero este plan →</span>
       </a>
       <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
-        <span className="material-symbols-outlined text-[16px] text-slate-400">check_circle</span>
-        <span className="">Sin mensualidades ocultas • Tu web es 100% tuya</span>
+        <span className="">Sin mensualidades • 100% tuya</span>
       </div>
     </div>
   </div>
@@ -411,8 +374,7 @@ function App() {
     
     <div>
       <div className="flex justify-between items-center mb-6">
-        <span className="px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#ff1a35] font-label-sm text-label-sm font-extrabold uppercase tracking-wider flex items-center gap-1.5">
-          <span className="material-symbols-outlined text-[16px] fill-current">star</span>
+        <span className="px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#ff1a35] font-label-sm text-label-sm font-extrabold uppercase tracking-wider">
           EL MÁS ELEGIDO POR PYMES
         </span>
         <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Turnkey Pro</span>
@@ -442,36 +404,28 @@ function App() {
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-[#ff1a35] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio .com y hosting cloud ultrarrápido incluido</span>
             <span className="font-body-sm text-body-sm text-slate-600">1 año completo de servidor SSD con certificado de seguridad SSL y protección DDoS.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-[#ff1a35] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">4 correos corporativos configurados</span>
             <span className="font-body-sm text-body-sm text-slate-600">ventas@, gerencia@, info@, soporte@ configurados en tus dispositivos de escritorio y móvil.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-[#ff1a35] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botones inteligentes de cotización directa a WhatsApp</span>
             <span className="font-body-sm text-body-sm text-slate-600">Mensajes prellenados con el servicio o producto específico de consulta para facilitar el cierre.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
-          </div>
+          <span className="text-[#ff1a35] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Soporte técnico preferencial y alta en Google</span>
             <span className="font-body-sm text-body-sm text-slate-600">Indexación inicial en motores de búsqueda y acompañamiento prioritario post-entrega.</span>
@@ -480,7 +434,6 @@ function App() {
       </div>
       
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 flex items-center gap-3 my-4">
-        <span className="material-symbols-outlined text-[24px] text-slate-400 shrink-0">build</span>
         <div className="text-xs text-slate-600">
           <strong className="text-slate-900 font-semibold">Póliza opcional de tranquilidad:</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#ff1a35] font-bold">$25/mes</span> (totalmente opcional).
         </div>
@@ -492,8 +445,7 @@ function App() {
         <span className="">Quiero mi web lista →</span>
       </a>
       <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
-        <span className="material-symbols-outlined text-[16px] text-[#20BA5A]">check_circle</span>
-        <span className="">Sin contratos de permanencia forzosa • Tu web es 100% tuya</span>
+        <span className="">Sin contratos • 100% tuya</span>
       </div>
     </div>
   </div>
@@ -506,9 +458,7 @@ function App() {
 <section data-aos="fade-up" className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="proceso">
 <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
 <div className="text-center max-w-2xl mx-auto mb-space-xl">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 mb-space-xs">
-<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">PASO A PASO</span>
-</div>
+
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
         Rápido, predecible y sin dolores de cabeza
       </h2>
@@ -523,9 +473,6 @@ function App() {
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">01</span>
-<div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-[#ff1a35]">
-<span className="material-symbols-outlined text-[24px]">assignment_turned_in</span>
-</div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Cuestionario rápido de 5 minutos
@@ -534,9 +481,8 @@ function App() {
             Nos cuentas sobre tu negocio, tus productos estrella y a quién quieres venderle. No necesitas preparar especificaciones ni terminología técnica.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 flex items-center gap-2 font-body-sm text-body-sm text-slate-600">
-<span className="material-symbols-outlined text-[18px] text-[#ff1a35]">timer</span>
-<span className="font-medium">Día 1: Diagnóstico inicial</span>
+<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
+<span className="font-medium">Día 1 — Diagnóstico inicial</span>
 </div>
 </div>
 {/*  Step 2  */}
@@ -544,9 +490,6 @@ function App() {
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">02</span>
-<div className="w-10 h-10 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-[#ff1a35]">
-<span className="material-symbols-outlined text-[24px]">desktop_mac</span>
-</div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Revisión de tu demo interactiva
@@ -555,9 +498,8 @@ function App() {
             En 72 horas te enviamos un enlace privado y protegido para que navegues tu nueva web real desde tu teléfono, pruebes los botones y solicites ajustes.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 flex items-center gap-2 font-body-sm text-body-sm text-slate-600">
-<span className="material-symbols-outlined text-[18px] text-[#ff1a35]">visibility</span>
-<span className="font-medium">Día 3-4: Enlace demo navegable</span>
+<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
+<span className="font-medium">Día 3-4 — Enlace demo navegable</span>
 </div>
 </div>
 {/*  Step 3  */}
@@ -565,9 +507,6 @@ function App() {
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">03</span>
-<div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-center text-[#20BA5A]">
-<span className="material-symbols-outlined text-[24px]">rocket_launch</span>
-</div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Lanzamiento oficial y puesta en marcha
@@ -576,9 +515,8 @@ function App() {
             Conectamos tu dominio corporativo, configuramos los correos institucionales y empezamos a canalizar cotizaciones y prospectos directamente a tu WhatsApp.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 flex items-center gap-2 font-body-sm text-body-sm text-slate-600">
-<span className="material-symbols-outlined text-[18px] text-[#20BA5A]">check_circle</span>
-<span className="font-medium">Día 5-7: 100% Operativo en vivo</span>
+<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
+<span className="font-medium">Día 5-7 — 100% operativo</span>
 </div>
 </div>
 </div>
@@ -590,15 +528,11 @@ function App() {
 <section data-aos="fade-up" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="preguntas">
 <div className="max-w-3xl mx-auto">
 <div className="text-center mb-space-lg">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 mb-space-xs">
-<span className="material-symbols-outlined text-[16px] text-[#ff1a35]">help_outline</span>
-<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">RESOLVEMOS TUS INQUIETUDES</span>
-</div>
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
           ¿Tienes dudas? Te las respondemos aquí
         </h2>
 <p className="font-body-md text-body-md text-slate-600 mt-2">
-          Respuestas transparentes sobre entrega, tecnología, contenidos y metodologías de pago.
+          Lo que más nos preguntan antes de empezar.
         </p>
 </div>
 {/*  FAQ Items (HTML5 details/summary styling)  */}
@@ -674,10 +608,7 @@ function App() {
 {/*  Top Decorative Accent  */}
 <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-<div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#ff1a35] mb-space-md">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35] animate-pulse"></span>
-<span className="font-label-sm text-label-sm uppercase tracking-widest font-bold">AGENDA DISPONIBLE ESTA SEMANA</span>
-</div>
+
 <h2 className="font-headline-xl text-headline-xl md:text-display-hero font-extrabold text-[#0f172a] tracking-tight leading-tight mb-space-sm">
           Tu competencia ya se está digitalizando.<br className="hidden sm:inline" />
 <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-[#ff1a35] to-[#e11d48]">
@@ -685,7 +616,7 @@ function App() {
           </span>
 </h2>
 <p className="font-body-lg text-body-lg text-slate-600 max-w-xl mb-space-lg">
-          Agenda una llamada técnica o escribe directamente a nuestros arquitectos digitales por WhatsApp. Respondemos en menos de 10 minutos.
+          Escríbenos por WhatsApp o déjanos tus datos. Respondemos en menos de 10 minutos.
         </p>
 {/*  Contact Actions (WhatsApp & Contact Form)  */}
 <div className="flex flex-col items-center gap-8 mb-space-lg w-full">
@@ -693,8 +624,7 @@ function App() {
     <svg className="w-7 h-7 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
       <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"  />
     </svg>
-    <span className="">Chatear con un Especialista en WhatsApp</span>
-    <span className="material-symbols-outlined text-[22px]">arrow_forward</span>
+    <span className="">Chatear por WhatsApp</span>
   </a>
 
   <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
@@ -705,11 +635,8 @@ function App() {
     {/* Formulario conectado a formsubmit.co mediante AJAX */}
     {formStatus.state === 'success' ? (
       <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 text-center animate-fade-in">
-        <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
-          <span className="material-symbols-outlined text-3xl">check_circle</span>
-        </div>
-        <h4 className="font-bold text-slate-900 text-lg mb-2">¡Solicitud Enviada!</h4>
-        <p className="text-sm text-slate-600">Hemos recibido tus datos correctamente. Nuestro equipo analizará tu requerimiento y te contactará a la brevedad.</p>
+        <h4 className="font-bold text-slate-900 text-lg mb-2">Solicitud enviada</h4>
+        <p className="text-sm text-slate-600">Recibimos tus datos. Te contactaremos pronto.</p>
         <button onClick={() => setFormStatus({ state: 'idle', message: '' })} className="mt-6 font-semibold text-sm text-emerald-700 hover:text-emerald-800 transition-colors">
           Enviar otra solicitud
         </button>
@@ -757,29 +684,16 @@ function App() {
 
         <button type="submit" disabled={formStatus.state === 'loading'} className="mt-2 w-full bg-slate-900 hover:bg-slate-800 disabled:bg-slate-600 text-white font-bold text-sm py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
           {formStatus.state === 'loading' ? 'Enviando...' : 'Enviar Solicitud de Cotización'}
-          {formStatus.state !== 'loading' && <span className="material-symbols-outlined text-[18px]">send</span>}
+          {formStatus.state !== 'loading' && <span className="">→</span>}
         </button>
       </form>
     )}
   </div>
 </div>
 {/*  Trust Guarantee Footnote  */}
-<div className="flex flex-wrap items-center justify-center gap-4 text-slate-500 font-body-sm text-body-sm">
-<span className="flex items-center gap-1 font-medium">
-<span className="material-symbols-outlined text-[16px] text-[#20BA5A]">flash_on</span>
-            Respuesta promedio: &lt; 10 min
-          </span>
-<span className="">•</span>
-<span className="flex items-center gap-1 font-medium">
-<span className="material-symbols-outlined text-[16px] text-[#ff1a35]">verified</span>
-            Diagnóstico 100% gratuito y sin compromiso
-          </span>
-<span className="">•</span>
-<span className="flex items-center gap-1 font-medium">
-<span className="material-symbols-outlined text-[16px] text-[#20BA5A]">lock</span>
-            Trato confidencial
-          </span>
-</div>
+<p className="text-slate-500 font-body-sm text-body-sm mt-6">
+  Respuesta promedio: menos de 10 min · Diagnóstico gratuito · Trato confidencial
+</p>
 </div>
 </div>
 </section>
@@ -834,13 +748,13 @@ function App() {
             <span className="text-white font-bold">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span>
           </div>
         </div>
-        <p className="font-body-sm text-body-sm text-slate-400 max-w-sm">Arquitectura web hipermoderna y sistemas de adquisición B2B de alta conversión. Diseñado con precisión para escalar operaciones digitales empresariales.</p>
+        <p className="font-body-sm text-body-sm text-slate-400 max-w-sm">Diseño web profesional para negocios que quieren vender más.</p>
       </div>
       <div className="md:col-span-2 flex flex-col gap-space-xs">
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Soluciones</span>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#demos">Demos de Alto Rendimiento</a>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#paquetes">Paquetes Enterprise</a>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">Metodología Sprint</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#demos">Demos</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#paquetes">Paquetes</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">Proceso</a>
       </div>
       <div className="md:col-span-2 flex flex-col gap-space-xs">
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Compañía</span>
@@ -849,13 +763,8 @@ function App() {
         <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#contacto">Contacto Directo</a>
       </div>
       <div className="md:col-span-3 flex flex-col gap-space-sm">
-        <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Conexión Ejecutiva</span>
-        <p className="font-body-sm text-body-sm text-slate-400">Acceso prioritario y consultoría de conversión directa con nuestros arquitectos.</p>
-        <div className="flex items-center gap-space-sm">
-          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a>
-          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">share</span></a>
-          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">mail</span></a>
-        </div>
+        <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Contacto</span>
+        <p className="font-body-sm text-body-sm text-slate-400">Escríbenos para cualquier consulta.</p>
       </div>
     </div>
     <div className="pt-space-md border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-space-sm text-slate-400 font-body-sm text-body-sm">
