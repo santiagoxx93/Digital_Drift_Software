@@ -84,41 +84,49 @@ function App() {
 </div>
 <div className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-700 px-3 py-0.5 bg-emerald-50 rounded-md border border-emerald-100 shadow-xs">
 <span className="material-symbols-outlined text-[13px] text-emerald-600">lock</span>
-<span className="font-semibold">www.minegocio.com</span>
+<span className="font-semibold">https://www.tuempresa.com</span>
 </div>
-<div className="flex items-center gap-1 text-slate-400">
-<span className="material-symbols-outlined text-[16px]">menu</span>
+<div className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+<span className="material-symbols-outlined text-[12px] text-[#22c55e]">bolt</span>
+0.6s carga
 </div>
 </div>
 {/*  Mockup Internal Dashboard View  */}
 <div className="bg-white rounded-xl p-4 flex flex-col gap-4 border border-slate-100 shadow-xs">
 <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row gap-2">
 <div>
-<span className="font-label-sm text-label-sm text-slate-500 uppercase tracking-wider block font-semibold mb-0.5">Optimizada para captación directa</span>
-<span className="font-headline-sm text-headline-sm text-slate-900 font-bold">Tu Página Web en Producción</span>
+<span className="font-label-sm text-label-sm text-slate-500 uppercase tracking-wider block font-semibold mb-0.5">100% activo y recibiendo visitas</span>
+<span className="font-headline-sm text-headline-sm text-slate-900 font-bold">Tu Negocio en Internet</span>
 </div>
 <span className="px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 font-label-sm text-[11px] font-semibold flex items-center gap-1.5 shrink-0">
 <span className="relative flex h-2 w-2">
   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
 </span>
-100% Operativa
+Online
 </span>
 </div>
-{/*  Ficha de estado del sitio  */}
-<div className="grid grid-cols-2 gap-3">
-<div className="p-3 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
-<span className="text-[11px] text-slate-500 font-medium mb-1">Dominio &amp; SSL</span>
-<span className="text-[12px] font-semibold text-slate-900 flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[16px] text-[#22c55e]">check_circle</span>
-.com Activo (Cloudflare)
+{/*  Ficha de estado del sitio (3 tarjetas)  */}
+<div className="grid grid-cols-3 gap-2">
+<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
+<span className="text-[10px] text-slate-500 font-medium mb-0.5">Dominio &amp; SSL</span>
+<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
+<span className="material-symbols-outlined text-[14px] text-[#22c55e]">check_circle</span>
+.com Propio (Activo)
 </span>
 </div>
-<div className="p-3 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
-<span className="text-[11px] text-slate-500 font-medium mb-1">Velocidad Móvil</span>
-<span className="text-[12px] font-semibold text-slate-900 flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[16px] text-[#22c55e]">bolt</span>
-0.6s (Ultra Rápida)
+<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
+<span className="text-[10px] text-slate-500 font-medium mb-0.5">Correos Empresa</span>
+<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
+<span className="material-symbols-outlined text-[14px] text-[#22c55e]">mark_email_read</span>
+4 Cuentas configuradas
+</span>
+</div>
+<div className="p-2.5 bg-slate-50 rounded-lg flex flex-col border border-slate-200 justify-center">
+<span className="text-[10px] text-slate-500 font-medium mb-0.5">Recepción de Leads</span>
+<span className="text-[11px] font-semibold text-slate-900 flex items-center gap-1">
+<span className="material-symbols-outlined text-[14px] text-[#22c55e]">smartphone</span>
+Directo a tu celular
 </span>
 </div>
 </div>
@@ -133,28 +141,24 @@ function App() {
 <div className="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0">
 <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
 </div>
-<span className="font-label-md text-label-md text-slate-900 font-bold leading-tight">Nuevo prospecto desde la web</span>
+<span className="font-label-md text-label-md text-slate-900 font-bold leading-tight">Nuevo cliente desde la web</span>
 </div>
-<span className="text-[11px] font-medium text-slate-500 shrink-0">hace 2 min</span>
+<span className="text-[11px] font-medium text-slate-500 shrink-0">Hace 2 min</span>
 </div>
 <div className="bg-white rounded-xl rounded-tl-none p-3 shadow-sm border border-emerald-100 relative z-10 text-[13px] leading-relaxed text-slate-700">
-¡Hola! Estuve viendo su catálogo en <span className="font-semibold text-[#25D366]">www.minegocio.com</span> y quiero solicitar una cotización para un pedido al mayor. ¿Tienen disponibilidad?
+¡Hola! Estuve viendo su catálogo en <span className="font-semibold text-[#25D366]">www.tuempresa.com</span> y me interesa cotizar un pedido. ¿Tienen disponibilidad inmediata?
 </div>
-<div className="inline-flex self-start px-3 py-1.5 rounded-lg bg-[#25D366] text-white text-[11px] font-bold shadow-sm items-center gap-1.5 mt-1 relative z-10">
-<span className="material-symbols-outlined text-[14px]">check_circle</span>
-Listo para responder y cerrar venta
+<div className="inline-flex self-start px-3 py-1.5 rounded-lg bg-[#25D366] text-white text-[11px] font-bold shadow-sm items-center gap-1.5 mt-1 relative z-10 hover:bg-[#20BA5A] transition-colors cursor-pointer">
+<span className="material-symbols-outlined text-[14px]">send</span>
+1 clic para responder en WhatsApp
 </div>
 </div>
 </div>
 {/*  Bottom Visual Bar: Quick Highlights  */}
-<div className="flex flex-wrap items-center justify-between px-3 pt-2 font-body-sm text-body-sm text-slate-500 gap-2">
-<span className="flex items-center gap-1.5 font-medium">
-<span className="material-symbols-outlined text-[16px] text-slate-400">mark_email_read</span>
-4 Correos Corporativos configurados
-</span>
-<span className="flex items-center gap-1.5 font-semibold text-slate-700">
-<span className="material-symbols-outlined text-[16px] text-slate-400">smartphone</span>
-Directo a tu celular
+<div className="flex items-center justify-center px-3 pt-3 pb-1 border-t border-slate-100 mt-1">
+<span className="font-body-sm text-[12px] text-slate-500 font-medium flex items-center gap-1.5 text-center">
+<span className="material-symbols-outlined text-[16px] text-[#ff1a35]">verified_user</span>
+Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 </span>
 </div>
 </div>
@@ -382,7 +386,7 @@ Directo a tu celular
 </div>
 {/*  Optional Maintenance Banner Inside Card  */}
 <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 flex items-center gap-3 my-4">
-<span className="text-2xl shrink-0">🛠️</span>
+<span className="material-symbols-outlined text-[24px] text-slate-400 shrink-0">build</span>
 <div className="text-xs text-slate-600">
 <strong className="text-slate-900 font-semibold">Póliza opcional de tranquilidad:</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#ff1a35] font-bold">$25/mes</span> (totalmente opcional).
         </div>
