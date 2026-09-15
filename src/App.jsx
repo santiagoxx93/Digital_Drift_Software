@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 600,
+      once: true,
+      easing: 'ease-out-cubic',
+      offset: 100,
+    });
+  }, []);
+
   return (
     <>
-<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.png" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#ff1a35] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#ff1a35] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
+<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.png" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#ff1a35] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#ff1a35] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
@@ -13,7 +24,7 @@ function App() {
 <div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
 {/*  Left Column: Copy & Immediate Action  */}
-<div className="lg:col-span-7 flex flex-col items-start">
+<div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
 <span className="relative flex h-2.5 w-2.5">
@@ -70,7 +81,7 @@ function App() {
 </div>
 </div>
 {/*  Right Column: Interactive Mockup Hero (macOS Clean White Engine)  */}
-<div className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
+<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
 {/*  Deep Crimson Glow Backing  */}
 <div className="absolute inset-0 bg-gradient-to-tr from-red-100/70 via-rose-50/50 to-transparent rounded-3xl blur-2xl -z-10"></div>
 {/*  Laptop / Tablet Glass Frame Mockup  */}
@@ -168,7 +179,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  =================================================================  */}
 {/*  2. SECCIÓN #demos - PORTAFOLIO & DEMOS INTERACTIVAS               */}
 {/*  =================================================================  */}
-<section className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="demos">
+<section data-aos="fade-up" className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="demos">
 <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
 <div className="max-w-2xl">
@@ -296,7 +307,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  =================================================================  */}
 {/*  3. SECCIÓN #paquetes - OFERTA PRINCIPAL: PAQUETE LLAVE EN MANO    */}
 {/*  =================================================================  */}
-<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="paquetes">
+<section data-aos="fade-up" className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="paquetes">
 {/*  Background Subtle Glow  */}
 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[500px] bg-red-500/5 rounded-full blur-[120px] pointer-events-none -z-10"></div>
 <div className="text-center max-w-2xl mx-auto mb-space-lg">
@@ -409,11 +420,11 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  =================================================================  */}
 {/*  4. SECCIÓN #proceso - METODOLOGÍA EN 3 PASOS                       */}
 {/*  =================================================================  */}
-<section className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="proceso">
+<section data-aos="fade-up" className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="proceso">
 <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
 <div className="text-center max-w-2xl mx-auto mb-space-xl">
 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 mb-space-xs">
-<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">METODOLOGÍA SPRINT</span>
+<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">PASO A PASO</span>
 </div>
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
         Rápido, predecible y sin dolores de cabeza
@@ -493,7 +504,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  =================================================================  */}
 {/*  5. SECCIÓN #preguntas - FAQ ACCORDION                               */}
 {/*  =================================================================  */}
-<section className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="preguntas">
+<section data-aos="fade-up" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="preguntas">
 <div className="max-w-3xl mx-auto">
 <div className="text-center mb-space-lg">
 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 mb-space-xs">
@@ -510,7 +521,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  FAQ Items (HTML5 details/summary styling)  */}
 <div className="flex flex-col gap-space-sm">
 {/*  FAQ 1  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40" open="">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
 <span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
@@ -525,7 +536,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
           </div>
 </details>
 {/*  FAQ 2  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40" open="">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
 <span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
@@ -540,7 +551,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
           </div>
 </details>
 {/*  FAQ 3  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40" open="">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
 <span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
@@ -555,7 +566,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
           </div>
 </details>
 {/*  FAQ 4  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40" open="">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
 <span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
@@ -575,7 +586,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 {/*  =================================================================  */}
 {/*  6. SECCIÓN BANNER FINAL CTA (#contacto) & CIERRE                   */}
 {/*  =================================================================  */}
-<section className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="contacto">
+<section data-aos="fade-up" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="contacto">
 <div className="relative bg-gradient-to-br from-white via-slate-50 to-red-50/40 border border-slate-200 rounded-3xl p-8 md:p-16 text-center shadow-xl overflow-hidden">
 {/*  Top Decorative Accent  */}
 <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-500/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -621,7 +632,91 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 </div>
 </div>
 </section>
-</div></main><footer className="w-full bg-[#f8fafc] backdrop-blur-md border-t border-slate-200 mt-space-xl"><div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl"><div className="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg"><div className="md:col-span-5 flex flex-col gap-space-sm"><div className="flex items-center gap-space-xs"><img alt="Digital Drift Logo" className="h-8 w-auto object-contain" src="/img/logo-digital-drift-footer.png" /><div className="font-headline-sm text-headline-sm leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div></div><p className="font-body-sm text-body-sm text-slate-600 max-w-sm">Arquitectura web hipermoderna y sistemas de adquisición B2B de alta conversión. Diseñado con precisión para escalar operaciones digitales empresariales.</p></div><div className="md:col-span-2 flex flex-col gap-space-xs"><span className="font-label-md text-label-md text-slate-900 uppercase tracking-wider font-bold mb-1">Soluciones</span><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#demos">Demos de Alto Rendimiento</a><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#paquetes">Paquetes Enterprise</a><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#proceso">Metodología Sprint</a></div><div className="md:col-span-2 flex flex-col gap-space-xs"><span className="font-label-md text-label-md text-slate-900 uppercase tracking-wider font-bold mb-1">Compañía</span><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#proceso">Acerca de Digital Drift</a><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#preguntas">FAQ &amp; Seguridad</a><a className="font-body-sm text-body-sm text-slate-600 hover:text-[#ff1a35] transition-colors" href="#contacto">Contacto Directo</a></div><div className="md:col-span-3 flex flex-col gap-space-sm"><span className="font-label-md text-label-md text-slate-900 uppercase tracking-wider font-bold mb-1">Conexión Ejecutiva</span><p className="font-body-sm text-body-sm text-slate-600">Acceso prioritario y consultoría de conversión directa con nuestros arquitectos.</p><div className="flex items-center gap-space-sm"><a className="w-9 h-9 rounded-lg bg-white hover:bg-slate-100 flex items-center justify-center text-slate-600 hover:text-[#ff1a35] transition-all border border-slate-200" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a><a className="w-9 h-9 rounded-lg bg-white hover:bg-slate-100 flex items-center justify-center text-slate-600 hover:text-[#ff1a35] transition-all border border-slate-200" href="#"><span className="material-symbols-outlined text-[18px]">share</span></a><a className="w-9 h-9 rounded-lg bg-white hover:bg-slate-100 flex items-center justify-center text-slate-600 hover:text-[#ff1a35] transition-all border border-slate-200" href="#"><span className="material-symbols-outlined text-[18px]">mail</span></a></div></div></div><div className="pt-space-md border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-space-sm text-slate-500 font-body-sm text-body-sm"><div className="">© 2026 Digital Drift B2B Growth Engine. Todos los derechos reservados.</div><div className="flex items-center gap-space-md"><a className="hover:text-[#ff1a35] transition-colors" href="#">Términos de Servicio</a><a className="hover:text-[#ff1a35] transition-colors" href="#">Políticas de Privacidad</a><a className="hover:text-[#ff1a35] transition-colors" href="#">SLA de Infraestructura</a></div></div></div></footer>
+</div></main>
+{/*  =================================================================  */}
+{/*  NUEVA SECCIÓN: Equipo Fundador                                     */}
+{/*  =================================================================  */}
+<section data-aos="fade-up" id="equipo" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl">
+  <div className="text-center max-w-2xl mx-auto mb-8">
+    <div className="inline-block bg-red-50 text-[#ff1a35] border border-red-200 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-2">
+      RESPALDO LOCAL
+    </div>
+    <h2 className="text-[#0f172a] font-bold text-3xl tracking-tight mt-2">
+      El equipo detrás de Digital Drift
+    </h2>
+    <p className="font-body-md text-body-md text-slate-600 mt-2">
+      Trato directo con los especialistas a cargo de tu proyecto, sin intermediarios.
+    </p>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+    {/*  Tarjeta 1  */}
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+      <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SS</div>
+      <h3 className="font-bold text-slate-900 text-lg">Santiago Sánchez</h3>
+      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Desarrollo &amp; Infraestructura Web</span>
+      <p className="text-slate-600 text-sm leading-relaxed">Garantiza tiempos de carga ultrarrápidos, seguridad SSL y conexión directa a WhatsApp.</p>
+    </div>
+    {/*  Tarjeta 2  */}
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+      <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">MP</div>
+      <h3 className="font-bold text-slate-900 text-lg">Moisés Porras</h3>
+      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Diseño &amp; Experiencia de Usuario (UI/UX)</span>
+      <p className="text-slate-600 text-sm leading-relaxed">Interfaces limpias, estéticas modernas y diseño 100% optimizado para pantallas móviles.</p>
+    </div>
+    {/*  Tarjeta 3  */}
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+      <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SV</div>
+      <h3 className="font-bold text-slate-900 text-lg">Santihel Valero</h3>
+      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Estrategia Comercial &amp; Cierre</span>
+      <p className="text-slate-600 text-sm leading-relaxed">Estructura catálogos y propuestas visuales enfocadas en retorno de inversión para negocios.</p>
+    </div>
+  </div>
+</section>
+
+<footer className="w-full bg-slate-900 border-t border-slate-800 text-slate-300 mt-space-xl">
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg">
+      <div className="md:col-span-5 flex flex-col gap-space-sm">
+        <div className="flex items-center gap-space-xs">
+          <img alt="Digital Drift Logo" className="h-8 w-auto object-contain" src="/img/logo-digital-drift-footer.png" />
+          <div className="font-headline-sm text-headline-sm leading-none">
+            <span className="text-white font-bold">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span>
+          </div>
+        </div>
+        <p className="font-body-sm text-body-sm text-slate-400 max-w-sm">Arquitectura web hipermoderna y sistemas de adquisición B2B de alta conversión. Diseñado con precisión para escalar operaciones digitales empresariales.</p>
+      </div>
+      <div className="md:col-span-2 flex flex-col gap-space-xs">
+        <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Soluciones</span>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#demos">Demos de Alto Rendimiento</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#paquetes">Paquetes Enterprise</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">Metodología Sprint</a>
+      </div>
+      <div className="md:col-span-2 flex flex-col gap-space-xs">
+        <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Compañía</span>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">Acerca de Digital Drift</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#preguntas">FAQ &amp; Seguridad</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#contacto">Contacto Directo</a>
+      </div>
+      <div className="md:col-span-3 flex flex-col gap-space-sm">
+        <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Conexión Ejecutiva</span>
+        <p className="font-body-sm text-body-sm text-slate-400">Acceso prioritario y consultoría de conversión directa con nuestros arquitectos.</p>
+        <div className="flex items-center gap-space-sm">
+          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">public</span></a>
+          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">share</span></a>
+          <a className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" href="#"><span className="material-symbols-outlined text-[18px]">mail</span></a>
+        </div>
+      </div>
+    </div>
+    <div className="pt-space-md border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-space-sm text-slate-400 font-body-sm text-body-sm">
+      <div className="">© 2026 Digital Drift. Todos los derechos reservados.</div>
+      <div className="flex items-center gap-space-md">
+        <a className="hover:text-white transition-colors" href="#">Términos de Servicio</a>
+        <a className="hover:text-white transition-colors" href="#">Políticas de Privacidad</a>
+        <a className="hover:text-white transition-colors" href="#">Garantía &amp; Soporte</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
     </>
   );
