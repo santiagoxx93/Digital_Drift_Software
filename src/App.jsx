@@ -433,8 +433,8 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
             <span className="material-symbols-outlined text-blue-500 text-[16px] font-bold">check</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Entrega estimada en 7 a 10 días hábiles</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Proceso ágil con acompañamiento directo.</span>
+            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Puesta en marcha y entrega lista para operar</span>
+            <span className="font-body-sm text-body-sm text-slate-600">Configuración completa para que comiences a recibir clientes sin enredos técnicos.</span>
           </div>
         </div>
       </div>
@@ -519,8 +519,8 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
             <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
           </div>
           <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Entrega garantizada en 5 a 7 días hábiles</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Cronograma estricto por contrato con acompañamiento y soporte técnico directo sin intermediarios.</span>
+            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Soporte técnico preferencial y alta en Google</span>
+            <span className="font-body-sm text-body-sm text-slate-600">Indexación inicial en motores de búsqueda y acompañamiento prioritario post-entrega.</span>
           </div>
         </div>
       </div>
