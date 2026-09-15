@@ -1,8 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
+  const [formStatus, setFormStatus] = useState({ state: 'idle', message: '' });
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setFormStatus({ state: 'loading', message: 'Enviando solicitud...' });
+    
+    const formData = new FormData(e.target);
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/DigitalDriftSoftware@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if(result.success) {
+        setFormStatus({ state: 'success', message: '¡Solicitud enviada exitosamente! Te contactaremos pronto.' });
+        e.target.reset();
+      } else {
+        setFormStatus({ state: 'error', message: 'Hubo un error al enviar. Por favor intenta por WhatsApp.' });
+      }
+    } catch (error) {
+      setFormStatus({ state: 'error', message: 'Error de red. Por favor intenta por WhatsApp.' });
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 600,
@@ -233,7 +263,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-salud.png" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Clínicas &amp; Salud Dental
@@ -604,14 +634,82 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 <p className="font-body-lg text-body-lg text-slate-600 max-w-xl mb-space-lg">
           Agenda una llamada técnica o escribe directamente a nuestros arquitectos digitales por WhatsApp. Respondemos en menos de 10 minutos.
         </p>
-{/*  Big Conversion WhatsApp Button  */}
-<a className="group inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-5 rounded-2xl font-headline-sm text-headline-sm font-black shadow-[0_12px_36px_rgba(37,211,102,0.45)] hover:shadow-[0_16px_48px_rgba(37,211,102,0.6)] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] mb-space-md" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20chatear%20con%20un%20especialista%20ahora." rel="noopener noreferrer" target="_blank">
-<svg className="w-7 h-7 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
-<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"  />
-</svg>
-<span className="">Chatear con un Especialista en WhatsApp</span>
-<span className="material-symbols-outlined text-[22px]">arrow_forward</span>
-</a>
+{/*  Contact Actions (WhatsApp & Contact Form)  */}
+<div className="flex flex-col items-center gap-8 mb-space-lg w-full">
+  <a className="group inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-5 rounded-2xl font-headline-sm text-headline-sm font-black shadow-[0_12px_36px_rgba(37,211,102,0.45)] hover:shadow-[0_16px_48px_rgba(37,211,102,0.6)] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20chatear%20con%20un%20especialista%20ahora." rel="noopener noreferrer" target="_blank">
+    <svg className="w-7 h-7 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"  />
+    </svg>
+    <span className="">Chatear con un Especialista en WhatsApp</span>
+    <span className="material-symbols-outlined text-[22px]">arrow_forward</span>
+  </a>
+
+  <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
+    <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#ff1a35] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-2">¿Prefieres detallarnos tu proyecto?</h3>
+    <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para darte una cotización exacta a tu correo <strong className="font-semibold text-slate-700">DigitalDriftSoftware@gmail.com</strong>.</p>
+    
+    {/* Formulario conectado a formsubmit.co mediante AJAX */}
+    {formStatus.state === 'success' ? (
+      <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 text-center animate-fade-in">
+        <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+          <span className="material-symbols-outlined text-3xl">check_circle</span>
+        </div>
+        <h4 className="font-bold text-slate-900 text-lg mb-2">¡Solicitud Enviada!</h4>
+        <p className="text-sm text-slate-600">Hemos recibido tus datos correctamente. Nuestro equipo analizará tu requerimiento y te contactará a la brevedad.</p>
+        <button onClick={() => setFormStatus({ state: 'idle', message: '' })} className="mt-6 font-semibold text-sm text-emerald-700 hover:text-emerald-800 transition-colors">
+          Enviar otra solicitud
+        </button>
+      </div>
+    ) : (
+      <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
+        <input type="hidden" name="_subject" value="Nueva Solicitud de Cotización - Digital Drift" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Nombre</label>
+            <input type="text" name="Nombre" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all disabled:opacity-50" placeholder="Tu nombre" />
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Correo</label>
+            <input type="email" name="Correo" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all disabled:opacity-50" placeholder="tucorreo@empresa.com" />
+          </div>
+        </div>
+        
+        <div className="flex flex-col gap-1.5">
+          <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Presupuesto Estimado</label>
+          <div className="relative">
+            <select name="Presupuesto" disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all appearance-none cursor-pointer disabled:opacity-50">
+              <option value="No estoy seguro, necesito asesoría">No estoy seguro, necesito asesoría</option>
+              <option value="Menos de $300 USD">Menos de $300 USD</option>
+              <option value="$300 - $600 USD">$300 - $600 USD</option>
+              <option value="Más de $600 USD">Más de $600 USD</option>
+            </select>
+            <span className="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">expand_more</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-1.5">
+          <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Detalles del Proyecto</label>
+          <textarea name="Mensaje" required disabled={formStatus.state === 'loading'} rows="4" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all resize-none disabled:opacity-50" placeholder="¿De qué trata tu negocio y qué necesitas lograr con la web?"></textarea>
+        </div>
+
+        {formStatus.state === 'error' && (
+          <div className="p-3 rounded-lg bg-red-50 text-red-600 text-sm font-medium border border-red-200 text-center">
+            {formStatus.message}
+          </div>
+        )}
+
+        <button type="submit" disabled={formStatus.state === 'loading'} className="mt-2 w-full bg-slate-900 hover:bg-slate-800 disabled:bg-slate-600 text-white font-bold text-sm py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+          {formStatus.state === 'loading' ? 'Enviando...' : 'Enviar Solicitud de Cotización'}
+          {formStatus.state !== 'loading' && <span className="material-symbols-outlined text-[18px]">send</span>}
+        </button>
+      </form>
+    )}
+  </div>
+</div>
 {/*  Trust Guarantee Footnote  */}
 <div className="flex flex-wrap items-center justify-center gap-4 text-slate-500 font-body-sm text-body-sm">
 <span className="flex items-center gap-1 font-medium">
