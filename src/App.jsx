@@ -57,12 +57,6 @@ function App() {
 <div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
-<span className="relative flex h-2.5 w-2.5">
-<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff1a35] opacity-75"></span>
-<span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ff1a35]"></span>
-</span>
-<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">EN VIVO</span>
-<span className="w-1 h-1 rounded-full bg-red-300"></span>
 <span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Agencia de Desarrollo &amp; Digitalización Comercial</span>
 </div>
 {/*  High-Impact H1 Headline  */}
@@ -213,10 +207,7 @@ Sin intermediarios • Tú eres dueño total de tu web y tus clientes
 <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
 <div className="max-w-2xl">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 mb-space-xs">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
-<span className="font-label-sm text-label-sm uppercase tracking-widest text-[#ff1a35] font-bold">PORTAFOLIO ACTIVO</span>
-</div>
+
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
           Demos interactivas listas para probar
         </h2>
