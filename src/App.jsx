@@ -630,7 +630,7 @@ function App() {
   <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#ff1a35] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
     <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-2">¿Prefieres detallarnos tu proyecto?</h3>
-    <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para darte una cotización exacta a tu correo <strong className="font-semibold text-slate-700">DigitalDriftSoftware@gmail.com</strong>.</p>
+    <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para darte una cotización exacta a tu correo <strong className="font-semibold text-slate-700">digitaldriftads@gmail.com</strong>.</p>
     
     {/* Formulario conectado a formsubmit.co mediante AJAX */}
     {formStatus.state === 'success' ? (
