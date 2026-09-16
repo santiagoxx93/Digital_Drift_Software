@@ -588,7 +588,7 @@ function App() {
             </span>
 </summary>
 <div className="px-space-md pb-space-md pt-0 text-slate-600 font-body-md text-body-md leading-relaxed">
-            Aceptamos transferencias bancarias locales, tarjetas de crédito y débito internacionales, Zelle y pagos en USDT/criptomonedas. La modalidad habitual es fraccionada: 50% para dar inicio al proyecto y el 50% restante al aprobar la web definitiva y lista para publicación.
+            Aceptamos transferencias bancarias locales y pagos en USDT. La modalidad habitual es fraccionada: 50% para dar inicio al proyecto y el 50% restante al aprobar la web definitiva y lista para publicación.
           </div>
 </details>
 </div>
