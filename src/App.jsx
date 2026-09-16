@@ -481,9 +481,7 @@ function App() {
             Nos cuentas sobre tu negocio, tus productos estrella y a quién quieres venderle. No necesitas preparar especificaciones ni terminología técnica.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
-<span className="font-medium">Día 1 — Diagnóstico inicial</span>
-</div>
+
 </div>
 {/*  Step 2  */}
 <div className="bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
@@ -495,12 +493,10 @@ function App() {
             Revisión de tu demo interactiva
           </h3>
 <p className="font-body-sm text-body-sm text-slate-600 leading-relaxed">
-            En 72 horas te enviamos un enlace privado y protegido para que navegues tu nueva web real desde tu teléfono, pruebes los botones y solicites ajustes.
+            Te enviamos un enlace privado y protegido para que navegues tu nueva web real desde tu teléfono, pruebes los botones y solicites ajustes.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
-<span className="font-medium">Día 3-4 — Enlace demo navegable</span>
-</div>
+
 </div>
 {/*  Step 3  */}
 <div className="bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
@@ -515,9 +511,7 @@ function App() {
             Conectamos tu dominio corporativo, configuramos los correos institucionales y empezamos a canalizar cotizaciones y prospectos directamente a tu WhatsApp.
           </p>
 </div>
-<div className="pt-space-md mt-space-md bg-slate-50 border border-slate-200 rounded-lg p-2.5 font-body-sm text-body-sm text-slate-600">
-<span className="font-medium">Día 5-7 — 100% operativo</span>
-</div>
+
 </div>
 </div>
 </div>
