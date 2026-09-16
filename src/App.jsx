@@ -12,7 +12,7 @@ function App() {
     const formData = new FormData(e.target);
     
     try {
-      const response = await fetch("https://formsubmit.co/ajax/88da48cc568bcc21ede0414de20ed98f", {
+      const response = await fetch("https://formsubmit.co/ajax/digitaldriftads@gmail.com", {
         method: "POST",
         headers: { 
           'Accept': 'application/json'
