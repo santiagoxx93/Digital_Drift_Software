@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -40,6 +40,48 @@ function App() {
       easing: 'ease-out-cubic',
       offset: 100,
     });
+  }, []);
+
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const container = carouselRef.current;
+    if (!container) return;
+
+    let animationId;
+    let isHoveredOrTouched = false;
+    const scrollSpeed = 1;
+
+    const scroll = () => {
+      if (!isHoveredOrTouched && container) {
+        container.scrollLeft += scrollSpeed;
+        if (container.scrollLeft >= container.scrollWidth / 2) {
+          container.scrollLeft = 0;
+        }
+      }
+      animationId = requestAnimationFrame(scroll);
+    };
+
+    // Small delay to let cards render before starting
+    setTimeout(() => {
+      animationId = requestAnimationFrame(scroll);
+    }, 500);
+
+    const handleEnter = () => isHoveredOrTouched = true;
+    const handleLeave = () => isHoveredOrTouched = false;
+
+    container.addEventListener('mouseenter', handleEnter);
+    container.addEventListener('mouseleave', handleLeave);
+    container.addEventListener('touchstart', handleEnter, { passive: true });
+    container.addEventListener('touchend', handleLeave);
+
+    return () => {
+      cancelAnimationFrame(animationId);
+      container.removeEventListener('mouseenter', handleEnter);
+      container.removeEventListener('mouseleave', handleLeave);
+      container.removeEventListener('touchstart', handleEnter);
+      container.removeEventListener('touchend', handleLeave);
+    };
   }, []);
 
   return (
@@ -173,7 +215,7 @@ function App() {
 <div className="w-full relative -mx-4 px-4 lg:mx-0 lg:px-0 py-4">
   <div className="absolute inset-y-0 left-0 w-12 lg:w-32 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none hidden lg:block"></div>
   <div className="absolute inset-y-0 right-0 w-12 lg:w-32 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none hidden lg:block"></div>
-  <div className="flex gap-space-md lg:w-max lg:animate-marquee-right lg:hover:[animation-play-state:paused] overflow-x-auto lg:overflow-visible snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+  <div ref={carouselRef} className="flex gap-space-md overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
     {[...Array(2)].map((_, i) => (
       <React.Fragment key={i}>
 
