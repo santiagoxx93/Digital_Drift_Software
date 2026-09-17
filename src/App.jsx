@@ -193,9 +193,9 @@ function App() {
   Página institucional para empresa de ingeniería civil, estructuras de acero y obras industriales. Incluye cotización por WhatsApp, galería de proyectos y formulario de contacto directo.
 </p>
 <div className="flex flex-wrap gap-1.5 mb-space-md">
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Cotización WhatsApp</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Galería de Proyectos</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Formulario de Contacto</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Cotización WhatsApp</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Galería de Proyectos</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Formulario de Contacto</span>
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://web-constructora-servintecavzla.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -219,9 +219,9 @@ function App() {
   Web médica diseñada para especialistas y odontología, orientada al agendamiento rápido de citas y consultas por WhatsApp.
 </p>
 <div className="flex flex-wrap gap-1.5 mb-space-md">
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Agenda Médica</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Especialidades</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Citas Directas</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Agenda Médica</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Especialidades</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Citas Directas</span>
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-clinica-dental-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -245,9 +245,9 @@ function App() {
   Menú interactivo optimizado para locales de comida rápida y delivery con recepción de pedidos directos a WhatsApp sin comisiones.
 </p>
 <div className="flex flex-wrap gap-1.5 mb-space-md">
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Menú Digital</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Carrito Rápido</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">0% Comisión</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Menú Digital</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Carrito Rápido</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">0% Comisión</span>
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-comida.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -271,9 +271,9 @@ function App() {
   Catálogo dinámico de productos con filtros de modelos, selección rápida y botón de compra directa al equipo de ventas.
 </p>
 <div className="flex flex-wrap gap-1.5 mb-space-md">
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Catálogo Visual</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Filtro de Modelos</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Cierre en 1 Clic</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Catálogo Visual</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Filtro de Modelos</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Cierre en 1 Clic</span>
 </div>
 </div>
 <a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demozapatos.vercel.app/" target="_blank" rel="noopener noreferrer">
