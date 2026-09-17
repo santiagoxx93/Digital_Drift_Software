@@ -177,7 +177,7 @@ function App() {
 <div>
 <div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
-    <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top" />
+    <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top transition-all duration-500 group-hover:object-contain" />
   </div>
   <div className="w-full h-44"></div>
 </div>
@@ -203,7 +203,7 @@ function App() {
 <div>
 <div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
-    <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top" />
+    <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-all duration-500 group-hover:object-contain" />
   </div>
   <div className="w-full h-44"></div>
 </div>
@@ -229,7 +229,7 @@ function App() {
 <div>
 <div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
-    <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top" />
+    <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top transition-all duration-500 group-hover:object-contain" />
   </div>
   <div className="w-full h-44"></div>
 </div>
@@ -255,7 +255,7 @@ function App() {
 <div>
 <div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
-    <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top" />
+    <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top transition-all duration-500 group-hover:object-contain" />
   </div>
   <div className="w-full h-44"></div>
 </div>
