@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 const DemoImage = ({ src, alt }) => {
   return (
-    <div className="w-full h-72 mb-space-sm rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+    <div className="w-full aspect-video mb-space-sm rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
       <img src={src} alt={alt} className="w-full h-full object-cover object-top" />
     </div>
   );
