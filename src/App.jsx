@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.png" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#ff1a35] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#ff1a35] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
+<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.webp" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#ff1a35] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#ff1a35] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
@@ -182,7 +182,7 @@ function App() {
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 md:group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 md:group-hover:h-auto md:group-hover:aspect-video md:group-hover:scale-[1.25] md:group-hover:-translate-y-4 md:group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom md:group-hover:border-[#ff1a35]/60">
-    <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top" />
+    <img src="/img/servitencavzla.webp" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top" />
   </div>
   <div className="w-full h-72"></div>
 </div>
@@ -208,7 +208,7 @@ function App() {
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 md:group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 md:group-hover:h-auto md:group-hover:aspect-video md:group-hover:scale-[1.25] md:group-hover:-translate-y-4 md:group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom md:group-hover:border-[#ff1a35]/60">
-    <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top" />
+    <img src="/img/clinica_dental.webp" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top" />
   </div>
   <div className="w-full h-72"></div>
 </div>
@@ -234,7 +234,7 @@ function App() {
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 md:group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 md:group-hover:h-auto md:group-hover:aspect-video md:group-hover:scale-[1.25] md:group-hover:-translate-y-4 md:group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom md:group-hover:border-[#ff1a35]/60">
-    <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top" />
+    <img src="/img/demo-comida.webp" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top" />
   </div>
   <div className="w-full h-72"></div>
 </div>
@@ -260,7 +260,7 @@ function App() {
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:h-auto group-hover:aspect-video group-hover:scale-[1.25] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
-    <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top" />
+    <img src="/img/demo-zapatos.webp" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top" />
   </div>
   <div className="w-full h-72"></div>
 </div>
@@ -756,7 +756,7 @@ function App() {
     <div className="grid grid-cols-1 md:grid-cols-12 gap-space-lg mb-space-lg">
       <div className="md:col-span-5 flex flex-col gap-space-sm">
         <div className="flex items-center gap-space-xs">
-          <img alt="Digital Drift Logo" className="h-8 w-auto object-contain" src="/img/logo-digital-drift-footer.png" />
+          <img alt="Digital Drift Logo" className="h-8 w-auto object-contain" src="/img/logo-digital-drift-footer.webp" />
           <div className="font-headline-sm text-headline-sm leading-none">
             <span className="text-white font-bold">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span>
           </div>
