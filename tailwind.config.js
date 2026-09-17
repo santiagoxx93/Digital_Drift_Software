@@ -74,7 +74,16 @@ export default {
         "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], 
         "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], 
         "headline-xl": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "700" } ] 
-      } 
+      },
+      "keyframes": {
+        "marquee-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        }
+      },
+      "animation": {
+        "marquee-right": "marquee-right 40s linear infinite",
+      }
     } 
   },
   plugins: [

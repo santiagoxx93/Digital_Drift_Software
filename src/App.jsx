@@ -170,10 +170,15 @@ function App() {
 </div>
 </div>
 {/*  4-Card Demo Grid  */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-space-md">
+<div className="w-full overflow-hidden relative -mx-4 px-4 lg:mx-0 lg:px-0 py-4">
+  <div className="absolute inset-y-0 left-0 w-12 lg:w-32 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none"></div>
+  <div className="absolute inset-y-0 right-0 w-12 lg:w-32 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none"></div>
+  <div className="flex gap-space-md w-max animate-marquee-right hover:[animation-play-state:paused]">
+    {[...Array(2)].map((_, i) => (
+      <React.Fragment key={i}>
 
 {/*  Card 1: Industria & Construcción  */}
-<div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[340px] md:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:h-auto group-hover:aspect-video group-hover:scale-[1.25] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
@@ -199,7 +204,7 @@ function App() {
 </div>
 
 {/*  Card 2: Clínicas & Salud Dental  */}
-<div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[340px] md:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:h-auto group-hover:aspect-video group-hover:scale-[1.25] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
@@ -225,7 +230,7 @@ function App() {
 </div>
 
 {/*  Card 3: Gastronomía & Menú Digital  */}
-<div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[340px] md:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:h-auto group-hover:aspect-video group-hover:scale-[1.25] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
@@ -251,7 +256,7 @@ function App() {
 </div>
 
 {/*  Card 4: Calzado & Tiendas Retail  */}
-<div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[340px] md:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:h-auto group-hover:aspect-video group-hover:scale-[1.25] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
@@ -275,7 +280,9 @@ function App() {
 <span>Ver demo</span>
 </a>
 </div>
-
+      </React.Fragment>
+    ))}
+  </div>
 </div>
 </div>
 </section>
