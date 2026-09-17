@@ -175,8 +175,11 @@ function App() {
 {/*  Card 1: Industria & Construcción  */}
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
-<div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
+<div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
+  <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
+    <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top" />
+  </div>
+  <div className="w-full h-44"></div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Industria &amp; Construcción
@@ -198,8 +201,11 @@ function App() {
 {/*  Card 2: Clínicas & Salud Dental  */}
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
-<div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
+<div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
+  <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
+    <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top" />
+  </div>
+  <div className="w-full h-44"></div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Clínicas &amp; Salud Dental
@@ -221,8 +227,11 @@ function App() {
 {/*  Card 3: Gastronomía & Menú Digital  */}
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
-<div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
+<div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
+  <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
+    <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top" />
+  </div>
+  <div className="w-full h-44"></div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Gastronomía &amp; Menú Digital
@@ -244,8 +253,11 @@ function App() {
 {/*  Card 4: Calzado & Tiendas Retail  */}
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
-<div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
+<div className="relative w-full h-44 mb-space-sm z-10 group-hover:z-50">
+  <div className="absolute inset-0 w-full h-full rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 group-hover:scale-[1.5] group-hover:-translate-y-4 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom group-hover:border-[#ff1a35]/60">
+    <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top" />
+  </div>
+  <div className="w-full h-44"></div>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Calzado &amp; Tiendas Retail
