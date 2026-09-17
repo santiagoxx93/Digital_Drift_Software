@@ -176,7 +176,7 @@ function App() {
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Industria &amp; Construcción
@@ -199,7 +199,7 @@ function App() {
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/clinica_dental.jpeg" alt="Vista previa demo Clínicas y Salud Dental" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Clínicas &amp; Salud Dental
@@ -222,7 +222,7 @@ function App() {
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/demo-comida.png" alt="Vista previa demo Gastronomía y Menú Digital" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Gastronomía &amp; Menú Digital
@@ -245,7 +245,7 @@ function App() {
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/demo-zapatos.png" alt="Vista previa demo Calzado y Tiendas Retail" className="w-full h-full object-cover object-top transition-all duration-[4000ms] ease-in-out group-hover:object-bottom group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Calzado &amp; Tiendas Retail
