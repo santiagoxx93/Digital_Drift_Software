@@ -74,6 +74,7 @@ function App() {
     container.addEventListener('mouseleave', handleLeave);
     container.addEventListener('touchstart', handleEnter, { passive: true });
     container.addEventListener('touchend', handleLeave);
+    container.addEventListener('touchcancel', handleLeave);
 
     return () => {
       cancelAnimationFrame(animationId);
@@ -81,6 +82,7 @@ function App() {
       container.removeEventListener('mouseleave', handleLeave);
       container.removeEventListener('touchstart', handleEnter);
       container.removeEventListener('touchend', handleLeave);
+      container.removeEventListener('touchcancel', handleLeave);
     };
   }, []);
 
@@ -215,12 +217,12 @@ function App() {
 <div className="w-full relative -mx-4 px-4 lg:mx-0 lg:px-0 py-4">
   <div className="absolute inset-y-0 left-0 w-12 lg:w-32 bg-gradient-to-r from-slate-50 to-transparent z-20 pointer-events-none hidden lg:block"></div>
   <div className="absolute inset-y-0 right-0 w-12 lg:w-32 bg-gradient-to-l from-slate-50 to-transparent z-20 pointer-events-none hidden lg:block"></div>
-  <div ref={carouselRef} className="flex gap-space-md overflow-x-auto snap-x snap-mandatory pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+  <div ref={carouselRef} className="flex gap-space-md overflow-x-auto pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" style={{ scrollBehavior: 'auto', WebkitOverflowScrolling: 'touch' }}>
     {[...Array(2)].map((_, i) => (
       <React.Fragment key={i}>
 
 {/*  Card 1: Industria & Construcción  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 snap-center group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 md:group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 md:group-hover:h-auto md:group-hover:aspect-video md:group-hover:scale-[1.25] md:group-hover:-translate-y-4 md:group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom md:group-hover:border-[#ff1a35]/60">
@@ -246,7 +248,7 @@ function App() {
 </div>
 
 {/*  Card 2: Clínicas & Salud Dental  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 snap-center group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="relative w-full h-72 mb-space-sm z-10 md:group-hover:z-50">
   <div className="absolute top-0 left-0 w-full h-72 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 transition-all duration-300 md:group-hover:h-auto md:group-hover:aspect-video md:group-hover:scale-[1.25] md:group-hover:-translate-y-4 md:group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)] origin-bottom md:group-hover:border-[#ff1a35]/60">
