@@ -3,19 +3,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const DemoImage = ({ src, alt }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div 
-      className={`relative w-full h-72 mb-space-sm transition-all duration-300 ${isExpanded ? 'z-50' : 'z-10'}`}
-      onClick={() => setIsExpanded(!isExpanded)}
-    >
-      <div className={`absolute top-0 left-0 w-full rounded-xl overflow-hidden border bg-slate-100 transition-all duration-300 origin-bottom cursor-pointer
-        ${isExpanded 
-          ? 'h-auto aspect-video scale-[1.10] sm:scale-[1.25] -translate-y-4 shadow-[0_30px_60px_rgba(0,0,0,0.4)] border-[#ff1a35]/60' 
-          : 'h-72 border-slate-200'}`}>
-        <img src={src} alt={alt} className="w-full h-full object-cover object-top" />
-      </div>
-      <div className="w-full h-72"></div>
+    <div className="w-full h-72 mb-space-sm rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
+      <img src={src} alt={alt} className="w-full h-full object-cover object-top" />
     </div>
   );
 };
