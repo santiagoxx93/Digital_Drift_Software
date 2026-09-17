@@ -176,21 +176,21 @@ function App() {
 <div className="group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <div className="w-full h-44 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 mb-space-sm relative group-hover:border-[#ff1a35]/40 transition-colors">
-  <img src="/img/demo-construccion.png" alt="Vista previa demo Industria y Construcción" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
+  <img src="/img/servitencavzla.jpg" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
   Industria &amp; Construcción
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
-  Plataforma institucional para constructoras y servicios técnicos orientada a licitaciones, fichas descargables y cotizaciones formales.
+  Página institucional para empresa de ingeniería civil, estructuras de acero y obras industriales. Incluye cotización por WhatsApp, galería de proyectos y formulario de contacto directo.
 </p>
 <div className="flex flex-wrap gap-1.5 mb-space-md">
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Catálogo Técnico</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Dossier PDF</span>
-<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Cotización WhatsApp</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-red-50 border border-red-200 text-[#ff1a35] font-medium">Cotización WhatsApp</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Galería de Proyectos</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-medium border border-emerald-200">Formulario de Contacto</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-servinteca.vercel.app" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://santiagoxx93.github.io/web_constructora_servintecavzla/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
