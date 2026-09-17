@@ -293,7 +293,7 @@ function App() {
 </div>
 
 {/*  Card 4: Calzado & Tiendas Retail  */}
-<div className="w-[340px] md:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/demo-zapatos.webp" alt="Vista previa demo Calzado y Tiendas Retail" />
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
@@ -312,6 +312,28 @@ function App() {
 <span>Ver demo</span>
 </a>
 </div>
+
+{/*  Card 5: Floristerías & Regalos  */}
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<DemoImage src="/img/floreriaweb.webp" alt="Vista previa demo Floristerías y Regalos" />
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+  Floristerías &amp; Regalos
+</h3>
+<p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
+  Tienda online elegante para floristerías y venta de regalos. Catálogo visual atractivo y recepción de pedidos directos a WhatsApp.
+</p>
+<div className="flex flex-wrap gap-1.5 mb-space-md">
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Diseño Elegante</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Catálogo Visual</span>
+<span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Pedidos Directos</span>
+</div>
+</div>
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-floristeria-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">
+<span>Ver demo</span>
+</a>
+</div>
+
       </React.Fragment>
     ))}
   </div>
