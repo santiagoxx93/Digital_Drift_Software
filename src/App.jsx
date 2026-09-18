@@ -147,7 +147,7 @@ function App() {
 <div className="absolute w-[200px] h-[200px] lg:w-[280px] lg:h-[280px] bg-[#ff1a35]/12 rounded-full blur-[60px] pointer-events-none animate-pulse"></div>
 {/*  Large floating brand icon  */}
 <div className="relative z-10 w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] animate-float">
-  <img src="/img/logo-digital-drift.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
+  <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
 </div>
 </div>
 </div>
