@@ -421,6 +421,80 @@ function App() {
   </div>
 </div>
 </div>
+</div>
+</section>
+{/*  =================================================================  */}
+{/*  NUEVA SECCIÓN: Razones para Elegirnos                              */}
+{/*  =================================================================  */}
+<section data-aos="fade-up" id="razones" className="w-full bg-slate-50 border-y border-slate-200 py-space-xl">
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
+    <div className="bg-[#0f172a] rounded-[40px] p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-2xl flex flex-col items-center">
+      
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#e11d2e] rounded-full mix-blend-multiply filter blur-[80px] opacity-40"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#b81524] rounded-full mix-blend-multiply filter blur-[80px] opacity-40"></div>
+
+      <h2 className="text-white font-extrabold text-4xl md:text-5xl tracking-tight mb-12 text-center relative z-10">
+        Razones para Elegirnos
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative z-10">
+        
+        {/* Razón 1 */}
+        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
+          
+          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
+            <span className="material-symbols-outlined text-white text-3xl">schedule</span>
+          </div>
+          <h3 className="font-bold text-2xl mb-3">Ventas 24/7</h3>
+          <p className="text-white/90 text-[15px] leading-relaxed">
+            Una de las ventajas más gratificantes de la digitalización es la posibilidad de mantenerse conectado y captando clientes en cualquier momento y día.
+          </p>
+        </div>
+
+        {/* Razón 2 */}
+        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
+          
+          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
+            <span className="material-symbols-outlined text-white text-3xl">rocket_launch</span>
+          </div>
+          <h3 className="font-bold text-2xl mb-3">Velocidad SEO</h3>
+          <p className="text-white/90 text-[15px] leading-relaxed">
+            Páginas ultra rápidas y optimizadas para Google. Supera a tu competencia apareciendo primero cuando tus clientes busquen tus servicios.
+          </p>
+        </div>
+
+        {/* Razón 3 */}
+        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
+          
+          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
+            <span className="material-symbols-outlined text-white text-3xl">design_services</span>
+          </div>
+          <h3 className="font-bold text-2xl mb-3">Diseño Premium</h3>
+          <p className="text-white/90 text-[15px] leading-relaxed">
+            Transmitimos confianza inmediata con estéticas modernas, atractivas y enfocadas en generar conversiones desde el primer vistazo.
+          </p>
+        </div>
+
+        {/* Razón 4 */}
+        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
+          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
+          
+          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
+            <span className="material-symbols-outlined text-white text-3xl">support_agent</span>
+          </div>
+          <h3 className="font-bold text-2xl mb-3">Soporte Directo</h3>
+          <p className="text-white/90 text-[15px] leading-relaxed">
+            Acompañamiento constante y trato humano. Estamos aquí para resolver tus dudas rápidamente, sin bots ni demoras interminables.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 {/*  =================================================================  */}
 {/*  3. SECCIÓN #paquetes - OFERTA PRINCIPAL: PAQUETE LLAVE EN MANO    */}
