@@ -425,19 +425,29 @@ function App() {
 {/*  =================================================================  */}
 {/*  NUEVA SECCIÓN: Razones para Elegirnos                              */}
 {/*  =================================================================  */}
-<section data-aos="fade-up" id="razones" className="w-full bg-slate-50 border-y border-slate-200 py-space-xl">
-  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
-    <div className="bg-[#0f172a] rounded-[40px] p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-2xl flex flex-col items-center">
-      
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#e11d2e] rounded-full mix-blend-multiply filter blur-[80px] opacity-40"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#b81524] rounded-full mix-blend-multiply filter blur-[80px] opacity-40"></div>
+<section data-aos="fade-up" id="razones" className="relative w-full bg-slate-50 border-y border-slate-200 py-space-xl overflow-hidden">
+  {/* Marca de agua (Logo repetido) */}
+  <div 
+    className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
+    style={{ 
+      backgroundImage: "url('/img/logo-digital-drift.webp')", 
+      backgroundSize: "250px", 
+      backgroundRepeat: "repeat",
+      backgroundPosition: "center"
+    }}
+  ></div>
 
-      <h2 className="text-white font-extrabold text-4xl md:text-5xl tracking-tight mb-12 text-center relative z-10">
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin relative z-10">
+    <div className="flex flex-col items-center">
+      
+      <div className="inline-block bg-red-50 text-[#e11d2e] border border-red-200 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-4">
+        POR QUÉ DIGITAL DRIFT
+      </div>
+      <h2 className="text-[#0f172a] font-extrabold text-4xl md:text-5xl tracking-tight mb-12 text-center">
         Razones para Elegirnos
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         
         {/* Razón 1 */}
         <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
