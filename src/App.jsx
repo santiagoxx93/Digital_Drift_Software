@@ -20,7 +20,7 @@ function App() {
     const formData = new FormData(e.target);
     
     try {
-      const response = await fetch("https://formsubmit.co/ajax/digitaldriftads@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/contacto@digitaldriftagency.lat", {
         method: "POST",
         headers: { 
           'Accept': 'application/json'
@@ -697,7 +697,7 @@ function App() {
   <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#e11d2e] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
     <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-2">¿Prefieres detallarnos tu proyecto?</h3>
-    <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para darte una cotización exacta a tu correo <strong className="font-semibold text-slate-700">digitaldriftads@gmail.com</strong>.</p>
+    <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para enviarte una cotización exacta. O escríbenos directamente a <strong className="font-semibold text-slate-700">contacto@digitaldriftagency.lat</strong>.</p>
     
     {/* Formulario conectado a formsubmit.co mediante AJAX */}
     {formStatus.state === 'success' ? (
