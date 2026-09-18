@@ -475,6 +475,94 @@ function App() {
 </div>
 </section>
 {/*  =================================================================  */}
+{/*  NUEVA SECCIÓN: Antes y Después                                     */}
+{/*  =================================================================  */}
+<section data-aos="fade-up" className="w-full bg-white py-space-xl border-t border-slate-200">
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="text-[#0f172a] font-extrabold text-4xl md:text-5xl tracking-tight mb-4">
+        Tu negocio <span className="text-slate-400">sin web</span> vs <span className="text-[#e11d2e]">con Digital Drift</span>
+      </h2>
+      <p className="font-body-md text-slate-600 text-lg">
+        La diferencia entre perseguir ventas y tener un sistema que venda por ti.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+      {/* Sin Digital Drift */}
+      <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-slate-300"></div>
+        <div className="flex items-center gap-4 mb-8">
+          <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500">
+            <span className="material-symbols-outlined text-2xl">sentiment_dissatisfied</span>
+          </div>
+          <h3 className="font-bold text-2xl text-slate-800">El método antiguo</h3>
+        </div>
+        
+        <ul className="flex flex-col gap-5">
+          <li className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
+            <span className="text-slate-600 font-medium">Pierdes ventas en WhatsApp por falta de información rápida.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
+            <span className="text-slate-600 font-medium">Tus clientes desconfían al no ver una página web oficial.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
+            <span className="text-slate-600 font-medium">Atención lenta y manual respondiendo las mismas dudas.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
+            <span className="text-slate-600 font-medium">Catálogo en PDF desactualizado y pesado de descargar.</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Con Digital Drift */}
+      <div className="bg-white border-2 border-[#e11d2e] rounded-3xl p-8 md:p-10 shadow-[0_20px_50px_rgba(225,29,46,0.1)] relative overflow-hidden transform md:-translate-y-4 group hover:-translate-y-6 transition-all duration-300">
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-[#e11d2e]"></div>
+        <div className="absolute -top-24 -right-24 w-48 h-48 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div className="flex items-center gap-4 mb-8 relative z-10">
+          <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#e11d2e] border border-red-100">
+            <span className="material-symbols-outlined text-2xl">rocket_launch</span>
+          </div>
+          <h3 className="font-bold text-2xl text-slate-900">Con Digital Drift</h3>
+        </div>
+        
+        <ul className="flex flex-col gap-5 relative z-10">
+          <li className="flex items-start gap-3">
+            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            </div>
+            <span className="text-slate-800 font-semibold">Ventas guiadas y catálogos interactivos disponibles 24/7.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            </div>
+            <span className="text-slate-800 font-semibold">Autoridad corporativa instantánea y correos profesionales.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            </div>
+            <span className="text-slate-800 font-semibold">Filtra curiosos y recibe clientes listos para comprar.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            </div>
+            <span className="text-slate-800 font-semibold">Botón de contacto directo a tu WhatsApp optimizado.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/*  =================================================================  */}
 {/*  NUEVA SECCIÓN: Razones para Elegirnos                              */}
 {/*  =================================================================  */}
 <section data-aos="fade-up" id="razones" className="relative w-full bg-slate-50 border-y border-slate-200 py-space-xl overflow-hidden">
@@ -699,8 +787,11 @@ function App() {
 {/*  Step 1  */}
 <div data-aos="fade-up" data-aos-delay="100" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
-<div className="flex items-center justify-between mb-space-md">
+<div className="flex items-center justify-between mb-space-xs">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">01</span>
+</div>
+<div className="w-full flex justify-center mb-6">
+  <img src="/img/paso1.jpg" alt="Cuestionario interactivo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Cuestionario rápido de 5 minutos
@@ -714,8 +805,11 @@ function App() {
 {/*  Step 2  */}
 <div data-aos="fade-up" data-aos-delay="200" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
-<div className="flex items-center justify-between mb-space-md">
+<div className="flex items-center justify-between mb-space-xs">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">02</span>
+</div>
+<div className="w-full flex justify-center mb-6">
+  <img src="/img/paso2.jpg" alt="Revisión de Demo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Revisión de tu demo interactiva
@@ -729,8 +823,11 @@ function App() {
 {/*  Step 3  */}
 <div data-aos="fade-up" data-aos-delay="300" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
-<div className="flex items-center justify-between mb-space-md">
+<div className="flex items-center justify-between mb-space-xs">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">03</span>
+</div>
+<div className="w-full flex justify-center mb-6">
+  <img src="/img/paso3.jpg" alt="Lanzamiento oficial" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Lanzamiento oficial y puesta en marcha
