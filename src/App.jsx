@@ -154,6 +154,48 @@ function App() {
 </div>
 </div>
 </section>
+
+{/*  =================================================================  */}
+{/*  1.5 SECCIÓN SERVICIOS BRANDING                                     */}
+{/*  =================================================================  */}
+<section className="w-full bg-[#0F172A] py-space-xl border-t border-slate-800 relative overflow-hidden">
+  {/* Subtle red glow on the right */}
+  <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] bg-[#e11d2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin relative z-10">
+    {/* Heading */}
+    <div className="max-w-4xl" data-aos="fade-up">
+      <h2 className="font-display-hero text-[32px] md:text-[42px] font-extrabold text-white leading-tight italic tracking-tight">
+        Desarrollo de software,<br className="hidden sm:inline" /> páginas web y soluciones<br className="hidden sm:inline" /> digitales a tu medida.
+      </h2>
+      <div className="h-1 w-64 bg-gradient-to-r from-[#e11d2e] to-transparent mt-6"></div>
+    </div>
+
+    {/* Services Grid */}
+    <div className="grid grid-cols-2 md:grid-cols-4 mt-16 md:divide-x divide-[#e11d2e]/30 gap-y-12">
+      {/* Item 1 */}
+      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="100">
+        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">code</span>
+        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Desarrollo de software</span>
+      </div>
+      {/* Item 2 */}
+      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="200">
+        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">language</span>
+        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Páginas web</span>
+      </div>
+      {/* Item 3 */}
+      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="300">
+        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">cloud</span>
+        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Soluciones en la nube</span>
+      </div>
+      {/* Item 4 */}
+      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="400">
+        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">rocket_launch</span>
+        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Automatización y más</span>
+      </div>
+    </div>
+  </div>
+</section>
 {/*  =================================================================  */}
 {/*  2. SECCIÓN #demos - PORTAFOLIO & DEMOS INTERACTIVAS               */}
 {/*  =================================================================  */}
