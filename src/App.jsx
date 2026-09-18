@@ -436,21 +436,20 @@ function App() {
 <div className="flex flex-col md:flex-row max-w-5xl mx-auto relative z-10 shadow-2xl rounded-3xl overflow-hidden mt-12">
 
   {/* Tarjeta 1: Landing page */}
-  <div className="flex-1 flex flex-col bg-[#2dd4bf] text-white p-8 md:p-12 relative">
-    <div className="mb-8 border-b border-white/20 pb-6">
-      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none">Landing page</h3>
+  <div className="flex-1 flex flex-col bg-white text-slate-900 p-8 md:p-12 relative border border-slate-200/80">
+    <div className="mb-8 border-b border-slate-100 pb-6">
+      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none text-[#0f172a]">Landing page</h3>
       <div className="flex items-baseline gap-1 mt-4">
-        <span className="text-xl font-medium">Desde</span>
-        <span className="text-[32px] font-extrabold tracking-tight">$150</span>
+        <span className="text-xl font-medium text-slate-500">Desde</span>
+        <span className="text-[32px] font-extrabold tracking-tight text-[#e11d2e]">$150</span>
       </div>
     </div>
     
-    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium">
+    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium text-slate-700">
       <li>Dominio x 1 Año GRATIS (.com o del país)</li>
       <li>Visitas y espacio ilimitado</li>
       <li>Hosting SSD x 1 Año GRATIS</li>
       <li>Certificado SSL (Seguridad)</li>
-      <li>Hasta 3 correos corporativos</li>
       <li>Diseño moderno y responsivo</li>
       <li>3 secciones (sencillo o landing)</li>
       <li>Formulario para captura de leads</li>
@@ -459,49 +458,48 @@ function App() {
       <li>Botón de llamada & WhatsApp</li>
       <li>Integración con Instagram y/o Facebook</li>
       <li>Integración con Google Maps</li>
-      <li>Integración con Google Analytics</li>
     </ul>
 
     <div className="pt-10 mt-auto flex justify-center">
-      <a className="bg-white text-slate-900 py-4 px-10 rounded-xl font-bold shadow-md hover:bg-slate-50 transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Landing%20Page%20de%20$150" target="_blank" rel="noopener noreferrer">
+      <a className="bg-slate-900 text-white py-4 px-10 rounded-xl font-bold shadow-md hover:bg-slate-800 transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Landing%20Page%20de%20$150" target="_blank" rel="noopener noreferrer">
         COTIZAR WEB
       </a>
     </div>
   </div>
 
   {/* Tarjeta 2: Profesional */}
-  <div className="flex-1 flex flex-col bg-[#404040] text-white p-8 md:p-12 relative overflow-hidden">
+  <div className="flex-1 flex flex-col bg-[#0f172a] text-white p-8 md:p-12 relative overflow-hidden">
     {/* Ribbon */}
-    <div className="absolute top-6 -right-12 w-48 bg-[#22c55e] text-white text-center py-1.5 font-bold text-[11px] uppercase tracking-widest rotate-45 shadow-lg z-10">
+    <div className="absolute top-6 -right-12 w-48 bg-[#e11d2e] text-white text-center py-1.5 font-bold text-[11px] uppercase tracking-widest rotate-45 shadow-lg z-10">
       RECOMENDADO
     </div>
 
     <div className="mb-8 border-b border-white/10 pb-6">
-      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none">Profesional</h3>
+      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none text-white">Profesional</h3>
       <div className="flex items-baseline gap-1 mt-4">
-        <span className="text-xl font-medium">Desde</span>
-        <span className="text-[32px] font-extrabold tracking-tight">$280</span>
+        <span className="text-xl font-medium text-slate-400">Desde</span>
+        <span className="text-[32px] font-extrabold tracking-tight text-[#e11d2e]">$280</span>
       </div>
     </div>
     
-    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium">
+    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium text-slate-300">
       <li>Dominio x 1 Año GRATIS (.com o del país)</li>
       <li>Visitas y espacio ilimitado</li>
       <li>Hosting SSD x 1 Año GRATIS</li>
       <li>Certificado SSL (Seguridad)</li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Hasta 10 correos corporativos
       </li>
       <li>Diseño moderno y responsivo</li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Hasta 6 secciones
       </li>
       <li>Formulario para captura de leads</li>
       <li>Carrusel de testimonios</li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Búsqueda de imágenes y textos persuasivos
       </li>
       <li>Botón de llamada & WhatsApp</li>
@@ -509,21 +507,21 @@ function App() {
       <li>Integración con Google Maps</li>
       <li>Integración con Google Analytics</li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Blog
       </li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Redacción SEO
       </li>
       <li className="font-bold flex items-start gap-2 text-white">
-        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
         Sitio autogestionable (incluye video tutorial)
       </li>
     </ul>
 
     <div className="pt-10 mt-auto flex justify-center">
-      <a className="bg-white text-slate-900 py-4 px-10 rounded-xl font-bold shadow-md hover:bg-slate-50 transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Profesional%20de%20$280" target="_blank" rel="noopener noreferrer">
+      <a className="bg-[#e11d2e] text-white py-4 px-10 rounded-xl font-bold shadow-[0_8px_24px_-4px_rgba(225,29,46,0.4)] hover:bg-[#b81524] transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Profesional%20de%20$280" target="_blank" rel="noopener noreferrer">
         COTIZAR WEB
       </a>
     </div>
