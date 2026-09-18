@@ -108,11 +108,23 @@ function App() {
       </div>
     </div>
     <nav className="hidden lg:flex items-center gap-space-md">
-      <a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a>
-      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a>
-      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a>
-      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a>
-      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a>
+      <a aria-current="page" className="px-4 py-1.5 transition-all duration-300 bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="demos" href="#demos">Demos</a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="paquetes" href="#paquetes">
+        Paquetes
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="proceso" href="#proceso">
+        Proceso
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="preguntas" href="#preguntas">
+        Preguntas
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="contacto" href="#contacto">
+        Contacto
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
     </nav>
     <div className="flex items-center gap-space-sm">
       <a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a>
