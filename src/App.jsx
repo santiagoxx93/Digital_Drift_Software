@@ -723,7 +723,7 @@ function App() {
         Servicio Llave en Mano, Cero Complicaciones
       </h2>
 <p className="font-body-md text-body-md text-slate-600 mt-2">
-        Nos encargamos de todo el montaje técnico, dominio y hosting. Tú te despreocupas del código y te enfocas únicamente en atender clientes y vender.
+        Nos encargamos de todo el montaje técnico, dominio y hosting inicial. Sin tarifas ocultas ni renovaciones infladas; tú te despreocupas del código y te enfocas en vender.
       </p>
 </div>
 {/*  Pricing Cards Grid  */}
