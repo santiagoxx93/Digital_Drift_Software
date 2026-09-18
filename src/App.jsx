@@ -577,53 +577,45 @@ function App() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
         
         {/* Razón 1 */}
-        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
-          
-          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
-            <span className="material-symbols-outlined text-white text-3xl">schedule</span>
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
+            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">schedule</span>
           </div>
-          <h3 className="font-bold text-2xl mb-3">Ventas 24/7</h3>
-          <p className="text-white/90 text-[15px] leading-relaxed">
+          <h3 className="font-bold text-xl text-slate-900 mb-2">Ventas 24/7</h3>
+          <p className="text-slate-600 text-[15px] leading-relaxed">
             Una de las ventajas más gratificantes de la digitalización es la posibilidad de mantenerse conectado y captando clientes en cualquier momento y día.
           </p>
         </div>
 
         {/* Razón 2 */}
-        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
-          
-          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
-            <span className="material-symbols-outlined text-white text-3xl">rocket_launch</span>
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
+            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">rocket_launch</span>
           </div>
-          <h3 className="font-bold text-2xl mb-3">Velocidad SEO</h3>
-          <p className="text-white/90 text-[15px] leading-relaxed">
+          <h3 className="font-bold text-xl text-slate-900 mb-2">Velocidad SEO</h3>
+          <p className="text-slate-600 text-[15px] leading-relaxed">
             Páginas ultra rápidas y optimizadas para Google. Supera a tu competencia apareciendo primero cuando tus clientes busquen tus servicios.
           </p>
         </div>
 
         {/* Razón 3 */}
-        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
-          
-          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
-            <span className="material-symbols-outlined text-white text-3xl">design_services</span>
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
+            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">design_services</span>
           </div>
-          <h3 className="font-bold text-2xl mb-3">Diseño Premium</h3>
-          <p className="text-white/90 text-[15px] leading-relaxed">
+          <h3 className="font-bold text-xl text-slate-900 mb-2">Diseño Premium</h3>
+          <p className="text-slate-600 text-[15px] leading-relaxed">
             Transmitimos confianza inmediata con estéticas modernas, atractivas y enfocadas en generar conversiones desde el primer vistazo.
           </p>
         </div>
 
         {/* Razón 4 */}
-        <div className="bg-[#e11d2e] p-6 md:p-8 text-white rounded-3xl transform hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 shadow-xl relative overflow-hidden group">
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl group-hover:bg-white/20 transition-all duration-300"></div>
-          
-          <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-sm">
-            <span className="material-symbols-outlined text-white text-3xl">support_agent</span>
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
+            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">support_agent</span>
           </div>
-          <h3 className="font-bold text-2xl mb-3">Soporte Directo</h3>
-          <p className="text-white/90 text-[15px] leading-relaxed">
+          <h3 className="font-bold text-xl text-slate-900 mb-2">Soporte Directo</h3>
+          <p className="text-slate-600 text-[15px] leading-relaxed">
             Acompañamiento constante y trato humano. Estamos aquí para resolver tus dudas rápidamente, sin bots ni demoras interminables.
           </p>
         </div>
