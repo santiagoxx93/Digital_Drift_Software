@@ -314,9 +314,9 @@ function App() {
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
 
   {/* Tarjeta 1: Plan Web Negocio */}
-  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-blue-400/60 hover:shadow-[0_20px_40px_rgba(59,130,246,0.12)] transition-all duration-300 relative overflow-hidden">
+  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-slate-800/60 hover:shadow-[0_20px_40px_rgba(15,23,42,0.12)] transition-all duration-300 relative overflow-hidden">
     {/* Top Accent Ribbon */}
-    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-400"></div>
+    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700"></div>
     
     <div>
       <div className="flex justify-between items-center mb-6">
@@ -333,7 +333,7 @@ function App() {
         <div className="flex flex-col mt-4">
           <div className="flex items-baseline gap-1">
             <span className="text-5xl font-extrabold text-[#0f172a] tracking-tight">$150</span>
-            <span className="text-xl font-bold text-blue-500">USD</span>
+            <span className="text-xl font-bold text-slate-900">USD</span>
           </div>
           <span className="text-xs text-slate-500 font-medium mt-1">o 2 cuotas de $80 USD</span>
         </div>
@@ -342,42 +342,42 @@ function App() {
       {/* Lista de características */}
       <div className="space-y-4 py-6">
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Diseño moderno 100% adaptable</span>
             <span className="font-body-sm text-body-sm text-slate-600">Optimizado para celulares y computadoras sin perder velocidad.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Catálogo interactivo</span>
             <span className="font-body-sm text-body-sm text-slate-600">Muestra organizada de tus productos o servicios con fotos y detalles.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botón directo a WhatsApp</span>
             <span className="font-body-sm text-body-sm text-slate-600">Tus clientes te piden o cotizan con un solo clic.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio (.com) y hosting ultra rápido</span>
             <span className="font-body-sm text-body-sm text-slate-600">Incluidos por 1 año completo con certificado de seguridad SSL.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Integración con redes sociales</span>
             <span className="font-body-sm text-body-sm text-slate-600">Conexión directa a perfiles de Instagram, Facebook y TikTok.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-blue-400 font-bold mr-1">—</span>
+          <span className="text-slate-900 font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Puesta en marcha y entrega lista para operar</span>
             <span className="font-body-sm text-body-sm text-slate-600">Configuración completa para que comiences a recibir clientes sin enredos técnicos.</span>
@@ -469,7 +469,7 @@ function App() {
     </div>
 
     <div className="pt-3 mt-auto">
-      <a className="w-full flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA5A] text-white py-4 px-6 rounded-xl font-headline-sm text-headline-sm font-bold shadow-[0_8px_24px_-2px_rgba(37,211,102,0.35)] transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20empezar%20con%20el%20Plan%20Pyme%20Conversión%20de%20$280." rel="noopener noreferrer" target="_blank">
+      <a className="w-full flex items-center justify-center gap-2 bg-[#e11d2e] hover:bg-[#b81524] text-white py-4 px-6 rounded-xl font-headline-sm text-headline-sm font-bold shadow-[0_8px_24px_-2px_rgba(225,29,46,0.35)] transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20empezar%20con%20el%20Plan%20Pyme%20Conversión%20de%20$280." rel="noopener noreferrer" target="_blank">
         <span className="">Quiero mi web lista →</span>
       </a>
       <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
