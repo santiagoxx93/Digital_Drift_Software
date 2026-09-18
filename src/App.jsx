@@ -464,143 +464,133 @@ function App() {
 {/*  =================================================================  */}
 {/*  NUEVA SECCIÓN: Antes y Después                                     */}
 {/*  =================================================================  */}
-<section data-aos="fade-up" className="w-full bg-white py-space-xl border-t border-slate-200">
-  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
-    <div className="text-center max-w-3xl mx-auto mb-16">
-      <h2 className="text-[#0f172a] font-extrabold text-4xl md:text-5xl tracking-tight mb-4">
-        Tu negocio <span className="text-slate-400">sin web</span> vs <span className="text-[#e11d2e]">con Digital Drift</span>
+<section data-aos="fade-up" className="w-full bg-[#0b1120] py-space-xl border-y border-slate-800 relative overflow-hidden">
+  {/* Subtle Background Glow */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-red-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+  <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin relative z-10">
+    <div className="text-center max-w-4xl mx-auto mb-20">
+      <h2 className="text-white font-extrabold text-4xl md:text-5xl tracking-tight mb-6">
+        Tu negocio <span className="text-slate-500 line-through decoration-red-500/50 decoration-4">sin web</span> <span className="text-[#e11d2e]">con Digital Drift</span>
       </h2>
-      <p className="font-body-md text-slate-600 text-lg">
-        La diferencia entre perseguir ventas y tener un sistema que venda por ti.
+      <p className="font-body-md text-slate-400 text-lg md:text-xl">
+        De perseguir ventas manualmente a tener un ecosistema automatizado que vende por ti.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
-      {/* Sin Digital Drift */}
-      <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-10 shadow-sm relative overflow-hidden group hover:shadow-md transition-shadow">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-slate-300"></div>
-        <div className="flex items-center gap-4 mb-8">
-          <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500">
-            <span className="material-symbols-outlined text-2xl">sentiment_dissatisfied</span>
+    <div className="flex flex-col gap-6 w-full max-w-5xl mx-auto">
+      {/* Row 1 */}
+      <div className="flex flex-col md:flex-row items-center gap-4 w-full group">
+        <div className="flex-1 flex items-center gap-4 bg-slate-800/40 p-5 rounded-2xl w-full border border-slate-700/50 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-500">
+          <div className="w-12 h-12 rounded-xl bg-slate-900 flex flex-col items-center justify-center shrink-0 border border-slate-700 overflow-hidden relative">
+            <div className="w-6 h-4 bg-slate-700 rounded-md rounded-br-none mb-1 opacity-50"></div>
+            <div className="w-4 h-3 bg-red-500/30 rounded-md rounded-bl-none self-end mr-2 opacity-50 relative">
+              <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
+            </div>
           </div>
-          <h3 className="font-bold text-2xl text-slate-800">El método antiguo</h3>
+          <p className="text-slate-300 font-medium leading-tight">Pierdes ventas en WhatsApp por falta de información rápida.</p>
         </div>
         
-        <div className="flex flex-col gap-4 mt-8 relative">
-          {/* Faded Background Pattern to signify chaos */}
-          <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 to-transparent pointer-events-none"></div>
-          
-          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform -rotate-1 hover:rotate-0 transition-transform duration-300">
-            {/* Custom Micro-UI: Broken Chat */}
-            <div className="w-12 h-12 rounded-xl bg-slate-100 flex flex-col items-center justify-center shrink-0 border border-slate-200 overflow-hidden relative">
-              <div className="w-6 h-4 bg-slate-300 rounded-md rounded-br-none mb-1 opacity-50"></div>
-              <div className="w-4 h-3 bg-red-300 rounded-md rounded-bl-none self-end mr-2 opacity-50 relative">
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
-              </div>
-            </div>
-            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Pierdes ventas en WhatsApp por falta de información rápida.</span>
-          </div>
+        <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
+          <span className="material-symbols-outlined text-3xl">arrow_forward</span>
+        </div>
 
-          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform rotate-1 translate-x-2 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
-            {/* Custom Micro-UI: Missing Web */}
-            <div className="w-12 h-12 rounded-xl bg-slate-100 flex flex-col items-center justify-center shrink-0 border border-slate-200 overflow-hidden">
-              <div className="w-8 h-8 border-2 border-slate-300 rounded-lg flex flex-col bg-white">
-                <div className="w-full h-2 bg-slate-300 border-b-2 border-slate-300"></div>
-                <div className="flex-1 flex items-center justify-center">
-                  <span className="text-slate-400 text-[9px] font-bold">404</span>
-                </div>
-              </div>
+        <div className="flex-1 flex items-center gap-4 bg-gradient-to-r from-red-500/10 to-transparent p-5 rounded-2xl w-full border-l-4 border-[#e11d2e] shadow-[0_0_30px_rgba(225,29,46,0)] group-hover:shadow-[0_0_30px_rgba(225,29,46,0.15)] transition-all duration-500 transform group-hover:-translate-y-1">
+          <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center shrink-0 border border-[#25D366]/20">
+            <div className="relative">
+              <svg className="w-6 h-6 text-[#25D366]" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
+              <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-[#0b1120] animate-pulse"></div>
             </div>
-            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Tus clientes desconfían al no ver una página web oficial.</span>
           </div>
-
-          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform -rotate-[0.5deg] -translate-x-1 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
-            {/* Custom Micro-UI: Slow Typing */}
-            <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200 overflow-hidden relative">
-              <div className="flex gap-1">
-                <div className="w-1.5 h-1.5 bg-slate-300 rounded-full animate-bounce"></div>
-                <div className="w-1.5 h-1.5 bg-slate-300 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                <div className="w-1.5 h-1.5 bg-red-400 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
-              </div>
-            </div>
-            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Atención lenta y manual respondiendo las mismas dudas.</span>
-          </div>
-
-          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform rotate-[1.5deg] translate-x-3 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
-            {/* Custom Micro-UI: Stuck PDF */}
-            <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center shrink-0 border border-slate-200 overflow-hidden relative">
-              <div className="w-7 h-9 bg-white border-2 border-slate-300 rounded shadow-sm flex flex-col items-center justify-center relative">
-                <div className="absolute top-0 right-0 w-2 h-2 bg-slate-200 border-l-2 border-b-2 border-slate-300"></div>
-                <span className="text-[8px] font-bold text-slate-400 mt-1">PDF</span>
-                <div className="w-4 h-1 bg-red-300 mt-1 rounded-full opacity-50"></div>
-              </div>
-            </div>
-            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Catálogo en PDF desactualizado y pesado de descargar.</span>
-          </div>
+          <p className="text-white font-bold leading-tight">Botón de contacto directo a tu WhatsApp optimizado.</p>
         </div>
       </div>
 
-      {/* Con Digital Drift */}
-      <div className="bg-white border-2 border-[#e11d2e] rounded-3xl p-8 md:p-10 shadow-[0_20px_50px_rgba(225,29,46,0.1)] relative overflow-hidden transform md:-translate-y-4 group hover:-translate-y-6 transition-all duration-300">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-[#e11d2e]"></div>
-        <div className="absolute -top-24 -right-24 w-48 h-48 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <div className="flex items-center gap-4 mb-8 relative z-10">
-          <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#e11d2e] border border-red-100">
-            <span className="material-symbols-outlined text-2xl">rocket_launch</span>
+      {/* Row 2 */}
+      <div className="flex flex-col md:flex-row items-center gap-4 w-full group">
+        <div className="flex-1 flex items-center gap-4 bg-slate-800/40 p-5 rounded-2xl w-full border border-slate-700/50 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-500">
+          <div className="w-12 h-12 rounded-xl bg-slate-900 flex flex-col items-center justify-center shrink-0 border border-slate-700 overflow-hidden">
+            <div className="w-8 h-8 border-2 border-slate-700 rounded-lg flex flex-col bg-slate-800">
+              <div className="w-full h-2 bg-slate-700 border-b-2 border-slate-700"></div>
+              <div className="flex-1 flex items-center justify-center">
+                <span className="text-slate-500 text-[9px] font-bold">404</span>
+              </div>
+            </div>
           </div>
-          <h3 className="font-bold text-2xl text-slate-900">Con Digital Drift</h3>
+          <p className="text-slate-300 font-medium leading-tight">Tus clientes desconfían al no ver una página oficial.</p>
         </div>
         
-        <div className="flex flex-col gap-4 mt-8 relative z-10">
-          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
-            {/* Custom Micro-UI: Interactive Catalog */}
-            <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] transition-colors overflow-hidden">
-              <div className="grid grid-cols-2 gap-1 w-7 h-7">
-                <div className="bg-[#e11d2e] group-hover/item:bg-white rounded-[4px] transition-colors opacity-80"></div>
-                <div className="bg-[#e11d2e] group-hover/item:bg-white rounded-[4px] transition-colors"></div>
-                <div className="bg-[#e11d2e] group-hover/item:bg-white rounded-[4px] transition-colors"></div>
-                <div className="bg-[#e11d2e] group-hover/item:bg-white rounded-[4px] transition-colors opacity-50"></div>
+        <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
+          <span className="material-symbols-outlined text-3xl">arrow_forward</span>
+        </div>
+
+        <div className="flex-1 flex items-center gap-4 bg-gradient-to-r from-red-500/10 to-transparent p-5 rounded-2xl w-full border-l-4 border-[#e11d2e] shadow-[0_0_30px_rgba(225,29,46,0)] group-hover:shadow-[0_0_30px_rgba(225,29,46,0.15)] transition-all duration-500 transform group-hover:-translate-y-1">
+          <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0 border border-red-500/20 relative">
+            <div className="w-8 h-8 rounded-full border-2 border-[#e11d2e] flex items-center justify-center">
+              <div className="w-4 h-4 bg-[#e11d2e] rounded-full flex items-center justify-center">
+                <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
               </div>
             </div>
-            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Ventas guiadas y catálogos interactivos 24/7.</span>
           </div>
+          <p className="text-white font-bold leading-tight">Autoridad corporativa instantánea y correos profesionales.</p>
+        </div>
+      </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
-            {/* Custom Micro-UI: Verified Authority */}
-            <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] transition-colors overflow-hidden relative">
-              <div className="w-8 h-8 rounded-full border-2 border-[#e11d2e] group-hover/item:border-white flex items-center justify-center transition-colors">
-                <div className="w-4 h-4 bg-[#e11d2e] group-hover/item:bg-white rounded-full flex items-center justify-center transition-colors">
-                  <svg className="w-2.5 h-2.5 text-white group-hover/item:text-[#e11d2e]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
-                </div>
-              </div>
+      {/* Row 3 */}
+      <div className="flex flex-col md:flex-row items-center gap-4 w-full group">
+        <div className="flex-1 flex items-center gap-4 bg-slate-800/40 p-5 rounded-2xl w-full border border-slate-700/50 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-500">
+          <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center shrink-0 border border-slate-700 overflow-hidden relative">
+            <div className="flex gap-1">
+              <div className="w-1.5 h-1.5 bg-slate-600 rounded-full animate-bounce"></div>
+              <div className="w-1.5 h-1.5 bg-slate-600 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+              <div className="w-1.5 h-1.5 bg-red-500/50 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
             </div>
-            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Autoridad corporativa instantánea y correos profesionales.</span>
           </div>
+          <p className="text-slate-300 font-medium leading-tight">Atención lenta y manual respondiendo las mismas dudas.</p>
+        </div>
+        
+        <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
+          <span className="material-symbols-outlined text-3xl">arrow_forward</span>
+        </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
-            {/* Custom Micro-UI: Funnel / Filtering */}
-            <div className="w-12 h-12 rounded-xl bg-red-50 flex flex-col items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] transition-colors overflow-hidden relative pt-1">
-              <div className="w-6 h-2 bg-[#e11d2e] group-hover/item:bg-white rounded-full transition-colors mb-0.5 opacity-40"></div>
-              <div className="w-4 h-2 bg-[#e11d2e] group-hover/item:bg-white rounded-full transition-colors mb-0.5 opacity-70"></div>
-              <div className="w-2 h-2 bg-[#e11d2e] group-hover/item:bg-white rounded-full transition-colors mb-1"></div>
-              <div className="w-1.5 h-1.5 bg-[#25D366] rounded-full shadow-[0_0_8px_#25D366]"></div>
-            </div>
-            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Filtra curiosos y recibe clientes listos para comprar.</span>
+        <div className="flex-1 flex items-center gap-4 bg-gradient-to-r from-red-500/10 to-transparent p-5 rounded-2xl w-full border-l-4 border-[#e11d2e] shadow-[0_0_30px_rgba(225,29,46,0)] group-hover:shadow-[0_0_30px_rgba(225,29,46,0.15)] transition-all duration-500 transform group-hover:-translate-y-1">
+          <div className="w-12 h-12 rounded-xl bg-red-500/10 flex flex-col items-center justify-center shrink-0 border border-red-500/20 pt-1">
+            <div className="w-6 h-1.5 bg-[#e11d2e] rounded-full mb-0.5 opacity-40"></div>
+            <div className="w-4 h-1.5 bg-[#e11d2e] rounded-full mb-0.5 opacity-70"></div>
+            <div className="w-2 h-1.5 bg-[#e11d2e] rounded-full mb-1"></div>
+            <div className="w-1.5 h-1.5 bg-[#25D366] rounded-full shadow-[0_0_8px_#25D366]"></div>
           </div>
+          <p className="text-white font-bold leading-tight">Filtra curiosos y recibe clientes listos para comprar.</p>
+        </div>
+      </div>
 
-          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
-            {/* Custom Micro-UI: WhatsApp Notification */}
-            <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center shrink-0 group-hover/item:bg-[#25D366] transition-colors overflow-hidden">
-              <div className="relative">
-                <svg className="w-6 h-6 text-[#25D366] group-hover/item:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/>
-                </svg>
-                <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-white group-hover/item:border-[#25D366] transition-colors animate-pulse"></div>
-              </div>
+      {/* Row 4 */}
+      <div className="flex flex-col md:flex-row items-center gap-4 w-full group">
+        <div className="flex-1 flex items-center gap-4 bg-slate-800/40 p-5 rounded-2xl w-full border border-slate-700/50 grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all duration-500">
+          <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center shrink-0 border border-slate-700 overflow-hidden relative">
+            <div className="w-7 h-9 bg-slate-800 border-2 border-slate-700 rounded flex flex-col items-center justify-center relative">
+              <div className="absolute top-0 right-0 w-2 h-2 bg-slate-700 border-l-2 border-b-2 border-slate-700"></div>
+              <span className="text-[8px] font-bold text-slate-500 mt-1">PDF</span>
+              <div className="w-4 h-1 bg-red-500/30 mt-1 rounded-full"></div>
             </div>
-            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Botón de contacto directo a tu WhatsApp optimizado.</span>
           </div>
+          <p className="text-slate-300 font-medium leading-tight">Catálogo en PDF desactualizado y pesado de descargar.</p>
+        </div>
+        
+        <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
+          <span className="material-symbols-outlined text-3xl">arrow_forward</span>
+        </div>
+
+        <div className="flex-1 flex items-center gap-4 bg-gradient-to-r from-red-500/10 to-transparent p-5 rounded-2xl w-full border-l-4 border-[#e11d2e] shadow-[0_0_30px_rgba(225,29,46,0)] group-hover:shadow-[0_0_30px_rgba(225,29,46,0.15)] transition-all duration-500 transform group-hover:-translate-y-1">
+          <div className="w-12 h-12 rounded-xl bg-red-500/10 flex items-center justify-center shrink-0 border border-red-500/20">
+            <div className="grid grid-cols-2 gap-1 w-7 h-7">
+              <div className="bg-[#e11d2e] rounded-[4px] opacity-80"></div>
+              <div className="bg-[#e11d2e] rounded-[4px]"></div>
+              <div className="bg-[#e11d2e] rounded-[4px]"></div>
+              <div className="bg-[#e11d2e] rounded-[4px] opacity-50"></div>
+            </div>
+          </div>
+          <p className="text-white font-bold leading-tight">Ventas guiadas y catálogos interactivos disponibles 24/7.</p>
         </div>
       </div>
     </div>
