@@ -574,50 +574,89 @@ function App() {
         Razones para Elegirnos
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mx-auto">
         
-        {/* Razón 1 */}
-        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
-            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">schedule</span>
+        {/* Razón 1 - Wide Card */}
+        <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group md:col-span-2 flex flex-col justify-between overflow-hidden relative">
+          <div className="absolute right-[-10%] top-0 opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+            <div className="w-64 h-64 bg-[#25D366] rounded-full blur-[80px]"></div>
           </div>
-          <h3 className="font-bold text-xl text-slate-900 mb-2">Ventas 24/7</h3>
-          <p className="text-slate-600 text-[15px] leading-relaxed">
-            Una de las ventajas más gratificantes de la digitalización es la posibilidad de mantenerse conectado y captando clientes en cualquier momento y día.
-          </p>
+          <div className="flex gap-4 items-center mb-6 z-10">
+            <div className="flex -space-x-3">
+              <div className="w-10 h-10 rounded-full bg-slate-200 border-2 border-white shadow-sm overflow-hidden">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Usuario" className="w-full h-full object-cover" />
+              </div>
+              <div className="w-10 h-10 rounded-full bg-slate-200 border-2 border-white shadow-sm overflow-hidden">
+                <img src="https://i.pravatar.cc/100?img=5" alt="Usuario" className="w-full h-full object-cover" />
+              </div>
+              <div className="w-10 h-10 rounded-full bg-[#25D366] border-2 border-white shadow-sm flex items-center justify-center">
+                <span className="material-symbols-outlined text-white text-[16px]">chat</span>
+              </div>
+            </div>
+            <div className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-bold border border-green-200 animate-pulse">Venta Online</div>
+          </div>
+          <div className="z-10">
+            <h3 className="font-bold text-2xl text-slate-900 mb-3">Ventas 24/7</h3>
+            <p className="text-slate-600 text-base leading-relaxed max-w-md">
+              Una de las ventajas más gratificantes de la digitalización es la posibilidad de mantenerse conectado y captando clientes en cualquier momento y día.
+            </p>
+          </div>
         </div>
 
-        {/* Razón 2 */}
-        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
-            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">rocket_launch</span>
+        {/* Razón 2 - Square Card */}
+        <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <div className="mb-6 w-full h-16 bg-slate-50 rounded-xl border border-slate-100 flex flex-col justify-center px-4 gap-2 relative z-10 overflow-hidden">
+            <div className="w-3/4 h-2 bg-slate-200 rounded-full overflow-hidden">
+              <div className="w-full h-full bg-gradient-to-r from-[#e11d2e] to-orange-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700"></div>
+            </div>
+            <div className="w-1/2 h-2 bg-slate-200 rounded-full overflow-hidden">
+              <div className="w-full h-full bg-gradient-to-r from-[#e11d2e] to-orange-400 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-700 delay-100"></div>
+            </div>
+            <div className="absolute right-4 text-xs font-bold text-[#e11d2e] opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-300">100/100</div>
           </div>
-          <h3 className="font-bold text-xl text-slate-900 mb-2">Velocidad SEO</h3>
-          <p className="text-slate-600 text-[15px] leading-relaxed">
-            Páginas ultra rápidas y optimizadas para Google. Supera a tu competencia apareciendo primero cuando tus clientes busquen tus servicios.
-          </p>
+          <div className="z-10">
+            <h3 className="font-bold text-2xl text-slate-900 mb-3">Velocidad SEO</h3>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Páginas rápidas y optimizadas. Supera a tu competencia en Google.
+            </p>
+          </div>
         </div>
 
-        {/* Razón 3 */}
-        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
-            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">design_services</span>
+        {/* Razón 3 - Square Card */}
+        <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between relative overflow-hidden">
+          <div className="mb-6 flex gap-2 relative z-10 h-16 items-end">
+            <div className="w-8 h-12 bg-slate-900 rounded-t-lg group-hover:h-16 transition-all duration-300"></div>
+            <div className="w-8 h-10 bg-[#e11d2e] rounded-t-lg group-hover:h-14 transition-all duration-300 delay-75"></div>
+            <div className="w-8 h-8 bg-slate-200 rounded-t-lg group-hover:h-12 transition-all duration-300 delay-150"></div>
           </div>
-          <h3 className="font-bold text-xl text-slate-900 mb-2">Diseño Premium</h3>
-          <p className="text-slate-600 text-[15px] leading-relaxed">
-            Transmitimos confianza inmediata con estéticas modernas, atractivas y enfocadas en generar conversiones desde el primer vistazo.
-          </p>
+          <div className="z-10">
+            <h3 className="font-bold text-2xl text-slate-900 mb-3">Diseño Premium</h3>
+            <p className="text-slate-600 text-base leading-relaxed">
+              Confianza inmediata con estéticas modernas y enfocadas en conversión.
+            </p>
+          </div>
         </div>
 
-        {/* Razón 4 */}
-        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-[#e11d2e] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
-          <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#e11d2e] transition-colors duration-300">
-            <span className="material-symbols-outlined text-[#e11d2e] group-hover:text-white text-2xl transition-colors duration-300">support_agent</span>
+        {/* Razón 4 - Wide Card */}
+        <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-xl transition-all duration-300 group md:col-span-2 flex flex-col justify-between overflow-hidden relative">
+          <div className="absolute right-[-10%] top-[-10%] opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
+            <div className="w-64 h-64 bg-[#e11d2e] rounded-full blur-[80px]"></div>
           </div>
-          <h3 className="font-bold text-xl text-slate-900 mb-2">Soporte Directo</h3>
-          <p className="text-slate-600 text-[15px] leading-relaxed">
-            Acompañamiento constante y trato humano. Estamos aquí para resolver tus dudas rápidamente, sin bots ni demoras interminables.
-          </p>
+          <div className="flex flex-col gap-3 mb-6 z-10 w-full max-w-[200px]">
+            <div className="w-full bg-slate-100 rounded-2xl rounded-tl-none p-3 border border-slate-200 transform origin-left group-hover:scale-105 transition-transform duration-300">
+              <div className="w-1/2 h-1.5 bg-slate-300 rounded-full mb-1.5"></div>
+              <div className="w-3/4 h-1.5 bg-slate-300 rounded-full"></div>
+            </div>
+            <div className="w-[80%] bg-red-50 rounded-2xl rounded-tr-none p-3 border border-red-100 self-end transform origin-right group-hover:scale-105 transition-transform duration-300 delay-75">
+              <div className="w-2/3 h-1.5 bg-red-200 rounded-full"></div>
+            </div>
+          </div>
+          <div className="z-10">
+            <h3 className="font-bold text-2xl text-slate-900 mb-3">Soporte Directo</h3>
+            <p className="text-slate-600 text-base leading-relaxed max-w-md">
+              Acompañamiento constante y trato humano. Estamos aquí para resolver tus dudas rápidamente, sin bots ni demoras interminables.
+            </p>
+          </div>
         </div>
 
       </div>
