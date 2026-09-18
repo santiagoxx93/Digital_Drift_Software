@@ -140,61 +140,12 @@ function App() {
   Entrega rápida · Sin letra pequeña · Optimizado para celulares
 </p>
 </div>
-{/*  Right Column: Minimal Phone Mockup  */}
+{/*  Right Column: Brand Logo Showcase  */}
 <div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
 {/*  Subtle background glow  */}
-<div className="absolute inset-0 bg-gradient-to-tr from-emerald-100/40 via-emerald-50/30 to-transparent rounded-3xl blur-2xl -z-10"></div>
-
-{/*  Phone Frame  */}
-<div className="w-[280px] sm:w-[300px] mx-auto">
-  <div className="bg-slate-900 rounded-[2.5rem] p-3 shadow-2xl shadow-slate-900/20">
-    {/*  Inner screen  */}
-    <div className="bg-white rounded-[2rem] overflow-hidden">
-      {/*  Status bar  */}
-      <div className="flex items-center justify-between px-6 pt-3 pb-2">
-        <span className="text-[11px] font-semibold text-slate-900">9:41</span>
-        <div className="w-20 h-5 bg-slate-900 rounded-full mx-auto"></div>
-        <div className="flex items-center gap-1">
-          <span className="material-symbols-outlined text-[14px] text-slate-900">signal_cellular_alt</span>
-          <span className="material-symbols-outlined text-[14px] text-slate-900">battery_full</span>
-        </div>
-      </div>
-
-      {/*  Lock screen content  */}
-      <div className="px-5 pt-8 pb-6 flex flex-col items-center">
-        <span className="text-[11px] text-slate-400 font-medium tracking-wide">Lunes 15 de septiembre</span>
-        <span className="text-[32px] font-bold text-slate-900 leading-tight mt-0.5">13:42</span>
-      </div>
-
-      {/*  WhatsApp Notification  */}
-      <div className="px-3 pb-4">
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-lg shadow-slate-200/60 p-4 flex flex-col gap-3">
-          {/*  Notification header  */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center shrink-0">
-                <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"/></svg>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[13px] font-bold text-slate-900 leading-tight">WhatsApp</span>
-                <span className="text-[11px] text-slate-500 font-medium">Nuevo mensaje</span>
-              </div>
-            </div>
-            <span className="text-[10px] text-slate-400 font-medium">ahora</span>
-          </div>
-          {/*  Message preview  */}
-          <div className="text-[13px] text-slate-700 leading-relaxed">
-            <span className="font-semibold text-slate-900">Cliente nuevo:</span> Hola, vi su página web y me interesa cotizar. ¿Tienen disponibilidad?
-          </div>
-        </div>
-      </div>
-
-      {/*  Bottom indicator bar  */}
-      <div className="flex justify-center pb-3 pt-2">
-        <div className="w-28 h-1 bg-slate-200 rounded-full"></div>
-      </div>
-    </div>
-  </div>
+<div className="absolute inset-0 bg-gradient-to-tr from-red-100/30 via-slate-50/20 to-transparent rounded-3xl blur-2xl -z-10"></div>
+<div className="w-full max-w-[420px] mx-auto">
+  <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software - Logo" className="w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.10)]" />
 </div>
 </div>
 </div>
