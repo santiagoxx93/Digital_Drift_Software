@@ -100,13 +100,18 @@ function App() {
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
-<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin pt-space-md md:pt-space-lg pb-space-xl">
+<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin pt-space-md md:pt-space-lg pb-space-xl overflow-hidden">
 {/*  Subtle Atmosphere Glows  */}
 <div className="absolute -top-12 left-1/4 w-[420px] h-[420px] bg-red-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
 <div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
-<div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
-{/*  Left Column: Copy & Immediate Action  */}
-<div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
+{/*  Watermark Logo Background  */}
+<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+  <div className="w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] lg:w-[750px] lg:h-[750px] opacity-[0.04] animate-float">
+    <img src="/img/logo-digital-drift-footer.webp" alt="" className="w-full h-full object-contain" aria-hidden="true" />
+  </div>
+</div>
+<div className="relative z-10 flex flex-col items-center text-center">
+<div data-aos="fade-up" className="flex flex-col items-center">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
 <span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Hacemos páginas web que venden</span>
@@ -123,7 +128,7 @@ function App() {
           Diseñamos la plataforma web de tu empresa: ultrarrápida, moderna y con dominio, correos corporativos y catálogo incluidos. Sin complicaciones técnicas.
         </p>
 {/*  CTAs  */}
-<div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto mb-space-lg">
+<div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto mb-space-lg justify-center">
 {/*  Primary CTA (WhatsApp High Conversion)  */}
 <a className="group relative inline-flex items-center justify-center gap-space-xs bg-[#25D366] hover:bg-[#20BA5A] text-white px-7 py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-[0_8px_24px_-2px_rgba(37,211,102,0.38)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.98]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20solicitar%20mi%20demo%20visual%20gratis." rel="noopener noreferrer" target="_blank">
 <svg className="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
@@ -139,16 +144,6 @@ function App() {
 <p className="text-slate-500 font-body-sm text-body-sm pt-2 font-medium">
   Entrega rápida · Sin letra pequeña · Optimizado para celulares
 </p>
-</div>
-{/*  Right Column: Atmospheric Brand Element  */}
-<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center min-h-[320px] lg:min-h-[420px]">
-{/*  Layered atmospheric glows  */}
-<div className="absolute w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] bg-[#ff1a35]/8 rounded-full blur-[80px] pointer-events-none"></div>
-<div className="absolute w-[200px] h-[200px] lg:w-[280px] lg:h-[280px] bg-[#ff1a35]/12 rounded-full blur-[60px] pointer-events-none animate-pulse"></div>
-{/*  Large floating brand icon  */}
-<div className="relative z-10 w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] animate-float">
-  <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
-</div>
 </div>
 </div>
 </section>
