@@ -140,12 +140,14 @@ function App() {
   Entrega rápida · Sin letra pequeña · Optimizado para celulares
 </p>
 </div>
-{/*  Right Column: Brand Logo Showcase  */}
-<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
-{/*  Subtle background glow  */}
-<div className="absolute inset-0 bg-gradient-to-tr from-red-100/30 via-slate-50/20 to-transparent rounded-3xl blur-2xl -z-10"></div>
-<div className="w-full max-w-[420px] mx-auto">
-  <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software - Logo" className="w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.10)]" />
+{/*  Right Column: Atmospheric Brand Element  */}
+<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center min-h-[320px] lg:min-h-[420px]">
+{/*  Layered atmospheric glows  */}
+<div className="absolute w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] bg-[#ff1a35]/8 rounded-full blur-[80px] pointer-events-none"></div>
+<div className="absolute w-[200px] h-[200px] lg:w-[280px] lg:h-[280px] bg-[#ff1a35]/12 rounded-full blur-[60px] pointer-events-none animate-pulse"></div>
+{/*  Large floating brand icon  */}
+<div className="relative z-10 w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px] animate-float">
+  <img src="/img/logo-digital-drift.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
 </div>
 </div>
 </div>

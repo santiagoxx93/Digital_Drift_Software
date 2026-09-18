@@ -79,10 +79,15 @@ export default {
         "marquee-right": {
           "0%": { transform: "translateX(-50%)" },
           "100%": { transform: "translateX(0%)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-16px)" },
         }
       },
       "animation": {
         "marquee-right": "marquee-right 40s linear infinite",
+        "float": "float 6s ease-in-out infinite",
       }
     } 
   },
