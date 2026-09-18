@@ -1097,7 +1097,7 @@ function App() {
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Compañía</span>
         <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#quienessomos">Acerca de Digital Drift</a>
         <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">FAQ &amp; Seguridad</a>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="https://wa.me/573243553258?text=Hola,%20quisiera%20contacto%20directo%20con%20la%20agencia." target="_blank" rel="noopener noreferrer">Contacto Directo</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="https://wa.me/584125063754?text=Hola,%20quisiera%20contacto%20directo%20con%20la%20agencia." target="_blank" rel="noopener noreferrer">Contacto Directo</a>
       </div>
       <div className="md:col-span-3 flex flex-col gap-space-sm">
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Contacto</span>
@@ -1121,7 +1121,7 @@ function App() {
       <div className="flex items-center gap-space-md">
         <button onClick={() => setIsTermsOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Términos de Servicio</button>
         <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Políticas de Privacidad</button>
-        <a className="hover:text-white transition-colors" href="https://wa.me/573243553258?text=Hola,%20tengo%20dudas%20sobre%20las%20garantías%20y%20el%20soporte." target="_blank" rel="noopener noreferrer">Garantía &amp; Soporte</a>
+        <a className="hover:text-white transition-colors" href="https://wa.me/584125063754?text=Hola,%20tengo%20dudas%20sobre%20las%20garantías%20y%20el%20soporte." target="_blank" rel="noopener noreferrer">Garantía &amp; Soporte</a>
       </div>
     </div>
   </div>
