@@ -418,7 +418,6 @@ function App() {
 
       </React.Fragment>
     ))}
-  </div>
 </div>
 </div>
 </div>
