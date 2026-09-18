@@ -100,7 +100,7 @@ function App() {
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
-<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin pt-space-md md:pt-space-lg pb-space-xl overflow-hidden">
+<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-0">
 {/*  Subtle Atmosphere Glows  */}
 <div className="absolute -top-12 left-1/4 w-[420px] h-[420px] bg-red-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
 <div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
@@ -110,7 +110,7 @@ function App() {
     <img src="/img/logo-digital-drift-footer.webp" alt="" className="w-full h-full object-contain" aria-hidden="true" />
   </div>
 </div>
-<div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+<div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
 {/*  Left Column: Copy & Immediate Action  */}
 <div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
