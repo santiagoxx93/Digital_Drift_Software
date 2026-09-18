@@ -106,26 +106,26 @@ function App() {
 <div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
 {/*  Watermark Logo Background  */}
 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-  <div className="w-[500px] h-[500px] sm:w-[600px] sm:h-[600px] lg:w-[750px] lg:h-[750px] opacity-[0.04] animate-float">
+  <div className="w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] opacity-[0.04] animate-float">
     <img src="/img/logo-digital-drift-footer.webp" alt="" className="w-full h-full object-contain" aria-hidden="true" />
   </div>
 </div>
-<div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+<div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-space-lg lg:gap-12 items-center">
 {/*  Left Column: Copy & Immediate Action  */}
-<div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
+<div data-aos="fade-up" className="flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
 <span className="font-label-sm text-label-sm text-slate-700 tracking-wider font-bold uppercase">IDEAS QUE ACELERAN TU MUNDO DIGITAL</span>
 </div>
 {/*  High-Impact H1 Headline  */}
-<h1 className="font-display-hero text-display-hero-mobile md:text-display-hero font-extrabold text-[#0f172a] tracking-tight leading-[1.1] mb-space-md">
+<h1 className="font-display-hero text-5xl md:text-6xl lg:text-[76px] font-extrabold text-[#0f172a] tracking-tight leading-[1.05] mb-6 lg:mb-8">
           Convertimos tu negocio en una máquina de cerrar clientes por{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#20ba5a] via-emerald-500 to-[#22c55e]">
             WhatsApp
           </span>
 </h1>
 {/*  Persuasive Subtitle  */}
-<p className="font-body-lg text-body-lg text-slate-600 max-w-xl mb-space-lg leading-relaxed">
+<p className="font-body-lg text-lg md:text-xl lg:text-[22px] text-slate-600 max-w-2xl mb-10 leading-relaxed">
           Diseñamos la plataforma web de tu empresa: ultrarrápida, moderna y con dominio, correos corporativos y catálogo incluidos. Sin complicaciones técnicas.
         </p>
 {/*  CTAs  */}
@@ -147,8 +147,8 @@ function App() {
 </p>
 </div>
 {/*  Right Column: Logo Display  */}
-<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
-<div className="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[420px] lg:h-[420px] animate-float">
+<div data-aos="fade-left" data-aos-delay="200" className="relative mt-6 lg:mt-0 flex items-center justify-center">
+<div className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] xl:w-[620px] xl:h-[620px] animate-float">
   <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
 </div>
 </div>
