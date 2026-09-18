@@ -23,8 +23,8 @@ export default {
         "outline": "#cbd5e1", 
         "surface-bright": "#ffffff", 
         "secondary": "#22c55e", 
-        "primary": "#ff1a35", 
-        "primary-dark": "#e11d48", 
+        "primary": "#e11d2e", 
+        "primary-dark": "#b81524", 
         "surface-container-lowest": "#ffffff", 
         "background": "#ffffff" 
       }, 
@@ -49,17 +49,17 @@ export default {
       }, 
       "fontFamily": { 
         "body-lg": [ "Inter" ], 
-        "label-sm": [ "Space Grotesk" ], 
-        "label-md": [ "Space Grotesk" ], 
+        "label-sm": [ "Exo 2", "sans-serif" ], 
+        "label-md": [ "Exo 2", "sans-serif" ], 
         "body-sm": [ "Inter" ], 
-        "label-lg": [ "Space Grotesk" ], 
-        "display-hero": [ "Space Grotesk" ], 
-        "display-hero-mobile": [ "Space Grotesk" ], 
-        "headline-lg": [ "Space Grotesk" ], 
-        "headline-sm": [ "Space Grotesk" ], 
-        "headline-md": [ "Space Grotesk" ], 
+        "label-lg": [ "Exo 2", "sans-serif" ], 
+        "display-hero": [ "Exo 2", "sans-serif" ], 
+        "display-hero-mobile": [ "Exo 2", "sans-serif" ], 
+        "headline-lg": [ "Exo 2", "sans-serif" ], 
+        "headline-sm": [ "Exo 2", "sans-serif" ], 
+        "headline-md": [ "Exo 2", "sans-serif" ], 
         "body-md": [ "Inter" ], 
-        "headline-xl": [ "Space Grotesk" ] 
+        "headline-xl": [ "Exo 2", "sans-serif" ] 
       }, 
       "fontSize": { 
         "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], 

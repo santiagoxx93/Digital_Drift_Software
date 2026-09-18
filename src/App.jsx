@@ -96,7 +96,7 @@ function App() {
 
   return (
     <>
-<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.webp" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#ff1a35] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#ff1a35] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
+<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.webp" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#e11d2e] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#e11d2e] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
@@ -115,7 +115,7 @@ function App() {
 <div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
-<span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Hacemos páginas web que venden</span>
+<span className="font-label-sm text-label-sm text-slate-700 tracking-wider font-bold uppercase">IDEAS QUE ACELERAN TU MUNDO DIGITAL</span>
 </div>
 {/*  High-Impact H1 Headline  */}
 <h1 className="font-display-hero text-display-hero-mobile md:text-display-hero font-extrabold text-[#0f172a] tracking-tight leading-[1.1] mb-space-md">
@@ -138,7 +138,7 @@ function App() {
 <span className="">Solicitar Demo Gratis</span>
 </a>
 {/*  Secondary Ghost CTA  */}
-<a className="inline-flex items-center justify-center gap-space-xs bg-white hover:bg-slate-50 border border-slate-300 hover:border-[#ff1a35] hover:shadow-[0_4px_16px_rgba(255,26,53,0.12)] text-slate-800 px-6 py-4 rounded-xl font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-200" href="#demos">
+<a className="inline-flex items-center justify-center gap-space-xs bg-white hover:bg-slate-50 border border-slate-300 hover:border-[#e11d2e] hover:shadow-[0_4px_16px_rgba(255,26,53,0.12)] text-slate-800 px-6 py-4 rounded-xl font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-200" href="#demos">
 <span className="">Ver demos</span>
 </a>
 </div>
@@ -171,7 +171,7 @@ function App() {
 </div>
 <div className="flex items-center gap-space-xs">
 <span className="font-label-md text-label-md text-slate-600">¿No ves tu industria?</span>
-<a className="font-label-md text-label-md text-[#ff1a35] hover:text-[#e11d48] hover:underline flex items-center font-bold" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20mi%20negocio%20es%20de%20otro%20rubro%20y%20quiero%20ver%20un%20ejemplo.">
+<a className="font-label-md text-label-md text-[#e11d2e] hover:text-[#e11d48] hover:underline flex items-center font-bold" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20mi%20negocio%20es%20de%20otro%20rubro%20y%20quiero%20ver%20un%20ejemplo.">
           Diseñamos a medida →
 </a>
 </div>
@@ -185,10 +185,10 @@ function App() {
       <React.Fragment key={i}>
 
 {/*  Card 1: Industria & Construcción  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/servitencavzla.webp" alt="Vista previa demo Industria y Construcción - Servinteca Vzla" />
-<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#e11d2e] transition-colors">
   Industria &amp; Construcción
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
@@ -200,16 +200,16 @@ function App() {
 <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Formulario de Contacto</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://web-constructora-servintecavzla.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#e11d2e] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://web-constructora-servintecavzla.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
 
 {/*  Card 2: Clínicas & Salud Dental  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/clinica_dental.webp" alt="Vista previa demo Clínicas y Salud Dental" />
-<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#e11d2e] transition-colors">
   Clínicas &amp; Salud Dental
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
@@ -221,16 +221,16 @@ function App() {
 <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Citas Directas</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-clinica-dental-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#e11d2e] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-clinica-dental-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
 
 {/*  Card 3: Gastronomía & Menú Digital  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 snap-center group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 snap-center group bg-white hover:bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/demo-comida.webp" alt="Vista previa demo Gastronomía y Menú Digital" />
-<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#e11d2e] transition-colors">
   Gastronomía &amp; Menú Digital
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
@@ -242,16 +242,16 @@ function App() {
 <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">0% Comisión</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-comida.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#e11d2e] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-comida.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
 
 {/*  Card 4: Calzado & Tiendas Retail  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/demo-zapatos.webp" alt="Vista previa demo Calzado y Tiendas Retail" />
-<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#e11d2e] transition-colors">
   Calzado &amp; Tiendas Retail
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
@@ -263,16 +263,16 @@ function App() {
 <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Cierre en 1 Clic</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demozapatos.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#e11d2e] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demozapatos.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
 
 {/*  Card 5: Floristerías & Regalos  */}
-<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
+<div className="w-[85vw] sm:w-[450px] lg:w-[500px] flex-shrink-0 group bg-white hover:bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-md shadow-sm hover:shadow-[0_12px_30px_rgba(255,26,53,0.12)] transition-all duration-300 flex flex-col justify-between">
 <div>
 <DemoImage src="/img/floreriaweb.webp" alt="Vista previa demo Floristerías y Regalos" />
-<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#ff1a35] transition-colors">
+<h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 group-hover:text-[#e11d2e] transition-colors">
   Floristerías &amp; Regalos
 </h3>
 <p className="font-body-sm text-body-sm text-slate-600 mt-1 mb-space-sm">
@@ -284,7 +284,7 @@ function App() {
 <span className="font-label-sm text-label-sm px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-slate-600 font-medium">Pedidos Directos</span>
 </div>
 </div>
-<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#ff1a35] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-floristeria-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">
+<a className="w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-[#e11d2e] hover:text-white font-label-md text-label-md text-slate-800 font-semibold flex items-center justify-center gap-1.5 transition-colors border border-slate-200 hover:border-transparent" href="https://demo-floristeria-mocha.vercel.app/" target="_blank" rel="noopener noreferrer">
 <span>Ver demo</span>
 </a>
 </div>
@@ -397,12 +397,12 @@ function App() {
   </div>
 
   {/* Tarjeta 2: Plan Pyme Conversión (Actual) */}
-  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-[#ff1a35]/60 hover:shadow-[0_20px_40px_rgba(255,26,53,0.12)] transition-all duration-300 relative overflow-hidden">
-    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#ff1a35] via-[#e11d48] to-[#f43f5e]"></div>
+  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-[#e11d2e]/60 hover:shadow-[0_20px_40px_rgba(255,26,53,0.12)] transition-all duration-300 relative overflow-hidden">
+    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#e11d2e] via-[#e11d48] to-[#f43f5e]"></div>
     
     <div>
       <div className="flex justify-between items-center mb-6">
-        <span className="px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#ff1a35] font-label-sm text-label-sm font-extrabold uppercase tracking-wider">
+        <span className="px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#e11d2e] font-label-sm text-label-sm font-extrabold uppercase tracking-wider">
           EL MÁS ELEGIDO POR PYMES
         </span>
         <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Turnkey Pro</span>
@@ -415,7 +415,7 @@ function App() {
         <div className="flex flex-col mt-4">
           <div className="flex items-baseline gap-1">
             <span className="text-5xl font-extrabold text-[#0f172a] tracking-tight">$280</span>
-            <span className="text-xl font-bold text-[#ff1a35]">USD</span>
+            <span className="text-xl font-bold text-[#e11d2e]">USD</span>
           </div>
           <span className="text-xs text-slate-500 font-medium mt-1">Pago único (o 2 cuotas de $145)</span>
         </div>
@@ -424,7 +424,7 @@ function App() {
       <div className="space-y-4 py-6">
         <div className="flex items-start gap-3.5">
           <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#ff1a35] text-[16px] font-bold">check</span>
+            <span className="material-symbols-outlined text-[#e11d2e] text-[16px] font-bold">check</span>
           </div>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Diseño a medida adaptado a móviles y PC</span>
@@ -432,28 +432,28 @@ function App() {
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-[#ff1a35] font-bold mr-1">—</span>
+          <span className="text-[#e11d2e] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio .com y hosting cloud ultrarrápido incluido</span>
             <span className="font-body-sm text-body-sm text-slate-600">1 año completo de servidor SSD con certificado de seguridad SSL y protección DDoS.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-[#ff1a35] font-bold mr-1">—</span>
+          <span className="text-[#e11d2e] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">4 correos corporativos configurados</span>
             <span className="font-body-sm text-body-sm text-slate-600">ventas@, gerencia@, info@, soporte@ configurados en tus dispositivos de escritorio y móvil.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-[#ff1a35] font-bold mr-1">—</span>
+          <span className="text-[#e11d2e] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botones inteligentes de cotización directa a WhatsApp</span>
             <span className="font-body-sm text-body-sm text-slate-600">Mensajes prellenados con el servicio o producto específico de consulta para facilitar el cierre.</span>
           </div>
         </div>
         <div className="flex items-start gap-3.5">
-          <span className="text-[#ff1a35] font-bold mr-1">—</span>
+          <span className="text-[#e11d2e] font-bold mr-1">—</span>
           <div className="flex flex-col">
             <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Soporte técnico preferencial y alta en Google</span>
             <span className="font-body-sm text-body-sm text-slate-600">Indexación inicial en motores de búsqueda y acompañamiento prioritario post-entrega.</span>
@@ -463,7 +463,7 @@ function App() {
       
       <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 flex items-center gap-3 my-4">
         <div className="text-xs text-slate-600">
-          <strong className="text-slate-900 font-semibold">Póliza opcional de tranquilidad:</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#ff1a35] font-bold">$25/mes</span> (totalmente opcional).
+          <strong className="text-slate-900 font-semibold">Póliza opcional de tranquilidad:</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#e11d2e] font-bold">$25/mes</span> (totalmente opcional).
         </div>
       </div>
     </div>
@@ -497,10 +497,10 @@ function App() {
 {/*  Process Steps Grid with Visual Indicators  */}
 <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
 {/*  Step 1  */}
-<div className="bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
 <div>
 <div className="flex items-center justify-between mb-space-md">
-<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">01</span>
+<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">01</span>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Cuestionario rápido de 5 minutos
@@ -512,10 +512,10 @@ function App() {
 
 </div>
 {/*  Step 2  */}
-<div className="bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
 <div>
 <div className="flex items-center justify-between mb-space-md">
-<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">02</span>
+<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">02</span>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Revisión de tu demo interactiva
@@ -527,10 +527,10 @@ function App() {
 
 </div>
 {/*  Step 3  */}
-<div className="bg-white border border-slate-200 hover:border-[#ff1a35]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
 <div>
 <div className="flex items-center justify-between mb-space-md">
-<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#ff1a35] transition-colors">03</span>
+<span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">03</span>
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Lanzamiento oficial y puesta en marcha
@@ -560,13 +560,13 @@ function App() {
 {/*  FAQ Items (HTML5 details/summary styling)  */}
 <div className="flex flex-col gap-space-sm">
 {/*  FAQ 1  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#e11d2e]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
+<span className="w-2 h-2 rounded-full bg-[#e11d2e]"></span>
               ¿Necesito saber de computación o programación?
             </span>
-<span className="material-symbols-outlined text-[#ff1a35] transition-transform duration-300 group-open:rotate-180">
+<span className="material-symbols-outlined text-[#e11d2e] transition-transform duration-300 group-open:rotate-180">
               expand_more
             </span>
 </summary>
@@ -575,13 +575,13 @@ function App() {
           </div>
 </details>
 {/*  FAQ 2  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#e11d2e]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
+<span className="w-2 h-2 rounded-full bg-[#e11d2e]"></span>
               ¿Cómo funciona la demo visual gratis antes de pagar?
             </span>
-<span className="material-symbols-outlined text-[#ff1a35] transition-transform duration-300 group-open:rotate-180">
+<span className="material-symbols-outlined text-[#e11d2e] transition-transform duration-300 group-open:rotate-180">
               expand_more
             </span>
 </summary>
@@ -590,13 +590,13 @@ function App() {
           </div>
 </details>
 {/*  FAQ 3  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#e11d2e]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
+<span className="w-2 h-2 rounded-full bg-[#e11d2e]"></span>
               ¿Qué pasa si no tengo fotos profesionales ni textos listos?
             </span>
-<span className="material-symbols-outlined text-[#ff1a35] transition-transform duration-300 group-open:rotate-180">
+<span className="material-symbols-outlined text-[#e11d2e] transition-transform duration-300 group-open:rotate-180">
               expand_more
             </span>
 </summary>
@@ -605,13 +605,13 @@ function App() {
           </div>
 </details>
 {/*  FAQ 4  */}
-<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#ff1a35]/40">
+<details className="group bg-white border border-slate-200 rounded-2xl overflow-hidden transition-all duration-200 open:shadow-sm open:border-[#e11d2e]/40">
 <summary className="flex items-center justify-between p-space-md cursor-pointer list-none select-none font-headline-sm text-headline-sm font-semibold text-slate-900">
 <span className="flex items-center gap-3">
-<span className="w-2 h-2 rounded-full bg-[#ff1a35]"></span>
+<span className="w-2 h-2 rounded-full bg-[#e11d2e]"></span>
               ¿Cuáles son las formas de pago?
             </span>
-<span className="material-symbols-outlined text-[#ff1a35] transition-transform duration-300 group-open:rotate-180">
+<span className="material-symbols-outlined text-[#e11d2e] transition-transform duration-300 group-open:rotate-180">
               expand_more
             </span>
 </summary>
@@ -633,7 +633,7 @@ function App() {
 
 <h2 className="font-headline-xl text-headline-xl md:text-display-hero font-extrabold text-[#0f172a] tracking-tight leading-tight mb-space-sm">
           Tu competencia ya se está digitalizando.<br className="hidden sm:inline" />
-<span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-[#ff1a35] to-[#e11d48]">
+<span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-[#e11d2e] to-[#e11d48]">
             No te quedes atrás.
           </span>
 </h2>
@@ -650,7 +650,7 @@ function App() {
   </a>
 
   <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
-    <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#ff1a35] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#e11d2e] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
     <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-2">¿Prefieres detallarnos tu proyecto?</h3>
     <p className="text-sm text-slate-500 mb-6">Completa los datos y analizaremos tu caso para darte una cotización exacta a tu correo <strong className="font-semibold text-slate-700">digitaldriftads@gmail.com</strong>.</p>
     
@@ -672,18 +672,18 @@ function App() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Nombre</label>
-            <input type="text" name="Nombre" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all disabled:opacity-50" placeholder="Tu nombre" />
+            <input type="text" name="Nombre" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e11d2e]/20 focus:border-[#e11d2e] transition-all disabled:opacity-50" placeholder="Tu nombre" />
           </div>
           <div className="flex flex-col gap-1.5">
             <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Correo</label>
-            <input type="email" name="Correo" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all disabled:opacity-50" placeholder="tucorreo@empresa.com" />
+            <input type="email" name="Correo" required disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e11d2e]/20 focus:border-[#e11d2e] transition-all disabled:opacity-50" placeholder="tucorreo@empresa.com" />
           </div>
         </div>
         
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Presupuesto Estimado</label>
           <div className="relative">
-            <select name="Presupuesto" disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all appearance-none cursor-pointer disabled:opacity-50">
+            <select name="Presupuesto" disabled={formStatus.state === 'loading'} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e11d2e]/20 focus:border-[#e11d2e] transition-all appearance-none cursor-pointer disabled:opacity-50">
               <option value="No estoy seguro, necesito asesoría">No estoy seguro, necesito asesoría</option>
               <option value="Menos de $300 USD">Menos de $300 USD</option>
               <option value="$300 - $600 USD">$300 - $600 USD</option>
@@ -695,7 +695,7 @@ function App() {
 
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-semibold text-slate-700 uppercase tracking-wide">Detalles del Proyecto</label>
-          <textarea name="Mensaje" required disabled={formStatus.state === 'loading'} rows="4" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#ff1a35]/20 focus:border-[#ff1a35] transition-all resize-none disabled:opacity-50" placeholder="¿De qué trata tu negocio y qué necesitas lograr con la web?"></textarea>
+          <textarea name="Mensaje" required disabled={formStatus.state === 'loading'} rows="4" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e11d2e]/20 focus:border-[#e11d2e] transition-all resize-none disabled:opacity-50" placeholder="¿De qué trata tu negocio y qué necesitas lograr con la web?"></textarea>
         </div>
 
         {formStatus.state === 'error' && (
@@ -725,7 +725,7 @@ function App() {
 {/*  =================================================================  */}
 <section data-aos="fade-up" id="equipo" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl">
   <div className="text-center max-w-2xl mx-auto mb-8">
-    <div className="inline-block bg-red-50 text-[#ff1a35] border border-red-200 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-2">
+    <div className="inline-block bg-red-50 text-[#e11d2e] border border-red-200 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-2">
       RESPALDO LOCAL
     </div>
     <h2 className="text-[#0f172a] font-bold text-3xl tracking-tight mt-2">
@@ -737,24 +737,24 @@ function App() {
   </div>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
     {/*  Tarjeta 1  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SS</div>
       <h3 className="font-bold text-slate-900 text-lg">Santiago Sánchez</h3>
-      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Desarrollo &amp; Infraestructura Web</span>
+      <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Desarrollo &amp; Infraestructura Web</span>
       <p className="text-slate-600 text-sm leading-relaxed">Garantiza tiempos de carga ultrarrápidos, seguridad SSL y conexión directa a WhatsApp.</p>
     </div>
     {/*  Tarjeta 2  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">MP</div>
       <h3 className="font-bold text-slate-900 text-lg">Moisés Porras</h3>
-      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Diseño &amp; Experiencia de Usuario (UI/UX)</span>
+      <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Diseño &amp; Experiencia de Usuario (UI/UX)</span>
       <p className="text-slate-600 text-sm leading-relaxed">Interfaces limpias, estéticas modernas y diseño 100% optimizado para pantallas móviles.</p>
     </div>
     {/*  Tarjeta 3  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#ff1a35]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SV</div>
       <h3 className="font-bold text-slate-900 text-lg">Santihel Valero</h3>
-      <span className="text-[#ff1a35] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Estrategia Comercial &amp; Cierre</span>
+      <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Estrategia Comercial &amp; Cierre</span>
       <p className="text-slate-600 text-sm leading-relaxed">Estructura catálogos y propuestas visuales enfocadas en retorno de inversión para negocios.</p>
     </div>
   </div>
@@ -767,7 +767,7 @@ function App() {
         <div className="flex items-center gap-space-xs">
           <img alt="Digital Drift Logo" className="h-8 w-auto object-contain" src="/img/logo-digital-drift-footer.webp" />
           <div className="font-headline-sm text-headline-sm leading-none">
-            <span className="text-white font-bold">Digital</span> <span className="text-[#ff1a35] font-bold">Drift</span>
+            <span className="text-white font-bold">Digital</span> <span className="text-[#e11d2e] font-bold">Drift</span>
           </div>
         </div>
         <p className="font-body-sm text-body-sm text-slate-400 max-w-sm">Diseño web profesional para negocios que quieren vender más.</p>
