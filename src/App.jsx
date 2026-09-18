@@ -524,7 +524,7 @@ function App() {
 <div className="flex flex-col md:flex-row max-w-5xl mx-auto relative z-10 shadow-2xl rounded-3xl overflow-hidden mt-12">
 
   {/* Tarjeta 1: Landing page */}
-  <div className="flex-1 flex flex-col bg-white text-slate-900 p-8 md:p-12 relative border border-slate-200/80">
+  <div data-aos="fade-up" data-aos-delay="100" className="flex-1 flex flex-col bg-white text-slate-900 p-8 md:p-12 relative border border-slate-200/80 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
     <div className="mb-8 border-b border-slate-100 pb-6">
       <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none text-[#0f172a]">Landing page</h3>
       <div className="flex items-baseline gap-1 mt-4">
@@ -556,7 +556,7 @@ function App() {
   </div>
 
   {/* Tarjeta 2: Profesional */}
-  <div className="flex-1 flex flex-col bg-[#0f172a] text-white p-8 md:p-12 relative overflow-hidden">
+  <div data-aos="fade-up" data-aos-delay="200" className="flex-1 flex flex-col bg-[#0f172a] text-white p-8 md:p-12 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
     {/* Ribbon */}
     <div className="absolute top-6 -right-12 w-48 bg-[#e11d2e] text-white text-center py-1.5 font-bold text-[11px] uppercase tracking-widest rotate-45 shadow-lg z-10">
       RECOMENDADO
@@ -645,7 +645,7 @@ function App() {
 {/*  Process Steps Grid with Visual Indicators  */}
 <div className="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
 {/*  Step 1  */}
-<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div data-aos="fade-up" data-aos-delay="100" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">01</span>
@@ -660,7 +660,7 @@ function App() {
 
 </div>
 {/*  Step 2  */}
-<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div data-aos="fade-up" data-aos-delay="200" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">02</span>
@@ -675,7 +675,7 @@ function App() {
 
 </div>
 {/*  Step 3  */}
-<div className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-md flex flex-col justify-between relative group transition-all">
+<div data-aos="fade-up" data-aos-delay="300" className="bg-white border border-slate-200 hover:border-[#e11d2e]/60 rounded-2xl p-space-lg shadow-sm hover:shadow-lg flex flex-col justify-between relative group transition-all duration-300 hover:-translate-y-1">
 <div>
 <div className="flex items-center justify-between mb-space-md">
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">03</span>
@@ -917,21 +917,21 @@ function App() {
   </div>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
     {/*  Tarjeta 1  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div data-aos="fade-up" data-aos-delay="100" className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SS</div>
       <h3 className="font-bold text-slate-900 text-lg">Santiago Sánchez</h3>
       <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Desarrollo &amp; Infraestructura Web</span>
       <p className="text-slate-600 text-sm leading-relaxed">Garantiza tiempos de carga ultrarrápidos, seguridad SSL y conexión directa a WhatsApp.</p>
     </div>
     {/*  Tarjeta 2  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div data-aos="fade-up" data-aos-delay="200" className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">MP</div>
       <h3 className="font-bold text-slate-900 text-lg">Moisés Porras</h3>
       <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Diseño &amp; Experiencia de Usuario (UI/UX)</span>
       <p className="text-slate-600 text-sm leading-relaxed">Interfaces limpias, estéticas modernas y diseño 100% optimizado para pantallas móviles.</p>
     </div>
     {/*  Tarjeta 3  */}
-    <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-md transition-all flex flex-col items-center text-center">
+    <div data-aos="fade-up" data-aos-delay="300" className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-[#e11d2e]/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
       <div className="h-12 w-12 rounded-xl bg-slate-900 text-white font-bold flex items-center justify-center mb-4 text-xl">SV</div>
       <h3 className="font-bold text-slate-900 text-lg">Santihel Valero</h3>
       <span className="text-[#e11d2e] font-semibold text-xs uppercase tracking-wide mt-1 mb-3">Estrategia Comercial &amp; Cierre</span>
