@@ -13,6 +13,8 @@ const DemoImage = ({ src, alt }) => {
 function App() {
   const [formStatus, setFormStatus] = useState({ state: 'idle', message: '' });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -1093,9 +1095,9 @@ function App() {
       </div>
       <div className="md:col-span-2 flex flex-col gap-space-xs">
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Compañía</span>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">Acerca de Digital Drift</a>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#preguntas">FAQ &amp; Seguridad</a>
-        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#contacto">Contacto Directo</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#quienessomos">Acerca de Digital Drift</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="#proceso">FAQ &amp; Seguridad</a>
+        <a className="font-body-sm text-body-sm text-slate-400 hover:text-white transition-colors" href="https://wa.me/573243553258?text=Hola,%20quisiera%20contacto%20directo%20con%20la%20agencia." target="_blank" rel="noopener noreferrer">Contacto Directo</a>
       </div>
       <div className="md:col-span-3 flex flex-col gap-space-sm">
         <span className="text-white font-bold uppercase tracking-wider text-xs mb-3">Contacto</span>
@@ -1117,13 +1119,73 @@ function App() {
     <div className="pt-space-md border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-space-sm text-slate-400 font-body-sm text-body-sm">
       <div className="">© 2026 Digital Drift. Todos los derechos reservados.</div>
       <div className="flex items-center gap-space-md">
-        <a className="hover:text-white transition-colors" href="#">Términos de Servicio</a>
-        <a className="hover:text-white transition-colors" href="#">Políticas de Privacidad</a>
-        <a className="hover:text-white transition-colors" href="#">Garantía &amp; Soporte</a>
+        <button onClick={() => setIsTermsOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Términos de Servicio</button>
+        <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Políticas de Privacidad</button>
+        <a className="hover:text-white transition-colors" href="https://wa.me/573243553258?text=Hola,%20tengo%20dudas%20sobre%20las%20garantías%20y%20el%20soporte." target="_blank" rel="noopener noreferrer">Garantía &amp; Soporte</a>
       </div>
     </div>
   </div>
 </footer>
+
+    {/* Terms of Service Modal */}
+    {isTermsOpen && (
+      <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
+        <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={() => setIsTermsOpen(false)}></div>
+        <div className="relative bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8 shadow-2xl">
+          <button onClick={() => setIsTermsOpen(false)} className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Términos de Servicio</h2>
+          <div className="prose prose-sm text-slate-600">
+            <p><strong>1. Aceptación de los Términos</strong><br/>
+            Al acceder y utilizar los servicios de Digital Drift Agency, usted acepta estar sujeto a estos términos de servicio. Si no está de acuerdo con alguna parte de estos términos, no podrá acceder al servicio.</p>
+            <p><strong>2. Servicios de Desarrollo Web</strong><br/>
+            Digital Drift se especializa en la creación de landing pages optimizadas para la conversión B2B. El alcance detallado, los plazos y los costos se definirán en una propuesta comercial específica antes de iniciar cualquier proyecto.</p>
+            <p><strong>3. Propiedad Intelectual</strong><br/>
+            El código fuente final, diseños e implementaciones entregadas pasan a ser propiedad del cliente una vez que se ha liquidado el 100% de los pagos acordados. Las licencias de software de terceros y plantillas mantienen la propiedad de sus respectivos creadores.</p>
+            <p><strong>4. Garantías y Soporte</strong><br/>
+            Nuestros paquetes incluyen soporte técnico posterior a la entrega. No nos hacemos responsables por caídas de servidores de terceros (como Hostinger o Vercel) o modificaciones en el código realizadas por el cliente después de la entrega oficial.</p>
+            <p><strong>5. Modificaciones</strong><br/>
+            Digital Drift se reserva el derecho de modificar estos términos en cualquier momento. El uso continuado del servicio después de dichos cambios constituye la aceptación de los nuevos términos.</p>
+          </div>
+          <div className="mt-8 flex justify-end">
+            <button onClick={() => setIsTermsOpen(false)} className="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-colors">Aceptar y Cerrar</button>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Privacy Policy Modal */}
+    {isPrivacyOpen && (
+      <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
+        <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={() => setIsPrivacyOpen(false)}></div>
+        <div className="relative bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8 shadow-2xl">
+          <button onClick={() => setIsPrivacyOpen(false)} className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Políticas de Privacidad</h2>
+          <div className="prose prose-sm text-slate-600">
+            <p><strong>1. Recopilación de Información</strong><br/>
+            Recopilamos la información mínima necesaria para brindarle nuestros servicios. Esto incluye nombre, correo electrónico, teléfono (WhatsApp) e información sobre su empresa proporcionada voluntariamente a través de nuestros formularios de contacto o cuestionarios.</p>
+            <p><strong>2. Uso de la Información</strong><br/>
+            Utilizamos su información personal estrictamente para comunicarnos con usted, proporcionar los servicios de desarrollo web solicitados, enviar propuestas comerciales y brindar soporte técnico. <strong>Nunca</strong> venderemos, alquilaremos ni compartiremos sus datos con terceros con fines comerciales.</p>
+            <p><strong>3. Seguridad de Datos</strong><br/>
+            Implementamos medidas de seguridad estándar de la industria para proteger su información personal. Nuestras páginas web utilizan certificados SSL y nuestra infraestructura está alojada en servidores seguros de Vercel y Cloudflare.</p>
+            <p><strong>4. Cookies</strong><br/>
+            Nuestra página web puede utilizar "cookies" para mejorar la experiencia del usuario y analizar el tráfico del sitio. Puede configurar su navegador para que rechace todas las cookies, aunque esto puede afectar ciertas funcionalidades.</p>
+            <p><strong>5. Derechos del Usuario</strong><br/>
+            Usted tiene el derecho de solicitar la eliminación, modificación o acceso a sus datos personales en cualquier momento escribiendo a nuestro contacto directo de WhatsApp o correo electrónico.</p>
+          </div>
+          <div className="mt-8 flex justify-end">
+            <button onClick={() => setIsPrivacyOpen(false)} className="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-colors">Entendido</button>
+          </div>
+        </div>
+      </div>
+    )}
 
     </>
   );
