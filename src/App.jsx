@@ -110,8 +110,9 @@ function App() {
     <img src="/img/logo-digital-drift-footer.webp" alt="" className="w-full h-full object-contain" aria-hidden="true" />
   </div>
 </div>
-<div className="relative z-10 flex flex-col items-center text-center">
-<div data-aos="fade-up" className="flex flex-col items-center">
+<div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+{/*  Left Column: Copy & Immediate Action  */}
+<div data-aos="fade-up" className="lg:col-span-7 flex flex-col items-start">
 {/*  Live Status Badge  */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 backdrop-blur-md shadow-sm mb-space-md">
 <span className="font-label-sm text-label-sm text-slate-600 tracking-wide font-medium">Hacemos páginas web que venden</span>
@@ -128,7 +129,7 @@ function App() {
           Diseñamos la plataforma web de tu empresa: ultrarrápida, moderna y con dominio, correos corporativos y catálogo incluidos. Sin complicaciones técnicas.
         </p>
 {/*  CTAs  */}
-<div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto mb-space-lg justify-center">
+<div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto mb-space-lg">
 {/*  Primary CTA (WhatsApp High Conversion)  */}
 <a className="group relative inline-flex items-center justify-center gap-space-xs bg-[#25D366] hover:bg-[#20BA5A] text-white px-7 py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-[0_8px_24px_-2px_rgba(37,211,102,0.38)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.98]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20solicitar%20mi%20demo%20visual%20gratis." rel="noopener noreferrer" target="_blank">
 <svg className="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
@@ -144,6 +145,12 @@ function App() {
 <p className="text-slate-500 font-body-sm text-body-sm pt-2 font-medium">
   Entrega rápida · Sin letra pequeña · Optimizado para celulares
 </p>
+</div>
+{/*  Right Column: Logo Display  */}
+<div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 relative mt-6 lg:mt-0 flex items-center justify-center">
+<div className="w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[420px] lg:h-[420px] animate-float">
+  <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
+</div>
 </div>
 </div>
 </section>
