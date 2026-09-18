@@ -13,19 +13,6 @@ const DemoImage = ({ src, alt }) => {
 function App() {
   const [formStatus, setFormStatus] = useState({ state: 'idle', message: '' });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
-  // Custom Hook for Scroll Progress
-  const [scrollProgress, setScrollProgress] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const totalScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scroll = `${(totalScroll / windowHeight) * 100}`;
-      setScrollProgress(scroll);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -110,9 +97,6 @@ function App() {
 
   return (
     <>
-{/* Scroll Progress Bar */}
-<div className="fixed top-0 left-0 h-1 bg-[#e11d2e] z-[100] transition-all duration-150 ease-out shadow-[0_0_10px_rgba(225,29,46,0.5)]" style={{ width: `${scrollProgress}%` }}></div>
-
 <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div>
 <div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 <header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt-space-sm py-2">
