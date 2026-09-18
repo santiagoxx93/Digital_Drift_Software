@@ -488,7 +488,7 @@ function App() {
               <div className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
             </div>
           </div>
-          <p className="text-slate-300 font-medium leading-tight">Pierdes ventas en WhatsApp por falta de información rápida.</p>
+          <p className="text-slate-300 font-medium leading-tight">Pierdes ventas por tardar en responder dudas básicas mientras atiendes el día a día.</p>
         </div>
         
         <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
@@ -502,7 +502,7 @@ function App() {
               <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-[#0b1120] animate-pulse"></div>
             </div>
           </div>
-          <p className="text-white font-bold leading-tight">Botón de contacto directo a tu WhatsApp optimizado.</p>
+          <p className="text-white font-bold leading-tight">Clientes que llegan a tu WhatsApp con el pedido definido y listos para transferir.</p>
         </div>
       </div>
 
@@ -517,7 +517,7 @@ function App() {
               </div>
             </div>
           </div>
-          <p className="text-slate-300 font-medium leading-tight">Tus clientes desconfían al no ver una página oficial.</p>
+          <p className="text-slate-300 font-medium leading-tight">Tus clientes desconfían, piden rebajas o dudan de la formalidad de tu negocio.</p>
         </div>
         
         <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
@@ -532,7 +532,7 @@ function App() {
               </div>
             </div>
           </div>
-          <p className="text-white font-bold leading-tight">Autoridad corporativa instantánea y correos profesionales.</p>
+          <p className="text-white font-bold leading-tight">Autoridad corporativa inmediata para cobrar lo que vales sin que cuestionen tus precios.</p>
         </div>
       </div>
 
@@ -546,7 +546,7 @@ function App() {
               <div className="w-1.5 h-1.5 bg-red-500/50 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
             </div>
           </div>
-          <p className="text-slate-300 font-medium leading-tight">Atención lenta y manual respondiendo las mismas dudas.</p>
+          <p className="text-slate-300 font-medium leading-tight">Horas respondiendo «¿precio?» por mensaje a personas que nunca compran.</p>
         </div>
         
         <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
@@ -560,7 +560,7 @@ function App() {
             <div className="w-2 h-1.5 bg-[#e11d2e] rounded-full mb-1"></div>
             <div className="w-1.5 h-1.5 bg-[#25D366] rounded-full shadow-[0_0_8px_#25D366]"></div>
           </div>
-          <p className="text-white font-bold leading-tight">Filtra curiosos y recibe clientes listos para comprar.</p>
+          <p className="text-white font-bold leading-tight">Filtro automático 24/7: tu web resuelve dudas y tú solo atiendes cierres reales.</p>
         </div>
       </div>
 
@@ -574,7 +574,7 @@ function App() {
               <div className="w-4 h-1 bg-red-500/30 mt-1 rounded-full"></div>
             </div>
           </div>
-          <p className="text-slate-300 font-medium leading-tight">Catálogo en PDF desactualizado y pesado de descargar.</p>
+          <p className="text-slate-300 font-medium leading-tight">Catálogos pesados en PDF que nadie descarga por falta de señal o datos móviles.</p>
         </div>
         
         <div className="shrink-0 text-slate-600 group-hover:text-[#e11d2e] transform group-hover:scale-125 transition-all duration-500 rotate-90 md:rotate-0">
@@ -590,7 +590,7 @@ function App() {
               <div className="bg-[#e11d2e] rounded-[4px] opacity-50"></div>
             </div>
           </div>
-          <p className="text-white font-bold leading-tight">Ventas guiadas y catálogos interactivos disponibles 24/7.</p>
+          <p className="text-white font-bold leading-tight">Catálogo interactivo ultraligero que abre al instante en cualquier teléfono.</p>
         </div>
       </div>
     </div>
