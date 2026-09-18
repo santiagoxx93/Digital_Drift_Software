@@ -433,170 +433,99 @@ function App() {
       </p>
 </div>
 {/*  Pricing Cards Grid  */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto relative z-10">
+<div className="flex flex-col md:flex-row max-w-5xl mx-auto relative z-10 shadow-2xl rounded-3xl overflow-hidden mt-12">
 
-  {/* Tarjeta 1: Plan Web Negocio */}
-  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-slate-800/60 hover:shadow-[0_20px_40px_rgba(15,23,42,0.12)] transition-all duration-300 relative overflow-hidden">
-    {/* Top Accent Ribbon */}
-    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700"></div>
-    
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <span className="px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-600 font-label-sm text-label-sm font-bold uppercase tracking-wider">
-          Sin mensualidades ocultas
-        </span>
-        <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Entrada Comercial</span>
-      </div>
-      
-      <div className="flex flex-col gap-2 pb-6 border-b border-slate-100">
-        <h3 className="font-headline-lg text-headline-lg font-extrabold text-slate-900">Plan Web Negocio</h3>
-        <p className="font-body-sm text-body-sm text-slate-600 mt-1">Moderna, rápida y lista para vender más. La solución directa para digitalizar tu catálogo y atender pedidos.</p>
-        
-        <div className="flex flex-col mt-4">
-          <div className="flex items-baseline gap-1">
-            <span className="text-5xl font-extrabold text-[#0f172a] tracking-tight">$150</span>
-            <span className="text-xl font-bold text-slate-900">USD</span>
-          </div>
-          <span className="text-xs text-slate-500 font-medium mt-1">o 2 cuotas de $80 USD</span>
-        </div>
-      </div>
-      
-      {/* Lista de características */}
-      <div className="space-y-4 py-6">
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Diseño moderno 100% adaptable</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Optimizado para celulares y computadoras sin perder velocidad.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Catálogo interactivo</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Muestra organizada de tus productos o servicios con fotos y detalles.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botón directo a WhatsApp</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Tus clientes te piden o cotizan con un solo clic.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio (.com) y hosting ultra rápido</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Incluidos por 1 año completo con certificado de seguridad SSL.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Integración con redes sociales</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Conexión directa a perfiles de Instagram, Facebook y TikTok.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-slate-900 font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Puesta en marcha y entrega lista para operar</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Configuración completa para que comiences a recibir clientes sin enredos técnicos.</span>
-          </div>
-        </div>
+  {/* Tarjeta 1: Landing page */}
+  <div className="flex-1 flex flex-col bg-[#2dd4bf] text-white p-8 md:p-12 relative">
+    <div className="mb-8 border-b border-white/20 pb-6">
+      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none">Landing page</h3>
+      <div className="flex items-baseline gap-1 mt-4">
+        <span className="text-xl font-medium">Desde</span>
+        <span className="text-[32px] font-extrabold tracking-tight">$150</span>
       </div>
     </div>
+    
+    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium">
+      <li>Dominio x 1 Año GRATIS (.com o del país)</li>
+      <li>Visitas y espacio ilimitado</li>
+      <li>Hosting SSD x 1 Año GRATIS</li>
+      <li>Certificado SSL (Seguridad)</li>
+      <li>Hasta 3 correos corporativos</li>
+      <li>Diseño moderno y responsivo</li>
+      <li>3 secciones (sencillo o landing)</li>
+      <li>Formulario para captura de leads</li>
+      <li>Carrusel de testimonios</li>
+      <li>Ajuste de imagen y textos</li>
+      <li>Botón de llamada & WhatsApp</li>
+      <li>Integración con Instagram y/o Facebook</li>
+      <li>Integración con Google Maps</li>
+      <li>Integración con Google Analytics</li>
+    </ul>
 
-    <div className="pt-3 mt-auto">
-      <a className="w-full flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white py-4 px-6 rounded-xl font-headline-sm text-headline-sm font-bold shadow-sm transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20empezar%20con%20el%20Plan%20Web%20Negocio%20de%20$150." rel="noopener noreferrer" target="_blank">
-        <span className="">Quiero este plan →</span>
+    <div className="pt-10 mt-auto flex justify-center">
+      <a className="bg-white text-slate-900 py-4 px-10 rounded-xl font-bold shadow-md hover:bg-slate-50 transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Landing%20Page%20de%20$150" target="_blank" rel="noopener noreferrer">
+        COTIZAR WEB
       </a>
-      <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
-        <span className="">Sin mensualidades • 100% tuya</span>
-      </div>
     </div>
   </div>
 
-  {/* Tarjeta 2: Plan Pyme Conversión (Actual) */}
-  <div className="h-full flex flex-col justify-between bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-200 hover:border-[#e11d2e]/60 hover:shadow-[0_20px_40px_rgba(255,26,53,0.12)] transition-all duration-300 relative overflow-hidden">
-    <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-[#e11d2e] via-[#e11d48] to-[#f43f5e]"></div>
-    
-    <div>
-      <div className="flex justify-between items-center mb-6">
-        <span className="px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#e11d2e] font-label-sm text-label-sm font-extrabold uppercase tracking-wider">
-          EL MÁS ELEGIDO POR PYMES
-        </span>
-        <span className="text-xs uppercase font-medium tracking-wider text-slate-400">Plan Turnkey Pro</span>
-      </div>
-      
-      <div className="flex flex-col gap-2 pb-6 border-b border-slate-100">
-        <h3 className="font-headline-lg text-headline-lg font-extrabold text-slate-900">Plan Pyme Conversión</h3>
-        <p className="font-body-sm text-body-sm text-slate-600 mt-1">Todo lo que tu empresa necesita para operar y captar clientes en internet desde el día 1.</p>
-        
-        <div className="flex flex-col mt-4">
-          <div className="flex items-baseline gap-1">
-            <span className="text-5xl font-extrabold text-[#0f172a] tracking-tight">$280</span>
-            <span className="text-xl font-bold text-[#e11d2e]">USD</span>
-          </div>
-          <span className="text-xs text-slate-500 font-medium mt-1">Pago único (o 2 cuotas de $145)</span>
-        </div>
-      </div>
-      
-      <div className="space-y-4 py-6">
-        <div className="flex items-start gap-3.5">
-          <div className="w-6 h-6 rounded-full bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="material-symbols-outlined text-[#e11d2e] text-[16px] font-bold">check</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Diseño a medida adaptado a móviles y PC</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Interfaz moderna, 100% responsiva y optimizada para máxima velocidad en redes 4G/5G.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-[#e11d2e] font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Dominio .com y hosting cloud ultrarrápido incluido</span>
-            <span className="font-body-sm text-body-sm text-slate-600">1 año completo de servidor SSD con certificado de seguridad SSL y protección DDoS.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-[#e11d2e] font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">4 correos corporativos configurados</span>
-            <span className="font-body-sm text-body-sm text-slate-600">ventas@, gerencia@, info@, soporte@ configurados en tus dispositivos de escritorio y móvil.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-[#e11d2e] font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Botones inteligentes de cotización directa a WhatsApp</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Mensajes prellenados con el servicio o producto específico de consulta para facilitar el cierre.</span>
-          </div>
-        </div>
-        <div className="flex items-start gap-3.5">
-          <span className="text-[#e11d2e] font-bold mr-1">—</span>
-          <div className="flex flex-col">
-            <span className="font-label-lg text-label-lg text-slate-900 font-semibold">Soporte técnico preferencial y alta en Google</span>
-            <span className="font-body-sm text-body-sm text-slate-600">Indexación inicial en motores de búsqueda y acompañamiento prioritario post-entrega.</span>
-          </div>
-        </div>
-      </div>
-      
-      <div className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 flex items-center gap-3 my-4">
-        <div className="text-xs text-slate-600">
-          <strong className="text-slate-900 font-semibold">Póliza opcional de tranquilidad:</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#e11d2e] font-bold">$25/mes</span> (totalmente opcional).
-        </div>
-      </div>
+  {/* Tarjeta 2: Profesional */}
+  <div className="flex-1 flex flex-col bg-[#404040] text-white p-8 md:p-12 relative overflow-hidden">
+    {/* Ribbon */}
+    <div className="absolute top-6 -right-12 w-48 bg-[#22c55e] text-white text-center py-1.5 font-bold text-[11px] uppercase tracking-widest rotate-45 shadow-lg z-10">
+      RECOMENDADO
     </div>
 
-    <div className="pt-3 mt-auto">
-      <a className="w-full flex items-center justify-center gap-2 bg-[#e11d2e] hover:bg-[#b81524] text-white py-4 px-6 rounded-xl font-headline-sm text-headline-sm font-bold shadow-[0_8px_24px_-2px_rgba(225,29,46,0.35)] transition-all duration-200 hover:scale-[1.01] active:scale-[0.99]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20empezar%20con%20el%20Plan%20Pyme%20Conversión%20de%20$280." rel="noopener noreferrer" target="_blank">
-        <span className="">Quiero mi web lista →</span>
-      </a>
-      <div className="flex items-center justify-center gap-2 mt-3 font-body-sm text-body-sm text-slate-500">
-        <span className="">Sin contratos • 100% tuya</span>
+    <div className="mb-8 border-b border-white/10 pb-6">
+      <h3 className="font-headline-lg text-[40px] md:text-[44px] font-extrabold tracking-tight leading-none">Profesional</h3>
+      <div className="flex items-baseline gap-1 mt-4">
+        <span className="text-xl font-medium">Desde</span>
+        <span className="text-[32px] font-extrabold tracking-tight">$280</span>
       </div>
+    </div>
+    
+    <ul className="flex flex-col gap-4 font-body-sm text-[15px] flex-grow font-medium">
+      <li>Dominio x 1 Año GRATIS (.com o del país)</li>
+      <li>Visitas y espacio ilimitado</li>
+      <li>Hosting SSD x 1 Año GRATIS</li>
+      <li>Certificado SSL (Seguridad)</li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Hasta 10 correos corporativos
+      </li>
+      <li>Diseño moderno y responsivo</li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Hasta 6 secciones
+      </li>
+      <li>Formulario para captura de leads</li>
+      <li>Carrusel de testimonios</li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Búsqueda de imágenes y textos persuasivos
+      </li>
+      <li>Botón de llamada & WhatsApp</li>
+      <li>Integración con Instagram y/o Facebook</li>
+      <li>Integración con Google Maps</li>
+      <li>Integración con Google Analytics</li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Blog
+      </li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Redacción SEO
+      </li>
+      <li className="font-bold flex items-start gap-2 text-white">
+        <div className="bg-[#22c55e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
+        Sitio autogestionable (incluye video tutorial)
+      </li>
+    </ul>
+
+    <div className="pt-10 mt-auto flex justify-center">
+      <a className="bg-white text-slate-900 py-4 px-10 rounded-xl font-bold shadow-md hover:bg-slate-50 transition-colors w-full sm:w-auto text-center" href="https://wa.me/584125063754?text=Hola,%20quiero%20cotizar%20el%20paquete%20Profesional%20de%20$280" target="_blank" rel="noopener noreferrer">
+        COTIZAR WEB
+      </a>
     </div>
   </div>
 
@@ -770,6 +699,39 @@ function App() {
     </svg>
     <span className="">Chatear por WhatsApp</span>
   </a>
+
+  {/* Contact Info Block (Email, Phone, Instagram) */}
+  <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-start md:items-center gap-6 md:gap-12 py-8 my-4 border-y border-slate-200/60">
+    <div className="flex items-center gap-4">
+      <div className="w-12 h-12 rounded-xl bg-[#2dd4bf]/10 flex items-center justify-center shrink-0">
+        <svg className="w-6 h-6 text-[#2dd4bf]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+      </div>
+      <div className="flex flex-col text-left">
+        <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">Email</span>
+        <a href="mailto:contacto@digitaldriftagency.lat" className="text-[15px] font-medium text-slate-900 hover:text-[#e11d2e] transition-colors">contacto@digitaldriftagency.lat</a>
+      </div>
+    </div>
+    
+    <div className="flex items-center gap-4">
+      <div className="w-12 h-12 rounded-xl bg-[#2dd4bf]/10 flex items-center justify-center shrink-0">
+        <svg className="w-6 h-6 text-[#2dd4bf]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+      </div>
+      <div className="flex flex-col text-left">
+        <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">Teléfono</span>
+        <a href="https://wa.me/584125063754" className="text-[15px] font-medium text-slate-900 hover:text-[#e11d2e] transition-colors">+58 412 506 3754</a>
+      </div>
+    </div>
+
+    <div className="flex items-center gap-4">
+      <div className="w-12 h-12 rounded-xl bg-[#2dd4bf]/10 flex items-center justify-center shrink-0">
+        <svg className="w-6 h-6 text-[#2dd4bf]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" strokeWidth={2}></rect><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" strokeWidth={2}></line></svg>
+      </div>
+      <div className="flex flex-col text-left">
+        <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">Instagram</span>
+        <a href="https://www.instagram.com/digitaldrift_agency/" target="_blank" rel="noopener noreferrer" className="text-[15px] font-medium text-slate-900 hover:text-[#e11d2e] transition-colors">@digitaldrift_agency</a>
+      </div>
+    </div>
+  </div>
 
   <div className="w-full max-w-xl mx-auto bg-white rounded-3xl p-6 sm:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 mt-2 text-left relative overflow-hidden group">
     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#e11d2e] to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
