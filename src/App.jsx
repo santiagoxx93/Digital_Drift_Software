@@ -124,6 +124,10 @@ function App() {
         Preguntas
         <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
       </a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="equipo" href="#equipo">
+        Quiénes Somos
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
       <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="contacto" href="#contacto">
         Contacto
         <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
@@ -146,6 +150,7 @@ function App() {
       <a onClick={() => setIsMobileMenuOpen(false)} href="#paquetes" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Paquetes</a>
       <a onClick={() => setIsMobileMenuOpen(false)} href="#proceso" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Proceso</a>
       <a onClick={() => setIsMobileMenuOpen(false)} href="#preguntas" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Preguntas</a>
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#equipo" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Quiénes Somos</a>
       <a onClick={() => setIsMobileMenuOpen(false)} href="#contacto" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2">Contacto</a>
     </nav>
     <a onClick={() => setIsMobileMenuOpen(false)} className="inline-flex items-center justify-center gap-2 px-8 py-4 mt-2 w-[80%] rounded-2xl bg-[#e11d2e] text-white font-bold text-lg shadow-[0_8px_24px_-4px_rgba(225,29,46,0.3)] hover:scale-105 transition-all" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
@@ -815,15 +820,12 @@ function App() {
 {/*  NUEVA SECCIÓN: Equipo Fundador                                     */}
 {/*  =================================================================  */}
 <section data-aos="fade-up" id="equipo" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl">
-  <div className="text-center max-w-2xl mx-auto mb-8">
-    <div className="inline-block bg-red-50 text-[#e11d2e] border border-red-200 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider mb-2">
-      RESPALDO LOCAL
-    </div>
-    <h2 className="text-[#0f172a] font-bold text-3xl tracking-tight mt-2">
-      El equipo detrás de Digital Drift
+  <div className="text-center max-w-2xl mx-auto mb-10">
+    <h2 className="text-[#0f172a] font-extrabold text-4xl md:text-5xl tracking-tight">
+      Quiénes Somos
     </h2>
-    <p className="font-body-md text-body-md text-slate-600 mt-2">
-      Trato directo con los especialistas a cargo de tu proyecto, sin intermediarios.
+    <p className="font-body-md text-slate-600 mt-4 text-lg">
+      <strong className="text-[#e11d2e] font-semibold">El equipo detrás de Digital Drift.</strong> Trato directo con los especialistas a cargo de tu proyecto, sin intermediarios.
     </p>
   </div>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
