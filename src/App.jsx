@@ -118,8 +118,8 @@ function App() {
 <span className="font-label-sm text-label-sm text-slate-700 tracking-wider font-bold uppercase">IDEAS QUE ACELERAN TU MUNDO DIGITAL</span>
 </div>
 {/*  High-Impact H1 Headline  */}
-<h1 className="font-display-hero text-5xl md:text-6xl lg:text-[76px] font-extrabold text-[#0f172a] tracking-tight leading-[1.05] mb-6 lg:mb-8">
-          Convertimos tu negocio en una máquina de cerrar clientes por{" "}
+<h1 className="font-display-hero text-5xl md:text-6xl lg:text-[64px] xl:text-[70px] font-extrabold text-[#0f172a] tracking-tight leading-[1.05] mb-6 lg:mb-8">
+          Convertimos tu negocio <br className="hidden lg:block" /> en una máquina de cerrar <br className="hidden lg:block" /> clientes por{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#20ba5a] via-emerald-500 to-[#22c55e]">
             WhatsApp
           </span>
