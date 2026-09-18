@@ -12,7 +12,7 @@ const DemoImage = ({ src, alt }) => {
 
 function App() {
   const [formStatus, setFormStatus] = useState({ state: 'idle', message: '' });
-
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setFormStatus({ state: 'loading', message: 'Enviando solicitud...' });
@@ -96,7 +96,50 @@ function App() {
 
   return (
     <>
-<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div><div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div><header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt- space-sm py-2"><div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300"><div className="flex items-center gap-space-sm"><img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.webp" /><div className="flex flex-col"><div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#e11d2e] font-bold">Drift</span></div><span className="font-label-sm text-label-sm uppercase text-[#e11d2e] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span></div></div><nav className="hidden lg:flex items-center gap-space-md"><a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a><a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a></nav><div className="flex items-center gap-space-sm"><a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a></div></div></header><main className="w-full pt-20 bg-transparent"><div className="flex flex-col w-full overflow-hidden text-slate-900">
+<div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div>
+<div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt-space-sm py-2">
+  <div className="max-w-[1280px] mx-auto h-20 px-gutter rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-sm flex items-center justify-between transition-all duration-300">
+    <div className="flex items-center gap-space-sm">
+      <img alt="Digital Drift Logo" className="h-14 w-auto object-contain" src="/img/logo-digital-drift.webp" />
+      <div className="flex flex-col">
+        <div className="font-headline-sm text-headline-sm tracking-tight leading-none"><span className="font-bold text-[#0f172a]">Digital</span> <span className="text-[#e11d2e] font-bold">Drift</span></div>
+        <span className="font-label-sm text-label-sm uppercase text-[#e11d2e] tracking-widest leading-none mt-1 font-bold">SOFTWARE</span>
+      </div>
+    </div>
+    <nav className="hidden lg:flex items-center gap-space-md">
+      <a aria-current="page" className="px-space-xs py-1 transition-colors bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200" data-path="demos" href="#demos">Demos</a>
+      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="paquetes" href="#paquetes">Paquetes</a>
+      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="proceso" href="#proceso">Proceso</a>
+      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="preguntas" href="#preguntas">Preguntas</a>
+      <a className="font-label-lg text-label-lg text-slate-600 hover:text-slate-950 hover:bg-slate-100 px-space-xs py-1 rounded-lg transition-colors" data-path="contacto" href="#contacto">Contacto</a>
+    </nav>
+    <div className="flex items-center gap-space-sm">
+      <a className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-label-sm text-label-sm font-semibold transition-all shadow-sm" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Consultar Ahora</a>
+      <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden p-2 text-slate-800 hover:text-[#e11d2e] transition-colors ml-2" aria-label="Toggle mobile menu">
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  {/* Mobile Menu Overlay */}
+  <div className={`fixed inset-x-0 top-[90px] mx-gutter-mobile h-[calc(100vh-110px)] bg-white/95 backdrop-blur-xl border border-slate-200 shadow-2xl rounded-3xl transition-all duration-300 lg:hidden flex flex-col items-center justify-center gap-8 ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto translate-y-0 scale-100' : 'opacity-0 pointer-events-none -translate-y-4 scale-95'}`}>
+    <nav className="flex flex-col items-center gap-6 text-center w-full px-8">
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#demos" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Demos</a>
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#paquetes" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Paquetes</a>
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#proceso" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Proceso</a>
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#preguntas" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2 border-b border-slate-100">Preguntas</a>
+      <a onClick={() => setIsMobileMenuOpen(false)} href="#contacto" className="w-full text-2xl font-bold text-slate-800 hover:text-[#e11d2e] py-2">Contacto</a>
+    </nav>
+    <a onClick={() => setIsMobileMenuOpen(false)} className="inline-flex items-center justify-center gap-2 px-8 py-4 mt-2 w-[80%] rounded-2xl bg-[#e11d2e] text-white font-bold text-lg shadow-[0_8px_24px_-4px_rgba(225,29,46,0.3)] hover:scale-105 transition-all" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20consultar%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
+      Consultar Ahora
+    </a>
+  </div>
+</header>
+<main className="w-full pt-20 bg-transparent">
+<div className="flex flex-col w-full overflow-hidden text-slate-900">
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
