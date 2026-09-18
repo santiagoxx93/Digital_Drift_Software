@@ -720,10 +720,10 @@ function App() {
 <div className="text-center max-w-2xl mx-auto mb-space-lg">
 
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
-        Transparencia Total, Cero Letras Pequeñas
+        Servicio Llave en Mano, Cero Complicaciones
       </h2>
 <p className="font-body-md text-body-md text-slate-600 mt-2">
-        Sin tarifas ocultas de renovación infladas ni costos técnicos imprevistos. Te entregamos un activo comercial de tu propiedad.
+        Nos encargamos de todo el montaje técnico, dominio y hosting. Tú te despreocupas del código y te enfocas únicamente en atender clientes y vender.
       </p>
 </div>
 {/*  Pricing Cards Grid  */}
