@@ -486,24 +486,38 @@ function App() {
           <h3 className="font-bold text-2xl text-slate-800">El método antiguo</h3>
         </div>
         
-        <ul className="flex flex-col gap-5">
-          <li className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
-            <span className="text-slate-600 font-medium">Pierdes ventas en WhatsApp por falta de información rápida.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
-            <span className="text-slate-600 font-medium">Tus clientes desconfían al no ver una página web oficial.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
-            <span className="text-slate-600 font-medium">Atención lenta y manual respondiendo las mismas dudas.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="material-symbols-outlined text-slate-400 mt-0.5">close</span>
-            <span className="text-slate-600 font-medium">Catálogo en PDF desactualizado y pesado de descargar.</span>
-          </li>
-        </ul>
+        <div className="flex flex-col gap-4 mt-8 relative">
+          {/* Faded Background Pattern to signify chaos */}
+          <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 to-transparent pointer-events-none"></div>
+          
+          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-[18px]">timer_off</span>
+            </div>
+            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Pierdes ventas en WhatsApp por falta de información rápida.</span>
+          </div>
+
+          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform rotate-1 translate-x-2 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-[18px]">gpp_maybe</span>
+            </div>
+            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Tus clientes desconfían al no ver una página web oficial.</span>
+          </div>
+
+          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform -rotate-[0.5deg] -translate-x-1 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-[18px]">support_agent</span>
+            </div>
+            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Atención lenta y manual respondiendo las mismas dudas.</span>
+          </div>
+
+          <div className="bg-white/60 p-4 rounded-2xl border border-slate-200 shadow-sm flex gap-4 items-center transform rotate-[1.5deg] translate-x-3 hover:rotate-0 hover:translate-x-0 transition-transform duration-300">
+            <div className="w-10 h-10 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0">
+              <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+            </div>
+            <span className="text-slate-600 font-medium text-sm md:text-base leading-tight">Catálogo en PDF desactualizado y pesado de descargar.</span>
+          </div>
+        </div>
       </div>
 
       {/* Con Digital Drift */}
@@ -518,32 +532,35 @@ function App() {
           <h3 className="font-bold text-2xl text-slate-900">Con Digital Drift</h3>
         </div>
         
-        <ul className="flex flex-col gap-5 relative z-10">
-          <li className="flex items-start gap-3">
-            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+        <div className="flex flex-col gap-4 mt-8 relative z-10">
+          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
+            <div className="w-10 h-10 rounded-xl bg-red-50 text-[#e11d2e] flex items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] group-hover/item:text-white transition-colors">
+              <span className="material-symbols-outlined text-[20px]">storefront</span>
             </div>
-            <span className="text-slate-800 font-semibold">Ventas guiadas y catálogos interactivos disponibles 24/7.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Ventas guiadas y catálogos interactivos 24/7.</span>
+          </div>
+
+          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
+            <div className="w-10 h-10 rounded-xl bg-red-50 text-[#e11d2e] flex items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] group-hover/item:text-white transition-colors">
+              <span className="material-symbols-outlined text-[20px]">verified</span>
             </div>
-            <span className="text-slate-800 font-semibold">Autoridad corporativa instantánea y correos profesionales.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Autoridad corporativa instantánea y correos profesionales.</span>
+          </div>
+
+          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
+            <div className="w-10 h-10 rounded-xl bg-red-50 text-[#e11d2e] flex items-center justify-center shrink-0 group-hover/item:bg-[#e11d2e] group-hover/item:text-white transition-colors">
+              <span className="material-symbols-outlined text-[20px]">filter_alt</span>
             </div>
-            <span className="text-slate-800 font-semibold">Filtra curiosos y recibe clientes listos para comprar.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <div className="bg-[#e11d2e] rounded-full w-6 h-6 flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
-              <span className="material-symbols-outlined text-white text-[14px] font-bold">check</span>
+            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Filtra curiosos y recibe clientes listos para comprar.</span>
+          </div>
+
+          <div className="bg-white p-4 rounded-2xl border border-red-100 shadow-[0_8px_24px_rgba(225,29,46,0.08)] flex gap-4 items-center transform transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 group/item">
+            <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0 group-hover/item:bg-[#25D366] group-hover/item:text-white transition-colors">
+              <span className="material-symbols-outlined text-[20px]">chat</span>
             </div>
-            <span className="text-slate-800 font-semibold">Botón de contacto directo a tu WhatsApp optimizado.</span>
-          </li>
-        </ul>
+            <span className="text-slate-800 font-bold text-sm md:text-base leading-tight">Botón de contacto directo a tu WhatsApp optimizado.</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
