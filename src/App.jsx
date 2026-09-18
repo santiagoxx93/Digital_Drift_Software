@@ -108,7 +108,10 @@ function App() {
       </div>
     </div>
     <nav className="hidden lg:flex items-center gap-space-md">
-      <a aria-current="page" className="px-4 py-1.5 transition-all duration-300 bg-red-50 text-[#e11d2e] font-label-lg rounded-lg border border-red-200 shadow-sm hover:shadow-md hover:-translate-y-0.5" data-path="demos" href="#demos">Demos</a>
+      <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="demos" href="#demos">
+        Demos
+        <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
+      </a>
       <a className="relative font-label-lg text-label-lg text-slate-600 hover:text-[#e11d2e] transition-colors duration-300 px-2 py-1 group" data-path="paquetes" href="#paquetes">
         Paquetes
         <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e11d2e] scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300 ease-out rounded-full"></span>
