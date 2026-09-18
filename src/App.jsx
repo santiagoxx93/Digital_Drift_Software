@@ -15,6 +15,7 @@ function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+  const [isSupportOpen, setIsSupportOpen] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -1121,7 +1122,7 @@ function App() {
       <div className="flex items-center gap-space-md">
         <button onClick={() => setIsTermsOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Términos de Servicio</button>
         <button onClick={() => setIsPrivacyOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Políticas de Privacidad</button>
-        <a className="hover:text-white transition-colors" href="https://wa.me/584125063754?text=Hola,%20tengo%20dudas%20sobre%20las%20garantías%20y%20el%20soporte." target="_blank" rel="noopener noreferrer">Garantía &amp; Soporte</a>
+        <button onClick={() => setIsSupportOpen(true)} className="hover:text-white transition-colors text-left cursor-pointer bg-transparent border-none p-0">Garantía &amp; Soporte</button>
       </div>
     </div>
   </div>
@@ -1182,6 +1183,36 @@ function App() {
           </div>
           <div className="mt-8 flex justify-end">
             <button onClick={() => setIsPrivacyOpen(false)} className="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-colors">Entendido</button>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* Support and Warranty Modal */}
+    {isSupportOpen && (
+      <div className="fixed inset-0 z-[1000] flex items-center justify-center p-4">
+        <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={() => setIsSupportOpen(false)}></div>
+        <div className="relative bg-white rounded-2xl w-full max-w-2xl max-h-[85vh] overflow-y-auto p-6 md:p-8 shadow-2xl">
+          <button onClick={() => setIsSupportOpen(false)} className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors">
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Garantía &amp; Soporte</h2>
+          <div className="prose prose-sm text-slate-600">
+            <p><strong>1. Periodo de Garantía Técnica</strong><br/>
+            Todo proyecto web desarrollado por Digital Drift incluye 30 días continuos de garantía técnica sin costo adicional, a partir de la fecha de entrega y despliegue oficial.</p>
+            <p><strong>2. Alcance de la Cobertura</strong><br/>
+            La garantía cubre exclusivamente la corrección de errores de código (bugs), enlaces rotos, desajustes de diseño responsivo en navegadores modernos y fallas en formularios de contacto o integraciones contratadas dentro del alcance original.</p>
+            <p><strong>3. Exclusiones de Garantía</strong><br/>
+            La garantía queda sin efecto si el código fuente, la base de datos o la configuración del servidor son modificados por el cliente o terceros no autorizados. Tampoco cubre interrupciones causadas por plataformas externas (proveedores de hosting, dominios o APIs de terceros) ni solicitudes de nuevas funcionalidades no contempladas en la propuesta inicial.</p>
+            <p><strong>4. Canales de Atención y SLA</strong><br/>
+            El soporte durante la garantía se canaliza a través de nuestro WhatsApp oficial y el correo contacto@digitaldriftagency.lat. Los reportes técnicos son atendidos en un plazo estimado de 24 a 48 horas laborables según la prioridad del caso.</p>
+            <p><strong>5. Mantenimiento Extendido</strong><br/>
+            Una vez finalizados los 30 días de garantía, el cliente puede optar por planes de soporte preventivo, actualizaciones de contenido y monitoreo continuo mediante un acuerdo de mantenimiento mensual independiente.</p>
+          </div>
+          <div className="mt-8 flex justify-end">
+            <button onClick={() => setIsSupportOpen(false)} className="bg-slate-900 text-white px-6 py-2 rounded-full font-medium hover:bg-slate-800 transition-colors">Entendido</button>
           </div>
         </div>
       </div>
