@@ -791,7 +791,7 @@ function App() {
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">01</span>
 </div>
 <div className="w-full flex justify-center mb-6">
-  <img src="/img/paso1.jpg" alt="Cuestionario interactivo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+  <img src="/img/paso1.webp" alt="Cuestionario interactivo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Cuestionario rápido de 5 minutos
@@ -809,7 +809,7 @@ function App() {
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">02</span>
 </div>
 <div className="w-full flex justify-center mb-6">
-  <img src="/img/paso2.jpg" alt="Revisión de Demo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+  <img src="/img/paso2.webp" alt="Revisión de Demo" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Revisión de tu demo interactiva
@@ -827,7 +827,7 @@ function App() {
 <span className="text-4xl font-extrabold font-mono text-red-100 group-hover:text-[#e11d2e] transition-colors">03</span>
 </div>
 <div className="w-full flex justify-center mb-6">
-  <img src="/img/paso3.jpg" alt="Lanzamiento oficial" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
+  <img src="/img/paso3.webp" alt="Lanzamiento oficial" loading="lazy" className="w-48 h-48 object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-500" />
 </div>
 <h3 className="font-headline-sm text-headline-sm font-bold text-slate-900 mb-space-xs">
             Lanzamiento oficial y puesta en marcha
