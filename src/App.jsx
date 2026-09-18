@@ -629,8 +629,10 @@ function App() {
 {/*  =================================================================  */}
 {/*  4. SECCIÓN #proceso - METODOLOGÍA EN 3 PASOS                       */}
 {/*  =================================================================  */}
-<section data-aos="fade-up" className="w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl" id="proceso">
-<div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin">
+<section data-aos="fade-up" className="relative w-full bg-[#f8fafc] border-y border-slate-200 py-space-xl overflow-hidden" id="proceso">
+{/* Marca de agua (Logo repetido) */}
+<div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url('/img/logo-digital-drift.webp')", backgroundSize: "250px", backgroundRepeat: "repeat", backgroundPosition: "center" }}></div>
+<div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin relative z-10">
 <div className="text-center max-w-2xl mx-auto mb-space-xl">
 
 <h2 className="font-headline-xl text-headline-xl font-bold text-[#0f172a] tracking-tight">
@@ -773,6 +775,8 @@ function App() {
 {/*  =================================================================  */}
 <section data-aos="fade-up" className="w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin py-space-xl" id="contacto">
 <div className="relative bg-gradient-to-br from-white via-slate-50 to-red-50/40 border border-slate-200 rounded-3xl p-8 md:p-16 text-center shadow-xl overflow-hidden">
+{/* Marca de agua (Logo repetido) */}
+<div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: "url('/img/logo-digital-drift.webp')", backgroundSize: "250px", backgroundRepeat: "repeat", backgroundPosition: "center" }}></div>
 {/*  Top Decorative Accent  */}
 <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-red-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
