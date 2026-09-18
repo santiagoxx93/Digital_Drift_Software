@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const DemoImage = ({ src, alt }) => {
   return (
     <div className="w-full aspect-video mb-space-sm rounded-xl overflow-hidden border border-slate-200 bg-slate-100">
-      <img src={src} alt={alt} className="w-full h-full object-cover object-top" />
+      <img src={src} alt={alt} loading="lazy" className="w-full h-full object-cover object-top" />
     </div>
   );
 };
@@ -13,6 +13,20 @@ const DemoImage = ({ src, alt }) => {
 function App() {
   const [formStatus, setFormStatus] = useState({ state: 'idle', message: '' });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Custom Hook for Scroll Progress
+  const [scrollProgress, setScrollProgress] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scroll = `${(totalScroll / windowHeight) * 100}`;
+      setScrollProgress(scroll);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setFormStatus({ state: 'loading', message: 'Enviando solicitud...' });
@@ -96,6 +110,9 @@ function App() {
 
   return (
     <>
+{/* Scroll Progress Bar */}
+<div className="fixed top-0 left-0 h-1 bg-[#e11d2e] z-[100] transition-all duration-150 ease-out shadow-[0_0_10px_rgba(225,29,46,0.5)]" style={{ width: `${scrollProgress}%` }}></div>
+
 <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-50/40 via-slate-50/60 to-white"></div>
 <div className="fixed top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-red-100/50 rounded-full blur-[140px] pointer-events-none -z-10"></div>
 <header data-aos="fade-down" data-aos-duration="500" className="fixed top-0 left-0 w-full z-50 px-gutter-mobile md:px-margin pt-space-sm py-2">
@@ -165,8 +182,8 @@ function App() {
 {/*  =================================================================  */}
 <section className="relative w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-margin min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-0">
 {/*  Subtle Atmosphere Glows  */}
-<div className="absolute -top-12 left-1/4 w-[420px] h-[420px] bg-red-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
-<div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
+<div className="absolute -top-12 left-1/4 w-[420px] h-[420px] bg-red-500/10 rounded-full blur-[100px] pointer-events-none -z-10 animate-aura"></div>
+<div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/10 rounded-full blur-[110px] pointer-events-none -z-10 animate-aura" style={{ animationDelay: "3s" }}></div>
 {/*  Watermark Logo Background  */}
 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
   <div className="w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] xl:w-[1100px] xl:h-[1100px] opacity-[0.04] animate-float">
@@ -216,12 +233,15 @@ function App() {
 {/*  CTAs  */}
 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm w-full sm:w-auto mb-space-lg">
 {/*  Primary CTA (WhatsApp High Conversion)  */}
-<a className="group relative inline-flex items-center justify-center gap-space-xs bg-[#25D366] hover:bg-[#20BA5A] text-white px-7 py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-[0_8px_24px_-2px_rgba(37,211,102,0.38)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.98]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20solicitar%20mi%20demo%20visual%20gratis." rel="noopener noreferrer" target="_blank">
-<svg className="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
+<div className="relative group">
+  <div className="absolute -inset-1 bg-[#25D366] rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-500 animate-pulse"></div>
+  <a className="relative inline-flex items-center justify-center gap-space-xs bg-[#25D366] hover:bg-[#20BA5A] text-white px-7 py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-[0_8px_24px_-2px_rgba(37,211,102,0.38)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.5)] transition-all duration-200 active:scale-[0.98]" href="https://wa.me/584125063754?text=Hola%20Digital%20Drift,%20quiero%20solicitar%20mi%20demo%20visual%20gratis." rel="noopener noreferrer" target="_blank">
+  <svg className="w-5 h-5 fill-current transition-transform duration-200 group-hover:scale-110" viewBox="0 0 24 24">
 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.582 1.954.914 2.8.914h.005c3.18 0 5.767-2.587 5.768-5.766.002-3.18-2.584-5.768-5.767-5.768zm3.392 8.234c-.144.405-.837.774-1.17.823-.312.045-.694.06-2.12-.533-1.708-.709-2.813-2.45-2.898-2.564-.085-.114-.698-.929-.698-1.772 0-.844.441-1.258.599-1.428.158-.171.345-.214.46-.214.115 0 .23.002.331.007.107.006.251-.041.393.299.144.405.49 1.196.533 1.282.043.086.072.186.014.3-.058.115-.086.186-.172.286-.086.1-.182.224-.26.3-.086.086-.176.18-.076.352.101.171.448.74 0.963 1.198.663.59 1.222.773 1.394.858.172.086.273.072.374-.043.101-.115.432-.503.547-.675.115-.172.23-.143.388-.086.158.058 1.007.474 1.179.56.173.086.288.129.331.2.043.072.043.418-.101.823zM12.004 2C6.479 2 2 6.479 2 12.004c0 1.905.534 3.684 1.458 5.207L2 22l4.945-1.296A9.957 9.957 0 0012.004 22c5.525 0 10.004-4.479 10.004-10.004C22.008 6.479 17.529 2 12.004 2z"  />
 </svg>
 <span className="">Solicitar Demo Gratis</span>
 </a>
+</div>
 {/*  Secondary Ghost CTA  */}
 <a className="inline-flex items-center justify-center gap-space-xs bg-white hover:bg-slate-50 border border-slate-300 hover:border-[#e11d2e] hover:shadow-[0_4px_16px_rgba(255,26,53,0.12)] text-slate-800 px-6 py-4 rounded-xl font-label-lg text-label-lg font-semibold shadow-sm transition-all duration-200" href="#demos">
 <span className="">Ver demos</span>
@@ -281,6 +301,38 @@ function App() {
     </div>
   </div>
 </section>
+
+{/*  =================================================================  */}
+{/*  MARQUEE DE CLIENTES / INDUSTRIAS                                   */}
+{/*  =================================================================  */}
+<div className="w-full bg-slate-900 border-y border-slate-800 py-5 overflow-hidden relative">
+  {/* Fade Edges for Marquee */}
+  <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none"></div>
+  <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none"></div>
+  
+  <div className="flex w-[200%] animate-marquee-left whitespace-nowrap items-center hover:[animation-play-state:paused]">
+    {[1, 2, 3].map((i) => (
+      <div key={i} className="flex gap-12 md:gap-24 px-6 md:px-12 items-center min-w-full justify-around opacity-50 hover:opacity-100 transition-opacity duration-300">
+        <span className="text-white font-label-lg uppercase tracking-widest text-sm font-bold flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#e11d2e] text-2xl">store</span> Retail & E-commerce
+        </span>
+        <span className="text-white font-label-lg uppercase tracking-widest text-sm font-bold flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#e11d2e] text-2xl">medical_services</span> Salud y Clínicas
+        </span>
+        <span className="text-white font-label-lg uppercase tracking-widest text-sm font-bold flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#e11d2e] text-2xl">restaurant</span> Gastronomía
+        </span>
+        <span className="text-white font-label-lg uppercase tracking-widest text-sm font-bold flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#e11d2e] text-2xl">real_estate_agent</span> Bienes Raíces
+        </span>
+        <span className="text-white font-label-lg uppercase tracking-widest text-sm font-bold flex items-center gap-2">
+          <span className="material-symbols-outlined text-[#e11d2e] text-2xl">engineering</span> Industria y Servicios
+        </span>
+      </div>
+    ))}
+  </div>
+</div>
+
 {/*  =================================================================  */}
 {/*  2. SECCIÓN #demos - PORTAFOLIO & DEMOS INTERACTIVAS               */}
 {/*  =================================================================  */}
