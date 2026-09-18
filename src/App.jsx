@@ -489,7 +489,7 @@ function App() {
       <li>Certificado SSL (Seguridad)</li>
       <li className="font-bold flex items-start gap-2 text-white">
         <div className="bg-[#e11d2e] rounded-[3px] w-4 h-4 mt-1 flex items-center justify-center text-white text-[10px] shrink-0 font-extrabold">✓</div>
-        Hasta 10 correos corporativos
+        Correos corporativos
       </li>
       <li>Diseño moderno y responsivo</li>
       <li className="font-bold flex items-start gap-2 text-white">
@@ -527,6 +527,15 @@ function App() {
     </div>
   </div>
 
+</div>
+
+{/* Mantenimiento Opcional */}
+<div className="max-w-5xl mx-auto mt-6 relative z-10">
+  <div className="bg-white border border-slate-200 rounded-2xl p-4 md:p-5 flex items-center justify-center gap-3 text-center shadow-sm">
+    <div className="text-sm md:text-[15px] text-slate-600">
+      <strong className="text-slate-900 font-semibold">Póliza de tranquilidad (Opcional):</strong> Mantenimiento mensual, copias de seguridad semanales y cambios de contenido por solo <span className="text-[#e11d2e] font-bold">$15/mes</span>.
+    </div>
+  </div>
 </div>
 </section>
 {/*  =================================================================  */}
