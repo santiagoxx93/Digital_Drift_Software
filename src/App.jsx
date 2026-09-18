@@ -100,13 +100,13 @@ function App() {
 {/*  =================================================================  */}
 {/*  1. HERO SECTION                                                    */}
 {/*  =================================================================  */}
-<section className="relative w-full max-w-[1280px] mx-auto px-gutter-mobile md:px-margin min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-0">
+<section className="relative w-full max-w-[1440px] mx-auto px-gutter-mobile md:px-margin min-h-[90vh] flex items-center overflow-hidden py-24 md:py-32 lg:py-0">
 {/*  Subtle Atmosphere Glows  */}
 <div className="absolute -top-12 left-1/4 w-[420px] h-[420px] bg-red-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
 <div className="absolute top-1/3 right-5 w-[360px] h-[360px] bg-rose-500/5 rounded-full blur-[110px] pointer-events-none -z-10"></div>
 {/*  Watermark Logo Background  */}
 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-  <div className="w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] opacity-[0.04] animate-float">
+  <div className="w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] xl:w-[1100px] xl:h-[1100px] opacity-[0.04] animate-float">
     <img src="/img/logo-digital-drift-footer.webp" alt="" className="w-full h-full object-contain" aria-hidden="true" />
   </div>
 </div>
@@ -118,7 +118,7 @@ function App() {
 <span className="font-label-sm text-label-sm text-slate-700 tracking-wider font-bold uppercase">IDEAS QUE ACELERAN TU MUNDO DIGITAL</span>
 </div>
 {/*  High-Impact H1 Headline  */}
-<h1 className="font-display-hero text-5xl md:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold text-[#0f172a] tracking-tight leading-[1.05] mb-6 lg:mb-8">
+<h1 className="font-display-hero text-5xl md:text-6xl lg:text-[54px] xl:text-[68px] font-extrabold text-[#0f172a] tracking-tight leading-[1.05] mb-6 lg:mb-10">
           <span className="lg:whitespace-nowrap">Convertimos tu negocio</span> <br className="hidden lg:block" />
           <span className="lg:whitespace-nowrap">en una máquina de cerrar</span> <br className="hidden lg:block" />
           <span className="lg:whitespace-nowrap">clientes por{" "}
@@ -128,7 +128,7 @@ function App() {
           </span>
 </h1>
 {/*  Persuasive Subtitle  */}
-<p className="font-body-lg text-lg md:text-xl lg:text-[22px] text-slate-600 max-w-3xl mb-10 leading-relaxed">
+<p className="font-body-lg text-lg md:text-xl lg:text-[22px] xl:text-[26px] text-slate-600 max-w-4xl mb-12 leading-relaxed">
           Diseñamos la plataforma web de tu empresa: ultrarrápida, moderna y con dominio, correos corporativos y catálogo incluidos. Sin complicaciones técnicas.
         </p>
 {/*  CTAs  */}
@@ -151,7 +151,7 @@ function App() {
 </div>
 {/*  Right Column: Logo Display  */}
 <div data-aos="fade-left" data-aos-delay="200" className="lg:col-span-5 xl:col-span-4 relative mt-6 lg:mt-0 flex items-center justify-center xl:justify-end">
-<div className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[450px] lg:h-[450px] xl:w-[620px] xl:h-[620px] animate-float">
+<div className="w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[450px] lg:h-[450px] xl:w-[750px] xl:h-[750px] animate-float">
   <img src="/img/logo-digital-drift-footer.webp" alt="Digital Drift Software" className="w-full h-full object-contain drop-shadow-[0_25px_50px_rgba(255,26,53,0.15)]" />
 </div>
 </div>
