@@ -250,9 +250,10 @@ function App() {
 {/*  =================================================================  */}
 {/*  1.5 SECCIÓN SERVICIOS BRANDING                                     */}
 {/*  =================================================================  */}
-<section className="w-full bg-[#0F172A] py-space-xl border-t border-slate-800 relative overflow-hidden">
+<section className="w-full bg-[#0F172A] py-space-xl border-y border-slate-800 relative overflow-hidden">
   {/* Subtle red glow on the right */}
   <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] bg-[#e11d2e]/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
   <div className="max-w-[1280px] mx-auto px-gutter-mobile md:px-margin relative z-10">
     {/* Heading */}
@@ -260,30 +261,103 @@ function App() {
       <h2 className="font-display-hero text-[32px] md:text-[42px] font-extrabold text-white leading-tight italic tracking-tight">
         Desarrollo de software,<br className="hidden sm:inline" /> páginas web y soluciones<br className="hidden sm:inline" /> digitales a tu medida.
       </h2>
-      <div className="h-1 w-64 bg-gradient-to-r from-[#e11d2e] to-transparent mt-6"></div>
+      <div className="h-1 w-24 bg-[#e11d2e] mt-6 shadow-[0_0_15px_#e11d2e]"></div>
     </div>
 
-    {/* Services Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-4 mt-16 md:divide-x divide-[#e11d2e]/30 gap-y-12">
-      {/* Item 1 */}
-      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="100">
-        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">code</span>
-        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Desarrollo de software</span>
+    {/* Services Grid with Custom Micro-UIs */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-8">
+      {/* Item 1: Desarrollo de Software */}
+      <div className="group flex flex-col items-center justify-center text-center p-8 bg-slate-800/20 rounded-3xl border border-slate-700/50 hover:bg-slate-800/40 hover:border-slate-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+        <div className="w-24 h-24 mb-6 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-blue-500/10 rounded-2xl blur-xl group-hover:bg-blue-500/20 transition-all"></div>
+          {/* Micro-UI: Terminal Window */}
+          <div className="w-20 h-16 bg-slate-900 border border-slate-700 rounded-lg shadow-lg flex flex-col overflow-hidden relative z-10 transform group-hover:-translate-y-1 group-hover:scale-105 transition-all duration-300">
+            <div className="h-3 bg-slate-800 border-b border-slate-700 flex items-center px-1.5 gap-1">
+              <div className="w-1.5 h-1.5 rounded-full bg-red-500/80"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/80"></div>
+              <div className="w-1.5 h-1.5 rounded-full bg-green-500/80"></div>
+            </div>
+            <div className="p-2 flex flex-col gap-1.5">
+              <div className="w-3/4 h-1 bg-blue-400/80 rounded-full"></div>
+              <div className="w-1/2 h-1 bg-purple-400/80 rounded-full"></div>
+              <div className="flex gap-1 items-center">
+                <span className="text-[8px] text-green-400 font-mono leading-none">&gt;</span>
+                <div className="w-1.5 h-2 bg-slate-300 animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span className="font-label-sm uppercase text-white font-bold tracking-widest text-xs leading-relaxed">Desarrollo de software</span>
       </div>
-      {/* Item 2 */}
-      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="200">
-        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">language</span>
-        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Páginas web</span>
+
+      {/* Item 2: Páginas Web */}
+      <div className="group flex flex-col items-center justify-center text-center p-8 bg-slate-800/20 rounded-3xl border border-slate-700/50 hover:bg-slate-800/40 hover:border-slate-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+        <div className="w-24 h-24 mb-6 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-[#e11d2e]/10 rounded-2xl blur-xl group-hover:bg-[#e11d2e]/20 transition-all"></div>
+          {/* Micro-UI: Web Browser & Layout */}
+          <div className="w-20 h-16 bg-white border border-slate-200 rounded-lg shadow-lg flex flex-col overflow-hidden relative z-10 transform group-hover:-translate-y-1 group-hover:scale-105 transition-all duration-300">
+            <div className="h-3 bg-slate-100 border-b border-slate-200 w-full flex items-center px-2">
+              <div className="w-8 h-1 bg-slate-300 rounded-full mx-auto"></div>
+            </div>
+            <div className="flex-1 p-1.5 flex gap-1.5">
+              <div className="w-1/3 h-full bg-slate-100 rounded-[3px] flex flex-col gap-1 p-1">
+                <div className="w-full h-1 bg-slate-300 rounded-full"></div>
+                <div className="w-2/3 h-1 bg-slate-300 rounded-full"></div>
+              </div>
+              <div className="flex-1 h-full flex flex-col gap-1">
+                <div className="w-full h-4 bg-slate-100 rounded-[3px]"></div>
+                <div className="flex gap-1 flex-1">
+                  <div className="flex-1 h-full bg-[#e11d2e]/20 rounded-[3px]"></div>
+                  <div className="flex-1 h-full bg-[#e11d2e]/20 rounded-[3px]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span className="font-label-sm uppercase text-white font-bold tracking-widest text-xs leading-relaxed">Páginas web</span>
       </div>
-      {/* Item 3 */}
-      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="300">
-        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">cloud</span>
-        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Soluciones en la nube</span>
+
+      {/* Item 3: Soluciones en la nube */}
+      <div className="group flex flex-col items-center justify-center text-center p-8 bg-slate-800/20 rounded-3xl border border-slate-700/50 hover:bg-slate-800/40 hover:border-slate-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+        <div className="w-24 h-24 mb-6 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-emerald-500/10 rounded-2xl blur-xl group-hover:bg-emerald-500/20 transition-all"></div>
+          {/* Micro-UI: Cloud Server Node */}
+          <div className="w-20 h-16 relative z-10 flex flex-col items-center justify-center gap-1.5 transform group-hover:-translate-y-1 group-hover:scale-105 transition-all duration-300">
+            <div className="w-16 h-3 bg-slate-800 border border-slate-600 rounded-md shadow-lg flex items-center justify-between px-2">
+               <div className="w-3 h-0.5 bg-slate-500 rounded-full"></div>
+               <div className="w-1 h-1 bg-emerald-400 rounded-full shadow-[0_0_5px_#34d399]"></div>
+            </div>
+            <div className="w-16 h-3 bg-slate-800 border border-slate-600 rounded-md shadow-lg flex items-center justify-between px-2 opacity-80">
+               <div className="w-3 h-0.5 bg-slate-500 rounded-full"></div>
+               <div className="w-1 h-1 bg-emerald-400 rounded-full shadow-[0_0_5px_#34d399]"></div>
+            </div>
+            <div className="w-16 h-3 bg-slate-800 border border-slate-600 rounded-md shadow-lg flex items-center justify-between px-2 opacity-60">
+               <div className="w-3 h-0.5 bg-slate-500 rounded-full"></div>
+               <div className="w-1 h-1 bg-emerald-400 rounded-full shadow-[0_0_5px_#34d399] animate-pulse"></div>
+            </div>
+            <div className="absolute w-0.5 h-10 bg-gradient-to-b from-emerald-400/0 via-emerald-400/50 to-emerald-400/0 -z-10 animate-pulse"></div>
+          </div>
+        </div>
+        <span className="font-label-sm uppercase text-white font-bold tracking-widest text-xs leading-relaxed">Soluciones en la nube</span>
       </div>
-      {/* Item 4 */}
-      <div className="flex flex-col items-center justify-center text-center px-4" data-aos="fade-up" data-aos-delay="400">
-        <span className="material-symbols-outlined text-[#e11d2e] text-[56px] mb-4 font-light">rocket_launch</span>
-        <span className="font-label-sm uppercase text-slate-300 font-bold tracking-widest text-xs leading-relaxed max-w-[140px]">Automatización y más</span>
+
+      {/* Item 4: Automatización */}
+      <div className="group flex flex-col items-center justify-center text-center p-8 bg-slate-800/20 rounded-3xl border border-slate-700/50 hover:bg-slate-800/40 hover:border-slate-600 transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+        <div className="w-24 h-24 mb-6 relative flex items-center justify-center">
+          <div className="absolute inset-0 bg-amber-500/10 rounded-2xl blur-xl group-hover:bg-amber-500/20 transition-all"></div>
+          {/* Micro-UI: Workflow Graph */}
+          <div className="w-20 h-16 relative z-10 flex items-center justify-center transform group-hover:-translate-y-1 group-hover:scale-105 transition-all duration-300">
+             <div className="absolute w-12 h-12 rounded-full border border-dashed border-amber-500/30 animate-[spin_10s_linear_infinite]"></div>
+             <div className="w-4 h-4 bg-amber-500 rounded-md absolute -left-1 shadow-[0_0_10px_#f59e0b]"></div>
+             <div className="w-8 h-0.5 bg-gradient-to-r from-amber-500 to-amber-300 absolute left-2 opacity-50"></div>
+             <div className="w-6 h-6 bg-slate-800 border border-amber-300 rounded-full absolute shadow-lg z-10 flex items-center justify-center">
+                <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
+             </div>
+             <div className="w-8 h-0.5 bg-gradient-to-r from-amber-300 to-slate-400 absolute right-2 opacity-50"></div>
+             <div className="w-4 h-4 bg-slate-700 border border-slate-500 rounded absolute -right-1"></div>
+          </div>
+        </div>
+        <span className="font-label-sm uppercase text-white font-bold tracking-widest text-xs leading-relaxed">Automatización y más</span>
       </div>
     </div>
   </div>
